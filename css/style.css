@@ -11,8 +11,8 @@ body{
     background-color: #FFFFFF;
 }
 .cabecalho img{
-    width: 171px;
-    height: 55px;
+    width: 13%;
+    height: 35%;
     position: absolute;
     top: 25%;
     left: 2%;
@@ -24,11 +24,11 @@ body{
 }
 
 .sing_in{
-    width: 60px;
-    height: 25px;
+    width:4%;
+    height: 5%;
     position: absolute;
-    left: 85%;
-    top: 1.2%;
+    left: 83%;
+    top: 0%;
     font-size: small;
     
 }
@@ -41,16 +41,17 @@ body{
     position: inherit;
     background-color: none;
     background-color: #FC4A1A;
+    font-size: 100%;
 }
 .sing_in button:hover{
     background-color: #F7B733;
 }
 .sing_up{
-    width: 60px;
-    height: 25px;
+    width: 4%;
+    height: 5%;
     position: absolute;
-    left: 89%;
-    top: 1.2%;
+    left: 88%;
+    top: 0%;
     font-size: small;
 }
 .sing_up button{
@@ -62,16 +63,17 @@ body{
     position: inherit;
     background-color: none;
     background-color: #FC4A1A;
+    font-size: 100%;
 }
 .sing_up button:hover{
     background-color: #F7B733;
 }
 .perfil{
-    width: 20px;
-    height: 20px;
+    width: 2%;
+    height: 4.3%;
     position: absolute;
-    top: 1.5%;
-    left: 94%;
+    top: 0.5%;
+    left: 93.2%;
 
 }
 .perfil img{
@@ -81,11 +83,11 @@ body{
 }
 
 .buscar{
-    width: 20px;
-    height: 20px;
+    width: 1.9%;
+    height: 4%;
     position: absolute;
-    top: 1.5%;
-    left: 96.8%;
+    top: 0.5%;
+    left: 96%;
 
 }
 .buscar img{
@@ -94,9 +96,35 @@ body{
     cursor: pointer;
 }
 .home{
-    width: 100px;
-    height: 50px;
+    width: 7%;
+    height: 6.5%;
     position: absolute;
-    top: 18%;
+    top: 18.5%;
     left: 15%;
+}
+.home button{
+    width: 100%;
+    height: 100%;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    background-color: #F7B733;
+}
+.procuradas{
+    width: 10%;
+    height: 6.5%;
+    position: absolute;
+    top: 18.5%;
+    left: 25%;
+}
+.procuradas button{
+    width: 100%;
+    height: 100%;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    background-color: #FFFFFF;
+}
+.procuradas button:hover{
+    background-color: #F7B733;
 }
