@@ -1,0 +1,61 @@
+body{
+    background-color: #EDEDED;
+
+}
+.cabecalho{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 20%;
+    background-color: #FFFFFF;
+}
+.cabecalho2{
+    width: 100%;
+    height: 25%;
+    background-color: #FC4A1A;
+}
+.sing_in{
+    width: 60px;
+    height: 25px;
+    position: absolute;
+    left: 85%;
+    top: 0.9%;
+    font-size: small;
+    
+}
+.sing_in button{
+    outline: none;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    position: inherit;
+    background-color: none;
+    background-color: #FC4A1A;
+}
+.sing_in button:hover{
+    background-color: #F7B733;
+}
+.sing_up{
+    width: 60px;
+    height: 25px;
+    position: absolute;
+    left: 89%;
+    top: 0.9%;
+    font-size: small;
+}
+.sing_up button{
+    outline: none;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    position: inherit;
+    background-color: none;
+    background-color: #FC4A1A;
+}
+.sing_up button:hover{
+    background-color: #F7B733;
+}
+
