@@ -11,8 +11,8 @@ body{
     background-color: #FFFFFF;
 }
 .cabecalho img{
-    width: 13%;
-    height: 35%;
+    width: 15%;
+    height: 37%;
     position: absolute;
     top: 25%;
     left: 2%;
@@ -100,7 +100,7 @@ body{
     height: 6.5%;
     position: absolute;
     top: 18.5%;
-    left: 15%;
+    left: 25%;
 }
 .home button{
     width: 100%;
@@ -115,7 +115,7 @@ body{
     height: 6.5%;
     position: absolute;
     top: 18.5%;
-    left: 25%;
+    left: 35%;
 }
 .procuradas button{
     width: 100%;
@@ -127,4 +127,76 @@ body{
 }
 .procuradas button:hover{
     background-color: #F7B733;
+}
+.arranjos{
+    width: 8%;
+    height: 6.5%;
+    position: absolute;
+    top: 18.5%;
+    left: 47%;
+}
+.arranjos button{
+    width: 100%;
+    height: 100%;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    background-color: #FFFFFF;
+}
+.arranjos button:hover{
+    background-color: #F7B733;
+}
+.ocasioes{
+    width: 8%;
+    height: 6.5%;
+    position: absolute;
+    top: 18.5%;
+    left: 57%;
+}
+.ocasioes button{
+    width: 100%;
+    height: 100%;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    background-color: #FFFFFF
+}
+.ocasioes button:hover{
+    background-color: #F7B733;
+}
+.coracao{
+    width: 1.4%;
+    height: 3%;
+    left: 85%;
+    top: 10%;
+    position: absolute;
+}
+.coracao img{
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+.sacola{
+    width: 1.4%;
+    height: 3%;
+    left: 87.5%;
+    top: 10%;
+    position: absolute;
+}
+.sacola img{
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+.tracos{
+    width: 1.4%;
+    height: 3.2%;
+    left: 90%;
+    top: 10%;
+    position: absolute;
+}
+.tracos img{
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
 }
