@@ -7,20 +7,28 @@ body{
     top: 0%;
     left: 0%;
     width: 100%;
-    height: 20%;
+    height: 25%;
     background-color: #FFFFFF;
+}
+.cabecalho img{
+    width: 171px;
+    height: 55px;
+    position: absolute;
+    top: 25%;
+    left: 2%;
 }
 .cabecalho2{
     width: 100%;
-    height: 25%;
+    height: 20%;
     background-color: #FC4A1A;
 }
+
 .sing_in{
     width: 60px;
     height: 25px;
     position: absolute;
     left: 85%;
-    top: 0.9%;
+    top: 1.2%;
     font-size: small;
     
 }
@@ -42,7 +50,7 @@ body{
     height: 25px;
     position: absolute;
     left: 89%;
-    top: 0.9%;
+    top: 1.2%;
     font-size: small;
 }
 .sing_up button{
@@ -58,4 +66,37 @@ body{
 .sing_up button:hover{
     background-color: #F7B733;
 }
+.perfil{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 1.5%;
+    left: 94%;
 
+}
+.perfil img{
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+.buscar{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 1.5%;
+    left: 96.8%;
+
+}
+.buscar img{
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+.home{
+    width: 100px;
+    height: 50px;
+    position: absolute;
+    top: 18%;
+    left: 15%;
+}
