@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
-    <script type="text/javascript" src="./js/script.js"></script>
+    <script src="./js/script.js"></script>
     <title>FLOWER</title>
 </head>
 <body>
@@ -66,9 +66,15 @@
     </div>
 
     <div class="Carrossel">
-        <img src="./img/Orquídea banner .png" alt="">
+        <button class="arrow-left control" aria-label="Previous image">◀</button>
+        <button class="arrow-right control" aria-label="Next Image">▶</button>
+        <div class="galeriaWrapper">
+            <div class="galeria">
+                <img src="./img/Orquídea banner .png" alt="" class="item current-item">
+                <img src="./img/Amaríslis banner.png" alt="item">
+            </div>
+        </div>
     </div>
 
-    
 </body>
 </html>
