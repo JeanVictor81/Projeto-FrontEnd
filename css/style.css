@@ -46,6 +46,7 @@ body{
 }
 .sing_in button:hover{
     background-color: #F7B733;
+    transition: 0.3s;
 }
 .sing_up{
     width: 4%;
@@ -68,6 +69,7 @@ body{
 }
 .sing_up button:hover{
     background-color: #F7B733;
+    transition: 0.3s;
 }
 .perfil{
     width: 2%;
@@ -130,6 +132,7 @@ body{
 }
 .procuradas button:hover{
     background-color: #F7B733;
+    transition: 0.3s;
 }
 .arranjos{
     width: 8%;
@@ -149,6 +152,7 @@ body{
 }
 .arranjos button:hover{
     background-color: #F7B733;
+    transition: 0.3s;
 }
 .ocasioes{
     width: 8%;
@@ -168,6 +172,7 @@ body{
 }
 .ocasioes button:hover{
     background-color: #F7B733;
+    transition: 0.3s;
 }
 .coracao{
     width: 1.4%;
@@ -260,4 +265,42 @@ body{
 .galeriaWrapper{
     overflow: hidden;
 
+}
+
+
+.tipos{
+    display: flex;
+    position: absolute;
+    width: 100%;
+    height: 40%;
+    place-items: center;
+    align-items: center;
+    top: 115%;
+    left: 0%;
+    
+}
+.nome{
+    position: relative;
+    font-family: Arial;
+    font-size: 20px;
+    position: absolute;
+    left: 43%;
+    top: 0%;
+    letter-spacing: 4px;
+}
+.tiposImg{
+    display: flex;
+    position: relative;
+    height: 60%;
+    width: 90%;
+    left: 4%;
+    gap: 100px;
+    place-items: center;
+    
+}
+.tiposImg img{
+    border-radius: 60%;
+    height: 80%;
+    width: 10%;
+    
 }
