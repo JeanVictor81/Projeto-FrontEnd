@@ -1,32 +1,33 @@
-const controls = document.querySelectorAll('.control');
+const controls = document.querySelectorAll(".control");
 let currentItem = 0;
-const items = document.querySelectorAll('.item');
-const maxItens = itens.length;
+const items = document.querySelectorAll(".item");
+const maxItems = items.length;
 
-controls.forEach((control)=>{
-    control.addEventListener('click',() => {
-        const isLeft = control.classList.contains("arrow-left");
+controls.forEach((control) => {
+  control.addEventListener("click", (e) => {
+    isLeft = e.target.classList.contains("arrow-left");
 
-        if(isLeft){
-            currentItem -=1;
-        }
-        else{
-            currentItem +=1; 
-        }
+    if (isLeft) {
+      currentItem -= 1;
+    } else {
+      currentItem += 1;
+    }
 
-        if(currentItem>= maxItens){
-            currentItem = 0;
-        }
-        if(currentItem < 0){
-            currentItem = maxItens - 1;
-        }
-        console.log(isLeft);
+    if (currentItem >= maxItems) {
+      currentItem = 0;
+    }
 
-        items.forEach(item => item.classList.remove("currentItem"));
+    if (currentItem < 0) {
+      currentItem = maxItems - 1;
+    }
 
-        items[currentItem].scrollIntoView({
-            inline:"center",
-            behavior: "smooth"
-        })
-    })
-})
+    items.forEach((item) => item.classList.remove("current-item"));
+
+    items[currentItem].scrollIntoView({
+      behavior: "smooth",
+      inline: "center"
+    });
+
+    items[currentItem].classList.add("current-item");
+  });
+});
