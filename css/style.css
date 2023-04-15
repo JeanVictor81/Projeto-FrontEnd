@@ -284,7 +284,7 @@ body{
     font-family: Arial;
     font-size: 20px;
     position: absolute;
-    left: 43%;
+    left: 44%;
     top: 0%;
     letter-spacing: 4px;
 }
@@ -293,8 +293,8 @@ body{
     position: relative;
     height: 60%;
     width: 90%;
-    left: 4%;
-    gap: 100px;
+    left: 4.8%;
+    gap: 98px;
     place-items: center;
     
 }
@@ -303,4 +303,30 @@ body{
     height: 80%;
     width: 10%;
     
+}
+.setaEsquerda, .SetaDireita{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: auto;
+    bottom: 0;
+    border: none;
+    outline: none;
+    background: transparent;
+    cursor: pointer;
+}
+.setaEsquerda img, .SetaDireita img{
+    left: 0;
+    width: 5%;
+    position: absolute;
+    left: 0;
+    top: 35%;
+    right: auto;
+}
+.SetaDireita img{
+    position: absolute;
+    left: auto;
+    right: 0;
 }
