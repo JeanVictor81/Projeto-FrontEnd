@@ -1,0 +1,228 @@
+:root
+{   --cor-fundo:#B0AFAF;
+    --laranja-Forte:#FC4A1A;
+    --branco:#ffff;
+    --laranja-Fraco:#f4781f;
+    --amarelo:#F7B733;
+    --azul-verde:#4ABDAC;
+}
+@font-face {
+    src: url(../fontes/Antonio-VariableFont_wght.ttf);
+    font-family: 'Antonio-Regular';    
+    font-weight: normal;
+} 
+@font-face {
+    src: url(../fontes/Inter-VariableFont_slnt\,wght.ttf);
+    font-family: 'Inter-regular';
+    font-weight: normal;
+}
+
+
+body
+{
+    background-color:var(--cor-fundo);
+    font-family: 'Antonio-Regular';
+    
+}
+.cabecalho
+{
+    background-color:var(--laranja-Forte);
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 15%;
+    display: flex;
+    justify-content: space-between;
+   
+   
+   
+}
+
+
+.cabecalho img{
+
+    
+    position: relative;
+    margin-left: 2rem;
+    width: 208px;
+    height:66px;
+    margin-top: 1rem;
+    cursor: pointer;
+
+
+}
+
+.cabecalho h4
+{   position: relative;
+    margin-top: 2rem;
+    padding: 0.5rem;
+    color: var(--branco);
+    cursor: pointer;
+    width: 10%;
+}
+.cabecalho h4:hover{
+    text-decoration:underline;
+}
+.breadcrumbs{
+    margin-top:7%;
+    margin-left: 1rem;
+    font-family:'Inter-regular';
+    display: flex;
+    flex-direction:row;
+    justify-content: start;
+    align-items: center;
+   
+}
+.breadcrumbs a
+{
+    text-decoration: none;
+    color:inherit;
+
+}
+.breadcrumbs a :hover
+{
+    text-decoration: underline;
+}
+
+#Entrar
+{
+    margin-left: 1px;
+    font-weight:bold;
+}
+
+.loginContainer
+{
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+    
+}
+.loginBox{
+    background-color:var(--branco);
+    width: 25rem;
+    height: 28rem;
+    
+    text-align: center;
+    
+}
+.loginBox input{
+    width : 60%;
+    height: 10%;
+    margin-top: -1rem;
+    border-radius: 3px;
+    border: 0px;
+    background-color: #D9D9D9;
+    font-family:'Inter-regular';
+    font-size: 15px;
+
+
+}
+.loginBox input:focus{
+    border: 1px solid var(--laranja-Fraco);
+    box-shadow: 0 0 3px var(--laranja-Forte);
+    outline: none;
+}
+.loginBox h3
+{
+    text-align: start;
+    margin-left: 4.5rem;
+}
+.textLogin
+{
+    color: #B0AFAF;
+    text-align: end;
+    margin-top:0.5rem;
+    margin-right: 4.5rem;
+    font-size:0.85rem;
+
+}
+.textLogin:hover
+{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.loginBox p{
+    color: #B0AFAF ;
+}
+.logoRedes
+{
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items: center;
+}
+.logoRedes img
+{
+    width: 10%;
+    height: 10%;
+}
+#logoApple
+{
+    width: 11%;
+    height: 11%;
+    margin-top: -8px;
+    margin-left: 2rem;
+}
+#logoGoogle
+{
+    margin-right: 2.5rem;
+}
+.logoRedes img:hover
+{
+    cursor: pointer;
+}
+.btncontinuar
+{
+    width: 80%;
+    height: 15%;
+    border-radius: 20px;
+    margin-top: 1rem;
+    background-color:var(--amarelo) ;
+    border: 1px solid var(--amarelo);
+    color: var(--branco);
+    font-size: 1.6rem;
+    font-family: 'Antonio-Regular';
+
+    
+}
+.btncontinuar:hover
+{
+    background-color:var(--laranja-Fraco);
+    border: 1px solid var(--laranja-Fraco); 
+    cursor: pointer;
+}
+.novoFlower
+{
+    display: flex;
+    flex-direction:row;
+    justify-content: end;
+    align-items: center;
+    margin-top: -1rem;
+    margin-right: 1.5rem;
+    color:  #B0AFAF;
+}
+#cadastro {
+    color: var(--laranja-Fraco);
+    margin-left: 2px;
+}
+#cadastro:hover
+{
+    color: var(--laranja-Forte);
+    cursor: pointer;
+}
+.ou
+{
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+    align-items: center;
+    margin-top: -1rem;
+}
+.ou hr
+{
+    width:40%;
+    
+
+}
