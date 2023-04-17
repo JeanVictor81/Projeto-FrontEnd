@@ -101,16 +101,16 @@ a
 }
 .loginBox{
     background-color:var(--branco);
-    width: 25rem;
-    height: 28rem;
+    width: 28rem;
+    height: 25rem;
     
     text-align: center;
     
 }
 .loginBox input{
-    width : 60%;
+    width : 65%;
     height: 10%;
-    margin-top: -1rem;
+    margin-top: 1rem;
     border-radius: 3px;
     border: 0px;
     background-color: #D9D9D9;
@@ -127,7 +127,8 @@ a
 .loginBox h3
 {
     text-align: start;
-    margin-left: 4.5rem;
+    margin-left: 4rem;
+    font-size: 25px;
 }
 .textLogin
 {
@@ -218,11 +219,12 @@ a
     flex-direction:row;
     justify-content: center;
     align-items: center;
-    margin-top: -1rem;
+    margin-top: 2rem;
+
 }
 .ou hr
 {
-    width:40%;
+    width:37.8%;
     
 
 }
