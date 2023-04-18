@@ -43,3 +43,35 @@
     
     background-color: var(--laranja-Fraco);
 }
+
+.breadcrumbs{
+    margin-top:10%;
+    margin-left: 2rem;
+    font-family:'Inter-regular';
+    color: var(--cor-fundo);
+    display: flex;
+    flex-direction:row;
+    justify-content: start;
+    align-items: center;
+   
+}
+
+a
+{
+    text-decoration: none;
+    color:inherit;
+
+}
+.breadcrumbs a :hover
+{
+    text-decoration: underline;
+}
+.paginaAtual
+{
+    color:var(--azul-verde);
+}
+.compraConrainer{
+    width: 1239px;
+    height:648px;
+    background-color:var(--branco);
+}
