@@ -46,7 +46,7 @@
 }
 
 .breadcrumbs{
-    margin-top:10%;
+    margin-top:7%;
     margin-left: 2rem;
     font-family:'Inter-regular';
     color: var(--cor-fundo);
@@ -81,7 +81,7 @@ a
     min-height:200px;
     background-color:var(--branco);
     position: absolute;
-    top: 68%;
+    top: 65%;
     left: 50%;
     transform: translate(-50%, -50%);
     display: grid;

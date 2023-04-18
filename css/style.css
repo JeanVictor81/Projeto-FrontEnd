@@ -21,244 +21,150 @@ body{
     margin: 0;
     background-color: #EDEDED;
     width: 100%;
-    height: 15%;
+    height: 100%;
     
 }
-@font-face {
-    src: url(../fontes/Antonio-VariableFont_wght.ttf);
-    font-family: 'Antonio-Regular';    
-    font-weight: normal;
-} 
-@font-face {
-    src: url(../fontes/Inter-VariableFont_slnt\,wght.ttf);
+header
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 25vh;
+    padding: 20px;
+    z-index: 1000;
+}
+.logar{
+    background-color: var(--laranja-Forte);
+    height: 5vh;
+    width: 100%;
+    position: inherit;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+.logar button{
+    outline: none;
+    border: none;
+    cursor: pointer;
+    font-size: 12px;
+    background-color: var(--laranja-Forte);
     font-family: 'Inter-regular';
-    font-weight: normal;
-}
-.cabecalho{
-    position: absolute;
-    top: 0%;
-    left: 0%;
-    width: 100%;
-    height: 20%;
-    background-color: #FFFFFF;
+    margin-right: 1%;
+    
     
 }
-.cabecalho img{
-    width: 15%;
-    height: 37%;
-    position: absolute;
-    top: 25%;
-    left: 2%;
+
+.logar button:hover{
+    background-color: var(--amarelo);
+    height: 100%;
 }
-.cabecalho2{
+.logar img
+{
+    margin-right: 1.5%;
+    width: 1.5%;
+    height: 60%;
+    cursor: pointer;
+}
+.menuPrincipal
+{   position: fixed;
+    background-color: #ffff;
     width: 100%;
-    height: 20%;
-    background-color: #FC4A1A;
+    height: 10vh;
+    left: 0;
+    top: 5%;
+}
+.container1
+{   position: inherit;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: center;
 }
 
-.sing_in{
-    width:4%;
-    height: 5%;
-    position: absolute;
-    left: 82%;
-    top: 0%;
-    font-size: small;
-    ;
+.logo img{
+    width: 100%;
+    height: 100%;
+    max-height: 55px;
+    max-width:171px;
+    padding: 1rem;
+    position: inherit;
+
+}
+.icones
+{
+    margin-left: 86%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: inherit;
+}
+.icones img
+{
+    width: 15px;
+    height: 15px;
+    margin-right: 2rem;
     
 }
-.sing_in button{
-    outline: none;
-    border: none;
+#tracos
+{
+    padding-top: 3px;
+}
+.icones img:hover{
     cursor: pointer;
+
+}
+.container2
+{
+    display: flex;
+    flex-direction: row;
+    height: 5vh;
     width: 100%;
-    height: 80%;
     position: inherit;
-    background-color: none;
-    background-color: #FC4A1A;
-    font-size: 100%;
-    font-family: 'Inter-regular'
+    top: 10vh;
+    left: 25rem;
+    align-items: center;
+    
+    
+  
+}
+ 
 
-}
-.sing_in button:hover{
-    background-color: #F7B733;
-    transition: 0.3s;
-}
-.sing_up{
-
-    width: 5%;
-    height: 5%;
-    position: absolute;
-    left: 86%;
-    top: 0%;
-    font-size: small;
-
-}
-.sing_up button{
-    outline: none;
-    border: none;
-    cursor: pointer;
-    width: 100%;
-    height: 80%;
-    position: inherit;
-    background-color: none;
-    background-color: #FC4A1A;
-    font-size: 100%;
-    font-family: 'Inter-regular'
-}
-.sing_up button:hover{
-    background-color: #F7B733;
-    transition: 0.3s;
-}
-.perfil{
-    width: 1.5%;
-    height: 3%;
-    position: absolute;
-    top: 0.5%;
-    left: 93.2%;
-    padding: 3px;
-
-}
-.perfil img{
-    width: 100%;
-    height: 100%;
-    cursor: pointer;
-}
-
-.buscar{
-    width: 1.5%;
-    height: 3%;
-    position: absolute;
-    top: 0.5%;
-    left: 96%;
-    padding: 3px
-
-}
-.buscar img{
-    width: 100%;
-    height: 100%;
-    cursor: pointer;
-}
-.home{
-    width: 7%;
-    height: 6.5%;
-    position: absolute;
-    top: 13.7%;
-    left: 25%;
-}
-.home button{
-    width: 100%;
-    height: 100%;
+.container2 button
+{
     border: none;
     cursor: pointer;
     outline: none;
-    background-color: #F7B733;
-    font-family:'Antonio-Regular';;
-}
-.home button:hover{
-    background-color: var(--laranja-Fraco);
-}
-.procuradas{
-    width: 10%;
-    height: 6.5%;
-    position: absolute;
-    top: 13.7%;
-    left: 35%;
-}
-.procuradas button{
-    width: 100%;
-    height: 100%;
-    border: none;
-    cursor: pointer;
-    outline: none;
-    background-color: #FFFFFF;
-    font-family:'Antonio-Regular';;
-}
-.procuradas button:hover{
-    background-color: var(--laranja-Fraco);
-    transition: 0.3s;
-}
-.arranjos{
-    width: 8%;
-    height: 6.5%;
-    position: absolute;
-    top: 13.7%;
-    left: 47%;
-}
-.arranjos button{
-    width: 100%;
-    height: 100%;
-    border: none;
-    cursor: pointer;
-    outline: none;
-    background-color: #FFFFFF;
+    
     font-family: 'Antonio-Regular';
+    font-size: 15px;
+    margin: 3rem;
 }
-.arranjos button:hover{
+.currentPageButton 
+{
+    background-color: var(--amarelo);
+    height: 100%;
+}
+.otherPagesButton 
+{
+    background-color: var(--branco);
+    height: 100%;
+}
+
+
+.container2 button:hover 
+{
     background-color: var(--laranja-Fraco);
     transition: 0.3s;
-}
-.ocasioes{
-    width: 8%;
-    height: 6.5%;
-    position: absolute;
-    top: 13.7%;
-    left: 57%;
-}
-.ocasioes button{
-    width: 100%;
     height: 100%;
-    border: none;
-    cursor: pointer;
-    outline: none;
-    background-color: #FFFFFF;
-    font-family: 'Antonio-Regular';
+   
+    
+   
 }
-.ocasioes button:hover{
-    background-color: var(--laranja-Fraco);
-    transition: 0.3s;
-}
-.coracao{
-
-    width: 1.3%;
-    height: 2.6%;
-    left: 89%;
-    top: 10%;
-    position: absolute;
-}
-.coracao img{
-    width: 100%;
-    height: 100%;
-    cursor: pointer;
-}
-.sacola{
-
-    width: 1.3%;
-    height: 2.6%;
-    left: 92.5%;
-
-    top: 10%;
-    position: absolute;
-}
-.sacola img{
-    width: 100%;
-    height: 100%;
-    cursor: pointer;
-}
-.tracos{
-    width: 1.3%;
-    height: 2.8%;
-    left: 96%;
-
-    top: 10%;
-    position: absolute;
-    padding: 2px;
-}
-.tracos img{
-    width: 100%;
-    height: 100%;
-    cursor: pointer;
-}
-
 .container{
     width: 100%;
     height: 70%;
