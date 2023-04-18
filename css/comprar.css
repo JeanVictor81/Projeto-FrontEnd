@@ -11,6 +11,7 @@
     font-family: 'Antonio-Regular';    
     font-weight: normal;
 } 
+
 @font-face {
     src: url(../fontes/Inter-VariableFont_slnt\,wght.ttf);
     font-family: 'Inter-regular';
@@ -70,8 +71,74 @@ a
 {
     color:var(--azul-verde);
 }
-.compraConrainer{
-    width: 1239px;
-    height:648px;
+.compraContainer{
+    
+    width: 100%;
+    height: 100%;
+    max-width:1239px;
+    max-height:648px;
+    min-width: 600px;
+    min-height:200px;
     background-color:var(--branco);
+    position: absolute;
+    top: 68%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+ 
+
+}
+
+.imgFLor{
+
+    grid-column: 1 / 3;
+    grid-row: 1/5;
+}
+
+.imgFLor img{
+    width: 100%;
+    height: 100%;
+    max-width:750px;
+    max-height:550px;
+    margin-left: 3rem;
+    margin-top: 1rem;
+}
+
+.titulo
+{
+    grid-column: 3 / 5;
+    grid-row: 1/3;
+    font-family: 'Antonio-Regular';
+}
+
+.titulo h1
+{
+    font-size: 30px;
+    
+}
+.titulo img
+{
+    margin-left: 1rem; 
+}
+.preco
+{
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    margin-left: 1.3rem;
+    margin-top: -2.3rem;
+    
+    
+}
+#parcelas
+{
+  
+}
+#desconto
+{
+    margin-left: 1rem;
+    color: #B40000;
+    text-decoration: line-through;
 }
