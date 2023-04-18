@@ -1105,6 +1105,10 @@ body{
     font-size: 15px;
 
 }
+.atendimentoClienteRodape a:hover{
+    text-decoration: underline;
+    
+}
 .nossasFloresRodape{
     position: relative;
     width: 350%;
@@ -1126,6 +1130,9 @@ body{
     font-family: 'Inter-regular';
     text-decoration: none;
     font-size: 15px;
+}
+.nossasFloresRodape a:hover{
+    text-decoration: underline;
 }
 .faleConoscoRodape{
     position: relative;
