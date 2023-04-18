@@ -33,20 +33,36 @@ controls.forEach((control) => {
 });
   
 function irParaHome() {
-  window.location.href = "index.html";
+  if(document.title == 'FLOWER')
+  {
+    window.location.href = "index.html";
+  }
+  else
+  {
+    window.location.href = "../index.html"
+  }
+  
 }
-var btnHome = document.getElementById("homePage");
-btnHome.addEventListener("click",irParaHome);
 
 function irParaLogin() {
-  window.location.href = "html/Login.html";
+    if (document.title == 'FLOWER') {
+      window.location.href = "html/Login.html";
+    }
+    else
+    {
+      window.location.href = "../html/Login.html"
+    }
+    
 }
-var btnLogin = document.getElementById("Entrar");
-btnLogin.addEventListener('click',irParaLogin);
 
 function irParaCadastro() 
-{ 
-  window.location.href = "html/cadastro.html";
+{
+  if (document.title == 'FLOWER') {
+    window.location.href = "html/cadastro.html";
+  }
+  else
+  {
+    window.location.href = "../html/cadastro.html";
+  }
+  
 }
-btnCadastrar = document.getElementById("btnCadastro");
-btnCadastrar.addEventListener('click', irParaCadastro);

@@ -81,7 +81,7 @@ a
     min-height:200px;
     background-color:var(--branco);
     position: absolute;
-    top: 65%;
+    top: 60vh;
     left: 50%;
     transform: translate(-50%, -50%);
     display: grid;
@@ -113,6 +113,51 @@ a
     font-family: 'Antonio-Regular';
 }
 
+.btnCompra
+{
+    grid-column: 3 / 5;
+    grid-row: 3/4;
+    font-family: 'Antonio-Regular';
+    padding: 10%
+}
+
+.btnCompra button
+{
+    height: 100%;
+    width: 100%;
+    max-width: 320px;
+    max-height: 60px;
+    margin-bottom: 1rem;
+    border-radius: 2px;
+    font-size: 40px;
+    font-family: 'Antonio-Regular';
+    border: none;
+    
+}
+.comprar
+{
+    background-color: var(--azul-verde);
+}
+.comprar:hover
+{
+    background-color: var(--amarelo);
+    cursor: pointer;
+}
+.sacolinha
+{
+    background-color: var(--laranja-Fraco);
+}
+.sacolinha img
+{
+    max-width: 30px;
+    max-height: 30px;
+}
+.sacolinha:hover
+{
+    background-color: var(--amarelo);
+    cursor: pointer;
+}
+
 .titulo h1
 {
     font-size: 30px;
@@ -132,13 +177,79 @@ a
     
     
 }
+.preco h1
+{
+    font-size: 40px;
+}
+.preco h3
+{
+    color: #B0AFAF;
+}
 #parcelas
 {
-  
+    margin-left: 1.3rem;
+    margin-top:-1.5rem;
+    color: #B0AFAF;
 }
 #desconto
 {
     margin-left: 1rem;
     color: #B40000;
     text-decoration: line-through;
+}
+.frete
+{
+    margin-left: 7%;
+    margin-top:8%;
+    display: flex;
+    align-items: center;
+
+}
+.frete img
+{
+    max-width: 27px;
+    max-height: 20px;
+    margin-right: 5px;
+}
+.destaque
+{
+    color: var(--amarelo);
+}
+.destaque:hover
+{
+    text-decoration:underline;
+    cursor: pointer;
+}
+.informacoes
+{     margin-left: 20%;
+      margin-top:-5vh;
+        padding: 2%;
+      font-family: 'Inter-Regular';
+    
+}
+.agendar
+{
+    margin-left: 7%;
+    margin-top:-5%;
+    display: flex;
+    align-items: center;
+
+}
+.agendar img
+{
+    max-width: 27px;
+    max-height: 20px;
+    margin-right: 5px;
+}
+.descricaoContainer
+{
+    width: 100%;
+    height: 100%;
+    max-width:1239px;
+    max-height:180px;
+    background-color:var(--branco);
+    position: absolute;
+    top: 113vh;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
