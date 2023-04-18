@@ -29,7 +29,7 @@ body{
     width:4%;
     height: 5%;
     position: absolute;
-    left: 84%;
+    left: 82%;
     top: 0%;
     font-size: small;
     
@@ -50,10 +50,10 @@ body{
     transition: 0.3s;
 }
 .sing_up{
-    width: 4%;
+    width: 6%;
     height: 5%;
     position: absolute;
-    left: 88%;
+    left: 86%;
     top: 0%;
     font-size: small;
 }
@@ -178,7 +178,7 @@ body{
 .coracao{
     width: 1.4%;
     height: 3%;
-    left: 85%;
+    left: 92.5%;
     top: 10%;
     position: absolute;
 }
@@ -190,7 +190,7 @@ body{
 .sacola{
     width: 1.4%;
     height: 3%;
-    left: 87.5%;
+    left: 94.6%;
     top: 10%;
     position: absolute;
 }
@@ -202,7 +202,7 @@ body{
 .tracos{
     width: 1.4%;
     height: 3.2%;
-    left: 90%;
+    left: 97%;
     top: 10%;
     position: absolute;
 }
@@ -316,7 +316,7 @@ body{
     width: 100%;
     height: 100%;
     position: absolute;
-    top: 0;
+    top: 1%;
     left: 0;
     right: auto;
     bottom: 0;
@@ -524,26 +524,263 @@ body{
 .imagemMaisProcuradasCasamentos{
     position: absolute;
     display: flex;
+    left: 0%;
     top: 290%;
-    gap: 100px;
+    gap: 70px;
 }
 .imagemMaisProcuradasCasamentos img{
     position: relative;
-    left: 3%;
+    left: 8%;
     width: 240px;
     height: 240px;
     border-radius: 10px;
+    cursor: pointer;
 }
 .imagemMaisProcuradasCongressos{
     position: absolute;
     display: flex;
+    left: 0%;
     top: 1120%;
-    gap: 100px;
+    gap: 70px;
 }
 .imagemMaisProcuradasCongressos img{
     position: relative;
-    left: 3%;
+    left: 8%;
     width: 240px;
     height: 240px;
+    cursor: pointer;
     border-radius: 10px;
+}
+.titelMaisProcuradosCasamentos{
+    position: absolute;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    top: 645%;
+    left: 0%;
+    gap: 70px;
+
+}
+.titelMaisProcuradosCasamentos h3{
+    position: relative;
+    left: 7%;
+    background-color: #FFFFFF;
+    width: 240px;
+    height: 150px;
+    border-radius: 10px;
+
+
+}
+.favoritoMaisProcuradasCasamentos{
+    position: absolute;
+    display: flex;
+    width: 20px;
+    height: 20px;
+    gap: 285px;
+    top: 747%;
+    left: 7.5%;
+}
+.favoritoMaisProcuradasCasamentos img:nth-child(2){
+    position: relative;
+    left: 12%;
+}
+.favoritoMaisProcuradasCasamentos img:nth-child(3){
+    position: relative;
+    left: 35%;
+}
+.favoritoMaisProcuradasCasamentos img:nth-child(4){
+    position: relative;
+    left: 55%;
+}
+.precoNormalCasamento{
+    position: absolute;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    top: 762%;
+    gap: 100px;
+}
+.precoNormalCasamento p{
+    position: relative;
+    left: 16.5%;
+    font-size: 25px;
+}
+.precoNormalCasamento p:nth-child(2){
+    position: relative;
+    left: 24.5%;
+}
+.precoNormalCasamento p:nth-child(3){
+    position: relative;
+    left: 33.5%;
+}
+.precoNormalCasamento p:nth-child(4){
+    position: relative;
+    left: 41%;
+}
+.cartaoMaisProcuradasCasamentos{
+    position: absolute;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    top: 820%;
+    gap: 100px;
+}
+.cartaoMaisProcuradasCasamentos p{
+    color: red;
+    position: relative;
+    left: 18%;
+    font-size: 11px;
+}
+.cartaoMaisProcuradasCasamentos p:nth-child(2){
+    position: relative;
+    left: 27.5%;
+}
+.cartaoMaisProcuradasCasamentos p:nth-child(3){
+    position: relative;
+    left: 37.5%;
+}
+.cartaoMaisProcuradasCasamentos p:nth-child(4){
+    position: relative;
+    left: 46.8%;
+}
+.titleMaisProcuradosCongressos{
+    position: absolute;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    top: 1474%;
+    left: 0%;
+    gap: 70px;
+}
+.titleMaisProcuradosCongressos h3{
+    position: relative;
+    background-color: #FFFFFF;
+    width: 240px;
+    height: 150px;
+    border-radius: 10px;
+    left: 7%;
+}
+.favoritoMaisProcuradasCongressos{
+    position: absolute;
+    display: flex;
+    width: 20px;
+    height: 20px;
+    gap: 285px;
+    top: 1590%;
+    left: 7.3%;
+}
+.favoritoMaisProcuradasCongressos img:nth-child(2){
+    position: relative;
+    left: 12%;
+}
+.favoritoMaisProcuradasCongressos img:nth-child(3){
+    position: relative;
+    left: 35.5%;
+}
+.favoritoMaisProcuradasCongressos img:nth-child(4){
+    position: relative;
+    left: 78%;
+}
+.precoNormalCongressos{
+    position: absolute;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    top: 1600%;
+    gap: 100px;
+}
+.precoNormalCongressos p{
+    position: relative;
+    left: 16.5%;
+    font-size: 25px;
+}
+.precoNormalCongressos p:nth-child(2){
+    position: relative;
+    left: 25.5%;
+}
+.precoNormalCongressos p:nth-child(3){
+    position: relative;
+    left: 34.5%;
+}
+.precoNormalCongressos p:nth-child(4){
+    position: relative;
+    left: 43%;
+}
+.cartaoMaisProcuradasCongressos{
+    position: absolute;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    top: 1655%;
+    gap: 100px;
+}
+.cartaoMaisProcuradasCongressos p{
+    position: relative;
+    left: 17.5%;
+    font-size: 12px;
+    color: #FC4A1A;
+}
+.cartaoMaisProcuradasCongressos p:nth-child(2){
+    position: relative;
+    left: 26.5%;
+}
+.cartaoMaisProcuradasCongressos p:nth-child(3){
+    position: relative;
+    left: 36%;
+}
+.cartaoMaisProcuradasCongressos p:nth-child(4){
+    position: relative;
+    left: 45%;
+}
+.informativos{
+    position: absolute;
+    display: flex;
+    top: 435%;
+    align-items: center;
+    width: 100%;
+    height: 74px;
+}
+.entrega{
+    display: flex;
+    position: relative;
+    left: 27%;
+    gap: 10px;
+}
+.entrega img{
+    position: relative;
+    width: 86.6px;
+    height: 65px;
+}
+.entrega h4{
+    font-family: Antonio;
+    color: #B0AFAF;
+}
+.flor{
+    display: flex;
+    position: relative;
+    left: 33%;
+    gap: 10px; 
+}
+.flor img{
+    position: relative;
+    width: 70px;
+    height: 74px;
+}
+.flor h4{
+    font-family: Antonio;
+    color: #B0AFAF;
+}
+.ofertasEspeciais{
+    position: absolute;
+    top: 460%;
+    width: 90%;
+    height: 75%;
+    left: 0%;
+}
+.ofertasEspeciais h1{
+    position: relative;
+    width: 355px;
+    left: 45%;
+    text-decoration: underline;
+    font-family: Inter;
 }
