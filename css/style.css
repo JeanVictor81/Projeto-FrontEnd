@@ -1,15 +1,36 @@
+:root
+{   --cor-fundo:#B0AFAF;
+    --laranja-Forte:#FC4A1A;
+    --branco:#ffff;
+    --laranja-Fraco:#f4781f;
+    --amarelo:#F7B733;
+    --azul-verde:#4ABDAC;
+}
+@font-face {
+    src: url(../fontes/Antonio-VariableFont_wght.ttf);
+    font-family: 'Antonio-Regular';    
+    font-weight: normal;
+} 
+@font-face {
+    src: url(../fontes/Inter-VariableFont_slnt\,wght.ttf);
+    font-family: 'Inter-regular';
+    font-weight: normal;
+}
+
 body{
     background-color: #EDEDED;
-    height: 5082px;
-    width: 1280px;
+    width: 100%;
+    height: 15%;
+    
 }
 .cabecalho{
     position: absolute;
     top: 0%;
     left: 0%;
     width: 100%;
-    height: 25%;
+    height: 20%;
     background-color: #FFFFFF;
+    
 }
 .cabecalho img{
     width: 15%;
@@ -31,6 +52,7 @@ body{
     left: 84%;
     top: 0%;
     font-size: small;
+    ;
     
 }
 .sing_in button{
@@ -38,45 +60,50 @@ body{
     border: none;
     cursor: pointer;
     width: 100%;
-    height: 100%;
+    height: 80%;
     position: inherit;
     background-color: none;
     background-color: #FC4A1A;
     font-size: 100%;
+    font-family: 'Inter-regular'
+
 }
 .sing_in button:hover{
     background-color: #F7B733;
     transition: 0.3s;
 }
 .sing_up{
-    width: 4%;
+    width: 5%;
     height: 5%;
     position: absolute;
     left: 88%;
     top: 0%;
     font-size: small;
+
 }
 .sing_up button{
     outline: none;
     border: none;
     cursor: pointer;
     width: 100%;
-    height: 100%;
+    height: 80%;
     position: inherit;
     background-color: none;
     background-color: #FC4A1A;
     font-size: 100%;
+    font-family: 'Inter-regular'
 }
 .sing_up button:hover{
     background-color: #F7B733;
     transition: 0.3s;
 }
 .perfil{
-    width: 2%;
-    height: 4.3%;
+    width: 1.5%;
+    height: 3%;
     position: absolute;
     top: 0.5%;
     left: 93.2%;
+    padding: 3px;
 
 }
 .perfil img{
@@ -86,11 +113,12 @@ body{
 }
 
 .buscar{
-    width: 1.9%;
-    height: 4%;
+    width: 1.5%;
+    height: 3%;
     position: absolute;
     top: 0.5%;
     left: 96%;
+    padding: 3px
 
 }
 .buscar img{
@@ -102,7 +130,7 @@ body{
     width: 7%;
     height: 6.5%;
     position: absolute;
-    top: 18.5%;
+    top: 13.7%;
     left: 25%;
 }
 .home button{
@@ -112,13 +140,16 @@ body{
     cursor: pointer;
     outline: none;
     background-color: #F7B733;
-    font-family: Antonio;
+    font-family:'Antonio-Regular';;
+}
+.home button:hover{
+    background-color: var(--laranja-Fraco);
 }
 .procuradas{
     width: 10%;
     height: 6.5%;
     position: absolute;
-    top: 18.5%;
+    top: 13.7%;
     left: 35%;
 }
 .procuradas button{
@@ -128,17 +159,17 @@ body{
     cursor: pointer;
     outline: none;
     background-color: #FFFFFF;
-    font-family: Antonio;
+    font-family:'Antonio-Regular';;
 }
 .procuradas button:hover{
-    background-color: #F7B733;
+    background-color: var(--laranja-Fraco);
     transition: 0.3s;
 }
 .arranjos{
     width: 8%;
     height: 6.5%;
     position: absolute;
-    top: 18.5%;
+    top: 13.7%;
     left: 47%;
 }
 .arranjos button{
@@ -148,17 +179,17 @@ body{
     cursor: pointer;
     outline: none;
     background-color: #FFFFFF;
-    font-family: Antonio;
+    font-family: 'Antonio-Regular';
 }
 .arranjos button:hover{
-    background-color: #F7B733;
+    background-color: var(--laranja-Fraco);
     transition: 0.3s;
 }
 .ocasioes{
     width: 8%;
     height: 6.5%;
     position: absolute;
-    top: 18.5%;
+    top: 13.7%;
     left: 57%;
 }
 .ocasioes button{
@@ -168,16 +199,16 @@ body{
     cursor: pointer;
     outline: none;
     background-color: #FFFFFF;
-    font-family: Antonio;
+    font-family: 'Antonio-Regular';
 }
 .ocasioes button:hover{
-    background-color: #F7B733;
+    background-color: var(--laranja-Fraco);
     transition: 0.3s;
 }
 .coracao{
-    width: 1.4%;
-    height: 3%;
-    left: 85%;
+    width: 1.3%;
+    height: 2.6%;
+    left: 89%;
     top: 10%;
     position: absolute;
 }
@@ -187,9 +218,9 @@ body{
     cursor: pointer;
 }
 .sacola{
-    width: 1.4%;
-    height: 3%;
-    left: 87.5%;
+    width: 1.3%;
+    height: 2.6%;
+    left: 92.5%;
     top: 10%;
     position: absolute;
 }
@@ -199,11 +230,12 @@ body{
     cursor: pointer;
 }
 .tracos{
-    width: 1.4%;
-    height: 3.2%;
-    left: 90%;
+    width: 1.3%;
+    height: 2.8%;
+    left: 96%;
     top: 10%;
     position: absolute;
+    padding: 2px;
 }
 .tracos img{
     width: 100%;
