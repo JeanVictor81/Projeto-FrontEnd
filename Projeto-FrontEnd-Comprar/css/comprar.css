@@ -1,0 +1,144 @@
+:root
+{   --cor-fundo:#B0AFAF;
+    --laranja-Forte:#FC4A1A;
+    --branco:#ffff;
+    --laranja-Fraco:#f4781f;
+    --amarelo:#F7B733;
+    --azul-verde:#4ABDAC;
+}
+@font-face {
+    src: url(../fontes/Antonio-VariableFont_wght.ttf);
+    font-family: 'Antonio-Regular';    
+    font-weight: normal;
+} 
+
+@font-face {
+    src: url(../fontes/Inter-VariableFont_slnt\,wght.ttf);
+    font-family: 'Inter-regular';
+    font-weight: normal;
+}
+
+.btnCabecalhoComprar {
+    
+        width: 7%;
+        height: 6.5%;
+        position: absolute;
+        top: 13.7%;
+        left: 25%;
+    
+   
+}
+.btnCabecalhoComprar button
+{
+    width: 100%;
+    height: 100%;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    background-color: inherit;
+    font-family:'Antonio-Regular';;
+}
+.btnCabecalhoComprar button:hover
+{
+   
+    
+    background-color: var(--laranja-Fraco);
+}
+
+.breadcrumbs{
+    margin-top:10%;
+    margin-left: 2rem;
+    font-family:'Inter-regular';
+    color: var(--cor-fundo);
+    display: flex;
+    flex-direction:row;
+    justify-content: start;
+    align-items: center;
+   
+}
+
+a
+{
+    text-decoration: none;
+    color:inherit;
+
+}
+.breadcrumbs a :hover
+{
+    text-decoration: underline;
+}
+.paginaAtual
+{
+    color:var(--azul-verde);
+}
+.compraContainer{
+    
+    width: 100%;
+    height: 100%;
+    max-width:1239px;
+    max-height:648px;
+    min-width: 600px;
+    min-height:200px;
+    background-color:var(--branco);
+    position: absolute;
+    top: 68%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+ 
+
+}
+
+.imgFLor{
+
+    grid-column: 1 / 3;
+    grid-row: 1/5;
+}
+
+.imgFLor img{
+    width: 100%;
+    height: 100%;
+    max-width:750px;
+    max-height:550px;
+    margin-left: 3rem;
+    margin-top: 1rem;
+}
+
+.titulo
+{
+    grid-column: 3 / 5;
+    grid-row: 1/3;
+    font-family: 'Antonio-Regular';
+}
+
+.titulo h1
+{
+    font-size: 30px;
+    
+}
+.titulo img
+{
+    margin-left: 1rem; 
+}
+.preco
+{
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    margin-left: 1.3rem;
+    margin-top: -2.3rem;
+    
+    
+}
+#parcelas
+{
+  
+}
+#desconto
+{
+    margin-left: 1rem;
+    color: #B40000;
+    text-decoration: line-through;
+}
