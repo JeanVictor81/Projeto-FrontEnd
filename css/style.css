@@ -4,6 +4,16 @@ body{
     height: 5082px;
     width: 1280px;
 }
+@font-face {
+    src: url(../fontes/Antonio-VariableFont_wght.ttf);
+    font-family: 'Antonio-Regular';    
+    font-weight: normal;
+} 
+@font-face {
+    src: url(../fontes/Inter-VariableFont_slnt\,wght.ttf);
+    font-family: 'Inter-regular';
+    font-weight: normal;
+}
 .cabecalho{
     position: absolute;
     top: 0%;
@@ -780,7 +790,88 @@ body{
 .ofertasEspeciais h1{
     position: relative;
     width: 355px;
-    left: 45%;
+    height: 31px;
+    left: 495px;
     text-decoration: underline;
-    font-family: Inter;
+    font-family: 'Inter-regular';
+    font-size: 24px;
+    font-style: normal;
+    letter-spacing: 5px;
 }
+.imagemOfertas{
+    position: absolute;
+    display: flex;
+    height: 50%;
+    width: 90%;
+    top: 25%;
+    left: 5%;
+    gap: 10px;
+
+}
+.imagemOfertas img{
+    position: relative;
+    left: 5%;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.imagemOfertas img:nth-child(1){
+    position: relative;
+    width: 725px;
+    height: 358px;
+}
+.imagemOfertas img:nth-child(2){
+    position: relative;
+    width: 386px;
+    height: 694px;
+}
+.imagemOfertas img:nth-child(3){
+    position: relative;
+    width: 347px;
+    height: 258px;
+    left: -94%;
+    top: 170%;
+}
+.imagemOfertas img:nth-child(4){
+    position: relative;
+    width: 347px;
+    height: 258px;
+    left: -93%;
+    top: 170%;
+}
+.sobreNos{
+    position: absolute;
+    display: flex;
+    height: 20%;
+    width: 100%;
+    top: 600%;
+    left: 0%;
+
+}
+.nomeSobreNos{
+    position: relative;
+    left: 69px;
+    width: 20%;
+}
+.textSobreNos{
+    position: relative;
+    width: 581.73px;
+    height: 316.09px;
+    left: -15%;
+    top: 60%;
+}
+.textSobreNos img:nth-child(2){
+    position: relative;
+    left: 118%;
+    top: -115%;
+    width: 1280px;
+    height: 720px;
+}
+.textSobreNos img:nth-child(2){
+    position: relative;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+
+
