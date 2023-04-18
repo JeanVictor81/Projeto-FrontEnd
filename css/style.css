@@ -1,8 +1,10 @@
-body{
-    margin: 0;
-    background-color: #EDEDED;
-    height: 5082px;
-    width: 1280px;
+:root
+{   --cor-fundo:#B0AFAF;
+    --laranja-Forte:#FC4A1A;
+    --branco:#ffff;
+    --laranja-Fraco:#f4781f;
+    --amarelo:#F7B733;
+    --azul-verde:#4ABDAC;
 }
 @font-face {
     src: url(../fontes/Antonio-VariableFont_wght.ttf);
@@ -14,214 +16,156 @@ body{
     font-family: 'Inter-regular';
     font-weight: normal;
 }
-.cabecalho{
-    position: absolute;
-    top: 0%;
-    left: 0%;
-    width: 100%;
-    height: 25%;
-    background-color: #FFFFFF;
-}
-.cabecalho img{
-    width: 15%;
-    height: 37%;
-    position: absolute;
-    top: 25%;
-    left: 2%;
-}
-.cabecalho2{
-    width: 100%;
-    height: 20%;
-    background-color: #FC4A1A;
-}
 
-.sing_in{
-    width:4%;
-    height: 5%;
-    position: absolute;
-    left: 82%;
-    top: 0%;
-    font-size: small;
+body{
+    margin: 0;
+    background-color: #EDEDED;
+    width: 100%;
+    height: 100%;
     
 }
-.sing_in button{
-    outline: none;
-    border: none;
-    cursor: pointer;
+header
+{
+    position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
-    height: 100%;
+    height: 25vh;
+    padding: 20px;
+    z-index: 1000;
+}
+.logar{
+    background-color: var(--laranja-Forte);
+    height: 5vh;
+    width: 100%;
     position: inherit;
-    background-color: none;
-    background-color: #FC4A1A;
-    font-size: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
 }
-.sing_in button:hover{
-    background-color: #F7B733;
-    transition: 0.3s;
-}
-.sing_up{
-    width: 6%;
-    height: 5%;
-    position: absolute;
-    left: 86%;
-    top: 0%;
-    font-size: small;
-}
-.sing_up button{
+.logar button{
     outline: none;
     border: none;
     cursor: pointer;
+    font-size: 12px;
+    background-color: var(--laranja-Forte);
+    font-family: 'Inter-regular';
+    margin-right: 1%;
+    
+    
+}
+
+.logar button:hover{
+    background-color: var(--amarelo);
+    height: 100%;
+}
+.logar img
+{
+    margin-right: 1.5%;
+    width: 1.5%;
+    height: 60%;
+    cursor: pointer;
+}
+
+.menuPrincipal
+{   position: fixed;
+    background-color: #ffff;
+    width: 100%;
+    height: 10vh;
+    left: 0;
+    top: 5%;
+}
+.container1
+{   position: inherit;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: center;
+}
+
+.logo img{
     width: 100%;
     height: 100%;
+    max-height: 55px;
+    max-width:171px;
+    padding: 1rem;
     position: inherit;
-    background-color: none;
-    background-color: #FC4A1A;
-    font-size: 100%;
-}
-.sing_up button:hover{
-    background-color: #F7B733;
-    transition: 0.3s;
-}
-.perfil{
-    width: 2%;
-    height: 4.3%;
-    position: absolute;
-    top: 0.5%;
-    left: 93.2%;
 
 }
-.perfil img{
-    width: 100%;
-    height: 100%;
+.icones
+{
+    margin-left: 86%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: inherit;
+}
+.icones img
+{
+    width: 15px;
+    height: 15px;
+    margin-right: 2rem;
+    
+}
+#tracos
+{
+    padding-top: 3px;
+}
+.icones img:hover{
     cursor: pointer;
-}
-
-.buscar{
-    width: 1.9%;
-    height: 4%;
-    position: absolute;
-    top: 0.5%;
-    left: 96%;
 
 }
-.buscar img{
+.container2
+{
+    display: flex;
+    flex-direction: row;
+    height: 5vh;
     width: 100%;
-    height: 100%;
-    cursor: pointer;
+    position: inherit;
+    top: 10vh;
+    left: 25rem;
+    align-items: center;
+    
+    
+  
 }
-.home{
-    width: 7%;
-    height: 6.5%;
-    position: absolute;
-    top: 18.5%;
-    left: 25%;
-}
-.home button{
-    width: 100%;
-    height: 100%;
+ 
+
+.container2 button
+{
     border: none;
     cursor: pointer;
     outline: none;
-    background-color: #F7B733;
-    font-family: Antonio;
+    
+    font-family: 'Antonio-Regular';
+    font-size: 15px;
+    margin: 3rem;
 }
-.procuradas{
-    width: 10%;
-    height: 6.5%;
-    position: absolute;
-    top: 18.5%;
-    left: 35%;
-}
-.procuradas button{
-    width: 100%;
+.currentPageButton 
+{
+    background-color: var(--amarelo);
     height: 100%;
-    border: none;
-    cursor: pointer;
-    outline: none;
-    background-color: #FFFFFF;
-    font-family: Antonio;
 }
-.procuradas button:hover{
-    background-color: #F7B733;
-    transition: 0.3s;
-}
-.arranjos{
-    width: 8%;
-    height: 6.5%;
-    position: absolute;
-    top: 18.5%;
-    left: 47%;
-}
-.arranjos button{
-    width: 100%;
+.otherPagesButton 
+{
+    background-color: var(--branco);
     height: 100%;
-    border: none;
-    cursor: pointer;
-    outline: none;
-    background-color: #FFFFFF;
-    font-family: Antonio;
-}
-.arranjos button:hover{
-    background-color: #F7B733;
-    transition: 0.3s;
-}
-.ocasioes{
-    width: 8%;
-    height: 6.5%;
-    position: absolute;
-    top: 18.5%;
-    left: 57%;
-}
-.ocasioes button{
-    width: 100%;
-    height: 100%;
-    border: none;
-    cursor: pointer;
-    outline: none;
-    background-color: #FFFFFF;
-    font-family: Antonio;
-}
-.ocasioes button:hover{
-    background-color: #F7B733;
-    transition: 0.3s;
-}
-.coracao{
-    width: 1.4%;
-    height: 3%;
-    left: 92.5%;
-    top: 10%;
-    position: absolute;
-}
-.coracao img{
-    width: 100%;
-    height: 100%;
-    cursor: pointer;
-}
-.sacola{
-    width: 1.4%;
-    height: 3%;
-    left: 94.6%;
-    top: 10%;
-    position: absolute;
-}
-.sacola img{
-    width: 100%;
-    height: 100%;
-    cursor: pointer;
-}
-.tracos{
-    width: 1.4%;
-    height: 3.2%;
-    left: 97%;
-    top: 10%;
-    position: absolute;
-}
-.tracos img{
-    width: 100%;
-    height: 100%;
-    cursor: pointer;
 }
 
+
+.container2 button:hover 
+{
+    background-color: var(--laranja-Fraco);
+    transition: 0.3s;
+    height: 100%;
+   
+    
+   
+}
 .container{
     width: 100%;
     height: 70%;
