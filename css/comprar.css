@@ -1,0 +1,395 @@
+:root
+{   --cor-fundo:#B0AFAF;
+    --laranja-Forte:#FC4A1A;
+    --branco:#ffff;
+    --laranja-Fraco:#f4781f;
+    --amarelo:#F7B733;
+    --azul-verde:#4ABDAC;
+}
+@font-face {
+    src: url(../fontes/Antonio-VariableFont_wght.ttf);
+    font-family: 'Antonio-Regular';    
+    font-weight: normal;
+} 
+
+@font-face {
+    src: url(../fontes/Inter-VariableFont_slnt\,wght.ttf);
+    font-family: 'Inter-regular';
+    font-weight: normal;
+}
+
+
+
+.btnCabecalhoComprar {
+    
+        width: 7%;
+        height: 6.5%;
+        position: absolute;
+        top: 13.7%;
+        left: 25%;
+    
+   
+}
+.btnCabecalhoComprar button
+{
+    width: 100%;
+    height: 100%;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    background-color: inherit;
+    font-family:'Antonio-Regular';;
+}
+.btnCabecalhoComprar button:hover
+{
+   
+    
+    background-color: var(--laranja-Fraco);
+}
+
+.breadcrumbs{
+    margin-top:7%;
+    margin-left: 2rem;
+    font-family:'Inter-regular';
+    color: var(--cor-fundo);
+    display: flex;
+    flex-direction:row;
+    justify-content: start;
+    align-items: center;
+   
+}
+
+a
+{
+    text-decoration: none;
+    color:inherit;
+
+}
+.breadcrumbs a :hover
+{
+    text-decoration: underline;
+}
+.paginaAtual
+{
+    color:var(--azul-verde);
+}
+.compraContainer{
+    
+    width: 100%;
+    height: 100%;
+    max-width:1239px;
+    max-height:648px;
+    min-width: 600px;
+    min-height:200px;
+    background-color:var(--branco);
+    position: relative;
+    top: 40vh;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+ 
+
+}
+
+.imgFLor{
+
+    grid-column: 1 / 3;
+    grid-row: 1/5;
+}
+
+.imgFLor img{
+    width: 100%;
+    height: 100%;
+    max-width:750px;
+    max-height:550px;
+    margin-left: 3rem;
+    margin-top: 1rem;
+}
+
+.titulo
+{
+    grid-column: 3 / 5;
+    grid-row: 1/3;
+    font-family: 'Antonio-Regular';
+}
+
+.btnCompra
+{
+    grid-column: 3 / 5;
+    grid-row: 3/4;
+    font-family: 'Antonio-Regular';
+    margin: 5%;
+    padding: 5%
+}
+
+.btnCompra button
+{
+    height: 100%;
+    width: 100%;
+    max-width: 320px;
+    max-height: 60px;
+    margin-bottom: 1rem;
+    border-radius: 2px;
+    font-size: 40px;
+    font-family: 'Antonio-Regular';
+    border: none;
+    
+}
+.comprar
+{
+    background-color: var(--azul-verde);
+}
+.comprar:hover
+{
+    background-color: var(--amarelo);
+    cursor: pointer;
+}
+.sacolinha
+{
+    background-color: var(--laranja-Fraco);
+}
+.sacolinha img
+{
+    max-width: 30px;
+    max-height: 30px;
+}
+.sacolinha:hover
+{
+    background-color: var(--amarelo);
+    cursor: pointer;
+}
+
+.titulo h1
+{
+    font-size: 30px;
+    
+}
+.titulo img
+{
+    margin-left: 1rem; 
+}
+.preco
+{
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    margin-left: 1.3rem;
+    margin-top: -2.3rem;
+    
+    
+}
+.preco h1
+{
+    font-size: 40px;
+}
+.preco h3
+{
+    color: #B0AFAF;
+}
+#parcelas
+{
+    margin-left: 1.3rem;
+    margin-top:-1.5rem;
+    color: #B0AFAF;
+}
+#desconto
+{
+    margin-left: 1rem;
+    color: #B40000;
+    text-decoration: line-through;
+}
+.frete
+{
+    margin-left: 7%;
+    margin-top:8%;
+    display: flex;
+    align-items: center;
+
+}
+.frete img
+{
+    max-width: 27px;
+    max-height: 20px;
+    margin-right: 5px;
+}
+.destaque
+{
+    color: var(--amarelo);
+}
+.destaque:hover
+{
+    text-decoration:underline;
+    cursor: pointer;
+}
+.informacoes
+{     margin-left: 20%;
+      margin-top:-3%;
+        padding: 2%;
+      font-family: 'Inter-Regular';
+    
+}
+.agendar
+{
+    margin-left: 7%;
+    margin-top:-5%;
+    display: flex;
+    align-items: center;
+
+}
+.agendar img
+{
+    max-width: 27px;
+    max-height: 20px;
+    margin-right: 5px;
+}
+
+.descricaoContainer
+{
+    width: 100%;
+    height: 100%;
+    max-width:1239px;
+    max-height:120px;
+    background-color:var(--branco);
+    position: relative;
+    margin-top:6%; 
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.descricaoContainer p
+{
+   font-family: 'Inter-regular';
+   font-size: 35;
+   padding: 20px;
+}
+
+.opiniaoTitulo
+{
+    width: 100%;
+    height: 100%;
+    max-width:770px;
+    max-height:72px;
+    background-color:var(--azul-verde);
+    position:relative;
+    margin-top: 1%;
+    left: 42%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-family:'Antonio-Regular';
+    border-radius: 2px;
+}
+.opiniaoTitulo hr
+{   
+    
+    border-color:fffff;
+}
+.opinioes
+{
+    width: 100%;
+    height: 100%;
+    max-width:988px;
+    max-height:247px;
+    background-color:var(--branco);
+    position:relative;
+    margin-top: 10vh;
+    left: 42%;
+    transform: translate(-50%, -50%);
+    font-family:'Antonio-Regular';
+    border-radius: 2px;
+    display: grid;
+    grid-template-columns: 0.5fr 2.5fr;
+}
+
+
+.opinioes img
+{
+    width: 100%;
+    height: 100%;
+    max-width:100px;
+    max-height: 100px;
+}
+
+.perfilOpiniao
+{
+    grid-column: 1 / 2;
+    justify-self: center;
+}
+.perfilOpiniao img
+{
+    padding: 10px;
+}
+.perfilOpiniao h2
+{
+    margin-top:-2%;
+}
+.opiniaoDetalhada
+{
+    grid-column: 2 / 3;
+}
+.opiniaoDetalhada h2
+{
+    text-align: center;
+}
+.opiniaoDetalhada hr
+{
+    width: 60%;
+    margin-top: -1%;
+    border-color: #f4781f;
+}
+.opiniaoDetalhada p
+{
+   font-family: 'Inter-Regular';
+   font-size: 20px;
+   text-align: start;
+   margin-left: 5%;
+}
+.opiniaoDetalhada img
+{
+    width: 100%;
+    height: 100%;
+    max-height: 34px;
+    max-width: 170px;
+    margin-top: -50%;
+    margin-left: 75%;
+}
+.avaliacaoRestantes
+{
+    width: 100%;
+    height: 100%;
+    max-width:600px;
+    max-height:72px;
+    background-color:var(--azul-verde);
+    position:relative;
+    margin-top: 1%;
+    left: 35%;
+    transform: translate(-50%, -50%);
+    font-family:'Antonio-Regular';
+    border-radius: 2px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.avaliacaoRestantes h2
+{
+    margin-left: 10%;
+}
+.avaliacaoRestantes h2:hover
+{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.avaliacaoRestantes img
+{
+    margin-right: 10%;
+}
+#sublinhado
+{
+    width: 40%;
+    margin-right: 45%;
+    border-color: var(--laranja-Forte);
+    margin-top: -3vh;
+}
