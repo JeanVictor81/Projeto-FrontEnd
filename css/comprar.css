@@ -18,6 +18,8 @@
     font-weight: normal;
 }
 
+
+
 .btnCabecalhoComprar {
     
         width: 7%;
@@ -80,8 +82,8 @@ a
     min-width: 600px;
     min-height:200px;
     background-color:var(--branco);
-    position: absolute;
-    top: 60vh;
+    position: relative;
+    top: 40vh;
     left: 50%;
     transform: translate(-50%, -50%);
     display: grid;
@@ -118,7 +120,8 @@ a
     grid-column: 3 / 5;
     grid-row: 3/4;
     font-family: 'Antonio-Regular';
-    padding: 10%
+    margin: 5%;
+    padding: 5%
 }
 
 .btnCompra button
@@ -222,7 +225,7 @@ a
 }
 .informacoes
 {     margin-left: 20%;
-      margin-top:-5vh;
+      margin-top:-3%;
         padding: 2%;
       font-family: 'Inter-Regular';
     
@@ -241,15 +244,152 @@ a
     max-height: 20px;
     margin-right: 5px;
 }
+
 .descricaoContainer
 {
     width: 100%;
     height: 100%;
     max-width:1239px;
-    max-height:180px;
+    max-height:120px;
     background-color:var(--branco);
-    position: absolute;
-    top: 113vh;
+    position: relative;
+    margin-top:6%; 
     left: 50%;
     transform: translate(-50%, -50%);
+}
+.descricaoContainer p
+{
+   font-family: 'Inter-regular';
+   font-size: 35;
+   padding: 20px;
+}
+
+.opiniaoTitulo
+{
+    width: 100%;
+    height: 100%;
+    max-width:770px;
+    max-height:72px;
+    background-color:var(--azul-verde);
+    position:relative;
+    margin-top: 1%;
+    left: 42%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-family:'Antonio-Regular';
+    border-radius: 2px;
+}
+.opiniaoTitulo hr
+{   
+    
+    border-color:fffff;
+}
+.opinioes
+{
+    width: 100%;
+    height: 100%;
+    max-width:988px;
+    max-height:247px;
+    background-color:var(--branco);
+    position:relative;
+    margin-top: 10vh;
+    left: 42%;
+    transform: translate(-50%, -50%);
+    font-family:'Antonio-Regular';
+    border-radius: 2px;
+    display: grid;
+    grid-template-columns: 0.5fr 2.5fr;
+}
+
+
+.opinioes img
+{
+    width: 100%;
+    height: 100%;
+    max-width:100px;
+    max-height: 100px;
+}
+
+.perfilOpiniao
+{
+    grid-column: 1 / 2;
+    justify-self: center;
+}
+.perfilOpiniao img
+{
+    padding: 10px;
+}
+.perfilOpiniao h2
+{
+    margin-top:-2%;
+}
+.opiniaoDetalhada
+{
+    grid-column: 2 / 3;
+}
+.opiniaoDetalhada h2
+{
+    text-align: center;
+}
+.opiniaoDetalhada hr
+{
+    width: 60%;
+    margin-top: -1%;
+    border-color: #f4781f;
+}
+.opiniaoDetalhada p
+{
+   font-family: 'Inter-Regular';
+   font-size: 20px;
+   text-align: start;
+   margin-left: 5%;
+}
+.opiniaoDetalhada img
+{
+    width: 100%;
+    height: 100%;
+    max-height: 34px;
+    max-width: 170px;
+    margin-top: -50%;
+    margin-left: 75%;
+}
+.avaliacaoRestantes
+{
+    width: 100%;
+    height: 100%;
+    max-width:600px;
+    max-height:72px;
+    background-color:var(--azul-verde);
+    position:relative;
+    margin-top: 1%;
+    left: 35%;
+    transform: translate(-50%, -50%);
+    font-family:'Antonio-Regular';
+    border-radius: 2px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.avaliacaoRestantes h2
+{
+    margin-left: 10%;
+}
+.avaliacaoRestantes h2:hover
+{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.avaliacaoRestantes img
+{
+    margin-right: 10%;
+}
+#sublinhado
+{
+    width: 40%;
+    margin-right: 45%;
+    border-color: var(--laranja-Forte);
+    margin-top: -3vh;
 }
