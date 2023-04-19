@@ -302,7 +302,7 @@ body{
     position: absolute;
     left: 45%;
     top: 0%;
-    letter-spacing: 4px;
+    letter-spacing: 5px;
 }
 .nome h1{
     text-decoration: underline;
@@ -339,6 +339,8 @@ body{
     position: relative;
     left: -94.5%;
     top: 150%;
+    font-family: 'Inter-regular';
+    letter-spacing: 5px;
 }
 .tiposDescricao p:nth-child(2){
     position: relative;
@@ -357,6 +359,8 @@ body{
 .tiposDescricao p:nth-child(5){
     position: relative;
     left: -70%;
+    height: 100%;
+    width: 40%;
 
 }
 .tiposDescricao p:nth-child(6){
@@ -368,32 +372,6 @@ body{
     background-color: #F7B733;
     
     
-}
-.setaEsquerda, .SetaDireita{
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 1%;
-    left: 0;
-    right: auto;
-    bottom: 0;
-    border: none;
-    outline: none;
-    background: transparent;
-    cursor: pointer;
-}
-.setaEsquerda img, .SetaDireita img{
-    left: 0;
-    width: 5%;
-    position: absolute;
-    left: 0;
-    top: 35%;
-    right: auto;
-}
-.SetaDireita img{
-    position: absolute;
-    left: auto;
-    right: 0;
 }
 .promocoes{
     display: flex;
@@ -566,6 +544,8 @@ body{
 }
 .nomeMaisProcuradas h1{
     text-decoration: underline;
+    letter-spacing: 5px;
+    font-family: 'Inter-regular';
 }
 .ocasioesMaisProcuradas{
     position: absolute;
@@ -574,10 +554,20 @@ body{
     top: 200%;
     left: 2%;
 }
+.ocasioesMaisProcuradas h3:nth-child(1){
+    position: relative;
+    top: 0%;
+    letter-spacing: 5px;
+    font-family: 'Inter-regular';
+}
+
 .ocasioesMaisProcuradas h3:nth-child(2){
     position: relative;
     top: 1500%;
+    letter-spacing: 5px;
+    font-family: 'Inter-regular';
 }
+
 .imagemMaisProcuradasCasamentos{
     position: absolute;
     display: flex;
@@ -625,8 +615,6 @@ body{
     width: 240px;
     height: 150px;
     border-radius: 10px;
-
-
 }
 .favoritoMaisProcuradasCasamentos{
     position: absolute;
@@ -898,6 +886,9 @@ body{
     position: relative;
     left: 69px;
     width: 20%;
+    font-family: 'Inter-regular';
+    letter-spacing: 5px;
+    text-decoration: underline;
 }
 .textSobreNos{
     position: relative;
@@ -925,12 +916,17 @@ body{
     width: 100%;
     height: 60%;
     top: 680%;
-    left: 0%;
+    left: -5%;
 }
 .nomeAvaliacao{
     position: relative;
-    top: 0%;
+    top: -2%;
     left: 38%;
+    width: 45%;
+    height: 15%;
+    letter-spacing: 5px;
+    font-family: 'Inter-regular';
+    text-decoration: underline;
 }
 .comentario1Avaliacao{
     position: relative;
@@ -978,13 +974,14 @@ body{
 .comentario2Avaliacao p{
     position: relative;
     font-family: 'Inter-regular';
-    top: -5%;
+    top: -15%;
     left: 3%;
+    gap: -10px;
 }
 .comentario2Avaliacao img{
     position: relative;
     left: 3%;
-    top: -2%;
+    top: -15%;
 }
 .comentario3Avaliacao {
     position: relative;
