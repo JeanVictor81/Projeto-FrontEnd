@@ -30,10 +30,10 @@ header
     top: 0;
     left: 0;
     width: 100%;
-    height: 25vh;
-    padding: 20px;
+    height: 15vh;
     z-index: 1000;
 }
+
 .logar{
     background-color: var(--laranja-Forte);
     height: 5vh;
@@ -76,7 +76,7 @@ header
     width: 100%;
     height: 10vh;
     left: 0;
-    top: 5%;
+    top: 5vh;
 }
 .container1
 {   position: inherit;
