@@ -33,7 +33,7 @@ controls.forEach((control) => {
 });
   
 function irParaHome() {
-  if(document.title == 'FLOWER')
+  if(document.title == 'FLOWERS')
   {
     window.location.href = "index.html";
   }
@@ -45,7 +45,7 @@ function irParaHome() {
 }
 
 function irParaLogin() {
-    if (document.title == 'FLOWER') {
+    if (document.title == 'FLOWERS') {
       window.location.href = "html/Login.html";
     }
     else
@@ -57,7 +57,7 @@ function irParaLogin() {
 
 function irParaCadastro() 
 {
-  if (document.title == 'FLOWER') {
+  if (document.title == 'FLOWERS') {
     window.location.href = "html/cadastro.html";
   }
   else
@@ -66,3 +66,5 @@ function irParaCadastro()
   }
   
 }
+
+
