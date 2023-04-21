@@ -67,4 +67,24 @@ function irParaCadastro()
   
 }
 
+const listBunttons = document.querySelectorAll(".prodSugerido");
+listBunttons.forEach((element)=> {
+      element.addEventListener("mouseover",()=>{
+        
+        element.childNodes[9].style.display = "flex";
+        element.childNodes[9].classList.add("active");
+  
+      })
+      element.addEventListener("mouseout",()=>{
+        
+       
+          element.childNodes[9].classList.remove("active");
+       
+          
+      })
+})
+const buttonsList = document.querySelectorAll(".btnSugeridos");
+buttonsList.forEach(element => {
+      element.setAttribute("data-btnTrasition","btnBonito");
+});
 
