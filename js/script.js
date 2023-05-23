@@ -67,24 +67,24 @@ function irParaCadastro()
   
 }
 
-const listBunttons = document.querySelectorAll(".prodSugerido");
-listBunttons.forEach((element)=> {
-      element.addEventListener("mouseover",()=>{
-        
-        element.childNodes[9].style.display = "flex";
-        element.childNodes[9].classList.add("active");
-  
-      })
-      element.addEventListener("mouseout",()=>{
+const listProdutcs = document.querySelectorAll(".produto")
+listProdutcs.forEach((element) => {
+  element.addEventListener("mouseover",()=>{
+
+    element.childNodes[7].style.display = 'flex';
+    element.childNodes[7].classList.add("active");
+  })
+  element.addEventListener("mouseout",()=>{
         
        
-          element.childNodes[9].classList.remove("active");
-       
-          
-      })
+    element.childNodes[7].classList.remove("active");
+ 
+    
+  })
 })
-const buttonsList = document.querySelectorAll(".btnSugeridos");
-buttonsList.forEach(element => {
+const productsButtonsList = document.querySelectorAll(".btnProduto");
+productsButtonsList.forEach(element => {
       element.setAttribute("data-btnTrasition","btnBonito");
 });
+
 

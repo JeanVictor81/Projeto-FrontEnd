@@ -5,6 +5,7 @@
     --laranja-Fraco:#f4781f;
     --amarelo:#F7B733;
     --azul-verde:#4ABDAC;
+    --verde-escuro: #003C1F;
 }
 @font-face {
     src: url(../fontes/Antonio-VariableFont_wght.ttf);
@@ -165,35 +166,47 @@ header
 
     .container
     {   
-    display: flex;
-    flex-direction: column; 
-    justify-content: center; 
-    align-items: center; 
-    min-height: 100vh; 
-    max-width: 1920px; 
-    margin: 0 auto; 
-    padding: 0 20px; 
+        display: flex;
+        flex-direction: column; 
+        justify-content: center; 
+        align-items: center; 
+        min-height: 100vh; 
+        max-width: 1280px; 
+        margin: 0 auto; 
+        padding: 0 20px; 
+        color: var(--verde-escuro);
      }
 
     .container h2
-    {   margin: 1.5%;
-        text-decoration: underline;
+    {   margin-left:0;
+        margin-bottom: 5%;
+        margin-top: 5%;
         font-family: 'inter-Regular';
+        align-self: flex-start;
+        font-weight: bold;
+        font-size: 250%;
     }
 
      .carrossel
-     {  margin-top: 5%;
+     {  margin-top: 15.5vh;
         width: 100%;
-        max-width: 1280px;
+        display: flex;
+        flex-direction:row;
+        align-items:center;
+        justify-content:center;
+       
 
      }
 
       .carrossel img
      {
-       
+       align-self: center;
+       justify-self: center;
         width: 100%;
         height: 100%;
         max-height: 60vh;
+        max-width: 1280px;
+        border-radius: 15px;
      }
     .tipos
     {
@@ -220,158 +233,229 @@ header
         padding-left: 17%;
     }
 
-    .promocoes
+    .produtos
     {
         display: flex;
-        justify-content: space-around;
+        justify-content: center;
+        align-items: center;
+        gap: 2vw;
     }
-    .prodSugerido{
+
+    .produto
+    {
+        background-color: #ffff;
+        width: 18vw;
+        max-width: 300px;
+        border-radius: 10px;
+        cursor: pointer;
+        max-height: 430px;
+        color: black;
+
+      
+    }
    
+    .produto img
+    {
         width: 100%;
-        height: 100%;
-        max-width: 250px;
-        max-height: 380px;
-        background-color: #fff;
-        border-radius: 3px;
-     
-     }
-     .prodSugerido:hover
-     {
-         cursor: pointer;
-     }
-     .prodSugerido img
-     {
-         
-         max-width: 250px;
-         max-height: 210px;
-         padding: 8%;
-     }
-     .prodSugerido h4
-     {
-         font-size:125%;
-         font-family: 'Antonio-Regular';
-         margin-left: 5%;
-         margin-bottom:0; 
-         margin-top: 0;   
-     }
-     
-     .prodSugerido .desconto
-     {
-         font-size:80%;
-         font-family: 'Antonio-Regular';
-         text-align: end;
-         margin-right: 10%;
-         margin-top: 0;
-     }
-     .prodSugerido .preco 
-     {
-     
-         font-family: 'Antonio-Regular';
-         justify-content: end;
-         margin-top: -11%;
-         margin-right: 3%;
-         
-         
-     }
-     .prodSugerido .preco h1
-     {
-         font-size:120%;
-         justify-self: end;
-     }
-     .prodSugerido .preco h3
-     {
-         font-size:80%;
-         
-     }
-     
-     .iconeCoracaoItem 
-     {
-         max-width: 20px;
-         max-height: 20px;
+        max-height: 220px;
+        border-radius: 10px;
         
-         
-     }
-     
-     .iconeCoracaoItem img
-     {
-         max-width: 20px;
-         max-height: 20px;
-         cursor: pointer;
-         margin: 0;
+    }
+
+    .tituloProduto 
+    {
+       padding: 2%; 
+       padding-bottom: 0;
+       font-family: 'Antonio-regular';
+       
+    }
+    .tituloProduto h1
+    {
+        margin-top:0;
+        font-weight: lighter;
+        font-size: 130%;
+        margin-bottom: 0;
+    }
+
+    .tituloProduto img
+    {   border-radius: 0;
+        max-width: 20px;
+        max-height: 25px;
+        margin-bottom: 0;
+        margin-top: 2%;
+    }
+    .produtoPreco
+    {
+        font-family: 'Antonio-Regular';
+        align-items: end;
+        text-align: right;
+        padding-right: 5%;
+        margin-top: -5%;
+    }
+    .produtoPreco h1
+    {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    .produtoPreco p
+    {   
+        margin-top: 0;
+        margin-bottom: 0;
+        color: red;
+    }
+    .btnProduto
+    {
         
-         
-     }
-     .space {
-         flex-grow: 1;
-         flex-shrink: 1;
-         width: 0;
+        display: none;
+        opacity: 0;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content:center;
+        margin-top: 4%;
+        margin-bottom: 3%;
+    }
+    .btnProduto button
+    {
+        width:45%;
+        height:5vh;
+        max-width: 120px;
+        max-height:40px;
+        border: none;
+        font-size:100%;
+        font-family:'Antonio-Regular';
+        border-radius: 2px;
+        color: #fff;
+    }
+    .btnProduto button:hover
+    {
+        cursor: pointer;
+        background-color: var(--amarelo);
+    }
+    .btnProduto img
+    {
+        width:100%;
+        height:100%;
+        max-width:21px;
+        max-height:24px;
+        border-radius: 0;
+ 
+    }
+
+   .btnProdutoSacola
+   {
+    background-color: var(--laranja-Fraco);
+    font-size: 150%;
+   }
+   .btnProdutoComprar
+   {
+    background-color:var(--azul-verde);
+   }
+
+   [data-btnTrasition = "btnBonito"]
+   {
+       opacity: 0;
+   }
+   [data-btnTrasition = "btnBonito"].active
+   {
+       opacity: 1;
+       animation: btnAnin;
+       animation-duration: 0.3s;
+   }
+   @keyframes btnAnin
+   {
+       0%
+       {
+           opacity: 0;
+           transform: translateY(-10px);
        }
-     .btnSugeridos
-     {
-         display: none;
-         opacity: 0;
-         flex-direction: row;
-         justify-content:center;
-         align-items: center;
-     }
-     .btnSugeridos button
-     {
-         width:100%;
-         height:100%;
-         min-height: 40px;
-         max-width:106px;
-         max-height:40px;
-         border: none;
-         font-size:100%;
-         font-family:'Antonio-Regular';
-         border-radius: 2px;
-         color: #fff;
-         
-     
-     }
-     .btnSugeridos button:hover
-     {
-         cursor: pointer;
-         background-color: var(--amarelo);
-     
-     }
-     .btnSugeridosCompra
-     {
-         background-color:var(--azul-verde);
-     }
-     .btnSugeridosSacola
-     {
-         background-color: var(--laranja-Fraco);
-     }
-     .btnSugeridos img
-     {    
-         width:100%;
-         height:100%;
-         max-width:21px;
-         max-height:24px;
-     
-     }
-     
-     [data-btnTrasition = "btnBonito"]
-     {
-         opacity: 0;
-     }
-     [data-btnTrasition = "btnBonito"].active
-     {
-         opacity: 1;
-         animation: btnAnin;
-         animation-duration: 0.3s;
-     }
-     @keyframes btnAnin
-     {
-         0%
-         {
-             opacity: 0;
-             transform: translateY(-10px);
-         }
-         100%
-         {
-             opacity: 1;
-             transform: translateY(0px);
-         } 
-     }
+       100%
+       {
+           opacity: 1;
+           transform: translateY(0px);
+       } 
+   }
+
+   h3
+   {
+     font-family: 'Antonio-Regular';
+     font-weight: lighter;
+     align-self: flex-start;
+     margin-left: 2%;
+   }
+   .btnMostrarMais
+   {
+    margin-top: 5%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+   }
+
+   .btnMostrarMais button
+   {
+        max-width: 200px;
+        max-height: 50px;
+        height: 10vh;
+        width: 100%;
+        color: #fff;
+        font-size:150%;
+        font-family: "Antonio-regular";
+        border-radius: 15px;
+        border: none;
+        
+        background-color: var(--verde-escuro);
+   }
+   .beneficios
+   {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        margin-top: 5%;
+
+   }
+   .vantagens
+   {
+        width: 100%;
+        background-color: var(--laranja-Fraco);
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+   }
+   .vantagensTexto
+   {
+    display: flex;
+    align-items:center;
+    justify-content:center;
+    font-family: "Inter-Regular";
+    color: #fff;
+    
+   }
+   .vantagensTexto h1
+   {
+    font-weight: lighter;
+   }
+   .vantagensTexto img {
+        color: #003C1F;
+        max-width: 25px;
+        padding-left:5px;
+
+   }
+   .vantagensCTA h1
+   {
+    font-weight: lighter;
+    font-family: "Inter-Regular";
+    color: #fff;
+   }
+
+   .iconesBeneficios
+   {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+   }
