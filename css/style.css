@@ -1,11 +1,12 @@
 :root
-{   --cor-fundo:#B0AFAF;
+{   --cor-fundo:#D9D9D9;
     --laranja-Forte:#FC4A1A;
     --branco:#ffff;
     --laranja-Fraco:#f4781f;
     --amarelo:#F7B733;
     --azul-verde:#4ABDAC;
     --verde-escuro: #003C1F;
+    --laranja-fosco: #FA623A;
 }
 @font-face {
     src: url(../fontes/Antonio-VariableFont_wght.ttf);
@@ -31,138 +32,149 @@ header
     top: 0;
     left: 0;
     width: 100%;
-    height: 15vh;
+    height: 30vh;
     z-index: 1000;
+    
 }
 
-.logar{
+.navCTA{
     background-color: var(--laranja-Forte);
     height: 5vh;
     width: 100%;
-    position: inherit;
+    position: fixed;
     top: 0;
     left: 0;
     display: flex;
     flex-direction: row;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
 }
-.logar button{
-    outline: none;
-    border: none;
-    cursor: pointer;
-    font-size: 12px;
-    background-color: var(--laranja-Forte);
-    font-family: 'Inter-regular';
-    margin-right: 1%;
-    
-    
-}
+.navCTA h3
 
-.logar button:hover{
-    background-color: var(--amarelo);
-    height: 100%;
-}
-.logar img
 {
-    margin-right: 1.5%;
-    width: 1.5%;
-    height: 60%;
-    cursor: pointer;
+    color: #fff;
+    font-family: 'Inter-regular';
+    font-weight: lighter;
+    font-size: 1rem;
 }
 
-.menuPrincipal
+.menuPesquisa
 {   position: fixed;
     background-color: #ffff;
     width: 100%;
-    height: 10vh;
+    height: 15vh;
     left: 0;
     top: 5vh;
-}
-.container1
-{   position: inherit;
     display: flex;
     flex-direction: row;
-    justify-content:space-between;
+    justify-content:center;
     align-items: center;
+    padding: 0.5%;
+    gap: 5%;
 }
+
 
 .logo img{
     width: 100%;
     height: 100%;
-    max-height: 55px;
-    max-width:171px;
-    padding: 1rem;
+    max-height: 100px;
+    max-width:100px;
     position: inherit;
 
 }
-.icones
+.buscar
 {
-    margin-left: 86%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    position: inherit;
-}
-.icones img
-{
-    width: 15px;
-    height: 15px;
-    margin-right: 2rem;
+    width: 50%;
+    display:flex;
     
 }
-#tracos
+.buscar input
 {
-    padding-top: 3px;
-}
-.icones img:hover{
-    cursor: pointer;
-
-}
-.container2
-{
-    display: flex;
-    flex-direction: row;
-    height: 5vh;
     width: 100%;
-    position: inherit;
-    top: 10vh;
-    left: 25rem;
-    align-items: center;
-    
-    
+    height: 4vh;
+    font-family: 'Inter-regular';
+    border: none;
+    background-color: var(--cor-fundo);
+    font-size: 1rem;
+    color: var(--verde-escuro);
+
 }
 
+.buscar img
+{
+    max-width: 21px;
+    max-height:23px;
+    margin-left: -25px;
+    margin-top:6px;
+}
+.entrarCasatrar
+{
+    font-size: 1rem;
+    font-family: "Inter-regular";
+    color: var(--verde-escuro);
+    width: 47.5%;
+}
 
-.container2 button
+.entrarCasatrar a
+{   
+    font-weight: bold;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+.entrarCasatrar a:hover
+{
+    cursor: pointer;
+    text-decoration: underline;
+}
+.loginSacola
+{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    gap: 2%;
+}
+.loginSacola img
+{
+    width:100%;
+    height:100%;
+    max-width: 32px;
+    max-height: 35px;
+}
+
+.menuPrincipal 
+{   
+    position: fixed;
+  
+    height:6vh;
+    width: 100%;
+    top: 20vh;
+    background-color:var(--cor-fundo);
+}
+.menuBotoes
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    height: 100%;
+    margin-left: 25vw;
+    
+}
+.menuBotoes button
 {
     border: none;
-    cursor: pointer;
-    outline: none;
-    
-    font-family: 'Antonio-Regular';
-    font-size: 15px;
-    margin: 3rem;
+    font-size: 1.2rem;
+    font-family: 'Antonio-regular';
+    color: var(--verde-escuro);
 }
-.currentPageButton 
+.menuBotoes button:hover
 {
-    background-color: var(--amarelo);
-    height: 100%;
-}
-.otherPagesButton 
-{
-    background-color: var(--branco);
-    height: 100%;
-}
-
-
-.container2 button:hover 
-{
-    background-color: var(--laranja-Fraco);
+    background-color:var(--laranja-Fraco);
     transition: 0.3s;
-    height: 100%;
+    cursor: pointer;
 }
+
+
 
     .container
     {   
@@ -175,6 +187,7 @@ header
         margin: 0 auto; 
         padding: 0 20px; 
         color: var(--verde-escuro);
+        
      }
 
     .container h2
@@ -188,7 +201,7 @@ header
     }
 
      .carrossel
-     {  margin-top: 15.5vh;
+     {  margin-top: 26vh;
         width: 100%;
         display: flex;
         flex-direction:row;
@@ -377,7 +390,7 @@ header
        } 
    }
 
-   h3
+  section h3
    {
      font-family: 'Antonio-Regular';
      font-weight: lighter;
@@ -401,11 +414,17 @@ header
         width: 100%;
         color: #fff;
         font-size:150%;
-        font-family: "Antonio-regular";
+        font-family: "Inter-regular";
         border-radius: 15px;
         border: none;
+        font-weight:bold;
         
         background-color: var(--verde-escuro);
+   }
+   .btnMostrarMais button:hover
+   {
+    cursor: pointer;
+    background-color:var(--amarelo);
    }
    .beneficios
    {
@@ -457,5 +476,222 @@ header
         display: flex;
         flex-direction: row;
         align-items: center;
-        justify-content: space-around;
+        justify-content: center;
+        margin-top: 5%;
+        gap: 3%;
+        font-family: 'Antonio-regular';
    }
+
+   .iconesBeneficios h1
+   {
+        color: #B0AFAF;
+        font-weight:lighter;
+        font-size: 100%;
+        text-decoration: underline;
+   }
+
+   
+
+   .iconesBeneficiosCaminhao
+   {
+    display: flex;
+    align-items: center;
+    gap: 2%;
+   }
+   .iconesBeneficiosCaminhao img
+   {
+        max-width: 97px;
+        max-height: 65px;
+        width: 100%;
+        height: 100%;
+   }
+   .iconesBeneficiosFlower
+   {
+    display: flex;
+    align-items: center;
+    gap: 2%;
+    
+   }
+   .iconesBeneficiosFlower img
+   {
+        max-width: 70px;
+        max-height: 74px;
+        width: 100%;
+        height: 100%;
+   }
+
+   .descontosImperdiveis
+   {    
+        margin-right: 3%;
+        display: grid;
+        grid-template-areas: 
+         "amarilis amarilis anturio"   
+         "flowers alpinia  anturio";
+         gap: 3%;
+   }
+   .amarilisBanner
+    {
+        grid-area: amarilis;
+    }
+    .amarilisBanner img
+    {
+        max-width: 725px;
+        max-height: 358px;
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+    }
+    .anturioBanner
+    {
+        grid-area:anturio;
+    }
+    .anturioBanner img
+    {
+        max-width:386px;
+        max-height:630px;
+        border-radius: 10px;
+        height: 100%;
+        width: 100%;
+    }
+    .flowersBanner
+    {
+        grid-area: flowers;
+    }
+    .flowersBanner img
+    {
+        max-width: 347px;
+        max-height: 258px;
+        height: 100%;
+        width: 100%;
+        
+    }
+    .alpiniaBanner
+    {
+        grid-area: alpinia;
+    }
+    .alpiniaBanner img
+    {
+        max-width: 350px;
+        max-height: 260px;
+        border-radius: 10px;
+        height: 100%;
+        width: 100%;
+    }
+    #opnioesFlowersTitulo
+    {
+        margin-top:500px
+    }
+    .opnioesFlowers
+    {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        gap: 5%;
+
+    }
+    .comentario
+    {
+        background-color: var(--verde-escuro);
+        color: #fff;
+        font-family: 'Inter-regular';
+        height: 50vh;
+        width: 100%;
+        max-width: 337px;
+        max-height: 243px;
+        display: flex;
+        flex-direction: column;
+        padding: 2%;
+        gap: 10%;
+    }
+    .comentario div
+    {
+        height: 33%;
+    }
+    .comentario p
+    {
+        margin: 0;
+        font-size: 90%;
+    }
+    .maisFeedbacks
+    {
+        margin: 50px;
+        align-self: flex-start;
+        height:10vh;
+    }
+    .maisFeedbacks button
+    {
+        border: none;
+        height: 100%;
+        max-height: 60px;
+        border-radius: 10px;
+        background-color: var(--amarelo);
+        font-size: 120%;
+        color: #fff;
+        font-family: 'Inter-regular';
+        font-weight: bold;
+
+    }
+
+    .maisFeedbacks button:hover
+    {
+        cursor: pointer;
+        background-color: #003C1F;
+    }
+
+    footer
+    {
+        top: 100;
+        left: 0;
+        background-color: var(--laranja-fosco);
+        height: 30vh;
+        margin:0;
+        padding:1%;
+        font-family: 'Inter-regular';
+    }
+
+    .footerContainer
+    {
+        display:flex;
+        flex-direction: row;
+        width: 100%;
+        
+        align-items: center;
+        justify-content:center;
+        gap: 2vw;
+    }
+
+    footer ul
+    {
+        list-style-type: none;
+        text-align: left;
+        margin: 0;
+        padding: 0;
+        line-height: 1.5;
+    }
+    footer a
+    {
+       margin: 0;
+       padding: 0;
+       text-decoration: none;
+       
+    }
+    footer a:hover
+    {
+        text-decoration: underline;
+        cursor: pointer;
+    }
+    footer h3
+    {
+        font-family: 'Inter-regular';
+        color: #fff;
+        font-size: 1rem;
+        font-weight:bold;
+        margin-left: 0;
+    }
+
+    footer h1
+    {
+        font-family: 'Antonio-regular';
+        color: #fff;
+    }
