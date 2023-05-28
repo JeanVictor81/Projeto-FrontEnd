@@ -37,21 +37,60 @@
         </div>
         <div class="menuPrincipal">
             <div class="menuBotoes">
-                <button>home</button>
-                <button>mais procuradas</button>
-                <button>arranjos</button>
-                <button>ocasiões</button>
-                <button>tipos</button>
+                <button class="botoesMenu">home</button>
+                <button class="botoesMenu">mais procuradas</button>
+                <button class="botoesMenu">arranjos</button>
+                <button class="botoesMenu">ocasiões</button>
+                <button class="botoesMenu">tipos</button>
             </div>
            
 
 
         </div>
     </header>
+    <section class="chatbot">
+        <div class="chat">
+            <div class="chatTitle">
+                <img src="img/close.png" id="closeChatMessage" alt="">
+                <h1>Flora</h1>
+                <img src="img/chatbot2 1.png" alt="">
+            </div>
+            <div class="menssagens">
+                <div class="mensagemFlora">
+                    <img src="" alt="">
+                    <p></p>
+                </div>
+                <div class="userMensagen">
+                    <img src="" alt="">
+                    <p></p>
+                </div>
+            </div>
+            <input type="text" id="chatInput">
+        </div>
+        <div class="chatbotBtn">
+            <img id="flora" src="img/chatbot.png" alt="">
+            <img src="img/ChatbotBallon.png" alt="">
+        </div>
+    </section>
     <section class="container">
         <div class="carrossel">
-            <img src="img/Orquídea banner .png" alt="">
+            <div class="imagensCarrossel">
+                <img src="img/Orquídea banner .png" alt="">  
+                <img src="img/BastioesBanner.png" alt="">
+                <img src="img/Trabalhe conosco banner.png" alt="">
+            </div>
+            <div class="carrosselCheckBox">
+                <input type="radio" id="radio1" name="btnCarrossel">
+                <input type="radio" id="radio2" name="btnCarrossel">
+                <input type="radio" id="radio3" name="btnCarrossel">          
+           </div>
         </div>
+        <div class="manual-navigation">
+            <label for="radio1" class="manual-btn"></label>
+            <label for="radio2" class="manual-btn"></label>
+            <label for="radio3" class="manual-btn"></label>
+        </div>
+       
         <h2>Todos os nossos tipos FLOWERS</h2>
         <div class="tipos">
            
@@ -273,7 +312,7 @@
             </div>
         </div>
         <div class="btnMostrarMais">
-            <button>mostrar mais</button>
+            <button class="btnContainer" >mostrar mais</button>
         </div>
         <div class="beneficios">
             <div class="vantagens">
@@ -312,13 +351,21 @@
                 <img src="img/Alpínia banner.png" alt="">
             </div>
         </div>
+        <div class="porqueComprar">
+            <img src="img/pqComprar.png" alt="">
+            <div class="porqueComprarTexto">
+                <h1>Por que <b>comprar conosco?</b></h1>
+                <p>Aqui na flowers você tem uma experiência única de vivenciar o clima tropical do Nordeste Brasileiro. Valorizamos a qualidade e a frescura das flores. Trabalhamos diretamente com produtores locais que se dedicam ao cultivo dessas plantas com técnicas cuidadosas e sustentáveis...</p>
+                <button class="btnContainer">ler mais</button>
+            </div>
+        </div>
         <h2 id="opnioesFlowersTitulo">Opiniões dos nossos #flowers</h2>
         <div class="opnioesFlowers">
             <div class="comentario">
                 <div>
                     <h1>Julia nunez</h1>
                 </div>
-                <div>
+                <div class="textoComentario">
                     <p>As melhores flores tropicais que ja comprei. Trabalho com decoração de eventos e indico d+ essa loja</p>
                 </div>
                 <div>
@@ -332,7 +379,7 @@
                 <div>
                     <h1>Arthur Oliveira</h1>
                 </div>
-                <div>
+                <div class="textoComentario">
                     <p>Envio super rápido! Sou do Piauí, mas estou em Londres para o meu casamento. Trazer um pouco do calor do meu Nordeste com essa tropicais!!!</p>
                 </div>
                 <div>
@@ -346,7 +393,7 @@
                 <div>
                     <h1>Vanessa Lima</h1>
                 </div>
-                <div>
+                <div class="textoComentario">
                     <p>O melhor site para comprar minhas queridinhas tropicais.</p>
                 </div>
                 <div>
@@ -358,7 +405,7 @@
             </div>
         </div>
         <div class="maisFeedbacks">
-            <button>Que tal um feedback?</button>
+            <button class="btnContainer">Que tal um feedback?</button>
 
         </div>
         
