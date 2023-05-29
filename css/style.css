@@ -224,6 +224,10 @@ header
         
        
     }
+    .chatbot input
+    {
+        display: none;
+    }
     .chat
     {   position: absolute;
         width: 85%;
@@ -263,12 +267,6 @@ header
         max-width: 70px;
         
     }
-    .menssagens
-    {
-        background-color: #003C1F;
-        opacity: 0.95;
-        min-height: 70%;
-    }
     #closeChatMessage
     {
         
@@ -276,6 +274,13 @@ header
         
         
     }
+    .menssagens
+    {
+        background-color: #003C1F;
+        opacity: 0.95;
+        min-height: 70%;
+    }
+  
   
     .chatBtn img
     {   
@@ -288,13 +293,21 @@ header
     }
     #chatBtnImgFlora
     {
-       bottom: -25px;
-       right: -18px;
+       bottom: -16px;
+       right: -12px;
+       max-width: 85px;
     }
     #chatClickFloraBaloon
     {
-        max-width: 83px;
+        max-width: 70px;
     }
+    .textInputBar
+    {
+        background-color: #003C1F;
+        height: 15%;
+    }
+
+
     .chatbotBtn
     {   
         
