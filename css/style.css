@@ -153,7 +153,7 @@ header
     height:6vh;
     width: 100%;
     top: 20vh;
-    background-color:var(--cor-fundo);
+    background-color:#EDEDED;
     color: var(--verde-escuro);
 }
 .menuPrincipalPag 
@@ -228,13 +228,12 @@ header
     {   position: absolute;
         width: 85%;
         height:80%;
-        background-color: #003C1F;
-        opacity: 0.95;
         border-radius: 10px;
-        bottom: 10px;
-        right: 18px;
+        bottom: 30px;
+        right: 50px;
         display: flex;
         flex-direction: column;
+        z-index: 101;
 
     }
     .chatTitle
@@ -242,7 +241,13 @@ header
        display: flex;
        justify-content: space-between;
        align-items: start;
-        opacity: 1; 
+       border-radius: 10px 10px 0 0;
+       background-color: #003C1F;
+       overflow: hidden;
+       max-height: 17.5%;
+       background-color: var(--verde-escuro);
+       opacity: 100;
+       
     }   
     .chatTitle h1
     {   
@@ -258,12 +263,37 @@ header
         max-width: 70px;
         
     }
+    .menssagens
+    {
+        background-color: #003C1F;
+        opacity: 0.95;
+        min-height: 70%;
+    }
     #closeChatMessage
     {
         
         padding: 10px;
         
         
+    }
+  
+    .chatBtn img
+    {   
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        object-fit: contain;
+        
+        
+    }
+    #chatBtnImgFlora
+    {
+       bottom: -25px;
+       right: -18px;
+    }
+    #chatClickFloraBaloon
+    {
+        max-width: 83px;
     }
     .chatbotBtn
     {   
@@ -302,6 +332,7 @@ header
         color: var(--verde-escuro);
         
         
+        
      }
 
     .container h2
@@ -331,11 +362,11 @@ header
         
         
         width: 100%;
-        width: 100%;
         padding: 0;
         display: flex;
         transform: translateX(0);
         transition: transform 2s ease;
+
         
         
      }
@@ -346,9 +377,10 @@ header
 
       .imagensCarrossel img
      {
-        min-width: 100%;
-        border-radius: 6px;
-        max-height:450px ;
+        width: 100%;
+        object-fit: contain;
+        border-radius: 2px;
+    
         
         
         
@@ -392,7 +424,10 @@ header
         height: 10vh;
         padding: 1%;
     }
-
+    .tipos img
+    {
+        object-fit: contain;
+    }
     .tipos h3
     {
         text-align: center;
