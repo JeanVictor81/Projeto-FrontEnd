@@ -7,9 +7,28 @@ const btnCarrossel = document.querySelectorAll('.carrosselCheckBox input');
 const productsButtonsList = document.querySelectorAll(".btnProduto");
 const listProdutcs = document.querySelectorAll(".produto")
 const buttons = menuPrincipal.querySelectorAll('button');
-let rodadasCarrossel;
+const btnChabot = document.querySelector('.chatbotBtn');
+const btnChabotAtive = document.querySelector('.chatBtn');
+const chatbot = document.querySelector('.chatbot');
+const closeChatbotIcon = document.getElementById('closeChatMessage');
+let buttonIndex = 0;
 
 
+function acionarChatbot() {
+  btnChabot.addEventListener('click', () => {
+    btnChabot.style.visibility = 'hidden';
+    chatbot.style.visibility = 'visible';
+
+
+  })
+}
+function desativarChatbot(element) 
+{
+    element.addEventListener('click', () => {
+      btnChabot.style.visibility = 'visible';
+      chatbot.style.visibility = 'hidden';
+    })
+}
 function irParaHome() {
   if(document.title == 'FLOWERS')
   {
@@ -118,37 +137,35 @@ function animarBtnMenu(){
 })
 }
 
-function automatizarCarrossel(i) {
-  rodadasCarrossel = setInterval(() => {
-    if (i == btnCarrossel.length) {
-      i = 0;
-    }
-    imgCarrossel.style.transform = `translateX(${-100 * i}%)`;
-    i++;
-  }, 3000);
-}
 
-function reiniciarAutomatizacao(i) {
-  clearInterval(rodadasCarrossel);
-  setTimeout(() => {
-    automatizarCarrossel(i);
-  }, 3000);
-}
+
+
 
 function navegarCarrossel() {
-  for (let i = 0; i < btnCarrossel.length; i++) {
-    btnCarrossel[i].addEventListener('click', () => {
-      imgCarrossel.style.transform = `translateX(${-100 * i}%)`;
-      clearInterval(rodadasCarrossel);
-      setTimeout(reiniciarAutomatizacao(i),3000) 
-    });
-  }
+
+
+  btnCarrossel.forEach((buttonCarrossel, index) => {
+      buttonCarrossel.addEventListener('click',() => {
+        buttonIndex = index;
+        imgCarrossel.style.transform = `translateX(${-100 * index}%)`;
+        
+      })
+  })
+  setInterval(() => {
+    if (buttonIndex == btnCarrossel.length) {
+      buttonIndex = 0;
+    }
+    imgCarrossel.style.transform = `translateX(${-100 * buttonIndex}%)`;
+    buttonIndex++;
+  }, 3000);
 }
 navegarCarrossel();
-automatizarCarrossel(0);
+
 animarBtnMenu()
 animarProduto();
-
+acionarChatbot();
+desativarChatbot(btnChabotAtive);
+desativarChatbot(closeChatbotIcon);
 window.addEventListener('scroll', manipularRolagem)
 
 

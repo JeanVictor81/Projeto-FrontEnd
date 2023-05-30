@@ -218,15 +218,11 @@ header
         width: 380px;
         height:440px;
         overflow: hidden;
-        visibility: visible;
+        visibility: hidden;
         
         
         
        
-    }
-    .chatbot input
-    {
-        display: none;
     }
     .chat
     {   position: absolute;
@@ -271,14 +267,68 @@ header
     {
         
         padding: 10px;
-        
+        cursor: pointer;
         
     }
-    .menssagens
+    .mensagens
     {
         background-color: #003C1F;
         opacity: 0.95;
         min-height: 70%;
+        display: flex;
+        flex-direction: column;
+    }
+    .mensagemFlora
+    {
+        display: flex;
+        
+    }
+    .mensagemFlora img
+    {
+      object-fit:contain;
+      max-width: 65px; 
+      transform: rotate(11deg);
+      width: 18%; 
+    }
+    .textoMensagemflora
+    {
+        color: var(--verde-escuro);
+        background-color: #ffff;
+        border-radius: 15px;
+        padding: 5px;
+        font-size:0.8rem;
+        font-family: Helvetica;
+        width: 78%;
+        margin-left: -13px;
+    }
+    .textoMensagemflora p
+    {
+        margin: 0;
+    }
+    .textoMensagemUsuario
+    {
+        border-radius: 15px;
+        padding: 5px;
+        font-size:0.8rem;
+        font-family: Helvetica;
+        width: 70%;
+        color: var(--verde-escuro); ;
+        background-color:#FFF;
+        opacity: 1;
+        margin-top: 5px;
+        margin-right: 3px;
+
+    }
+    .textoMensagemUsuario p
+    {
+        margin: 0;
+        text-align: right;
+    }
+    .mensagemUsuario
+    {
+        display: flex;
+        justify-content: flex-end;
+        width: 100%;
     }
   
   
@@ -288,6 +338,7 @@ header
         bottom: 0;
         right: 0;
         object-fit: contain;
+        cursor: pointer;
         
         
     }
@@ -301,12 +352,36 @@ header
     {
         max-width: 70px;
     }
-    .textInputBar
+    .inputChatbotContainer
     {
+        height: 10%;
         background-color: #003C1F;
-        height: 15%;
+        margin-top:1px;
+        display: flex;
+        border-radius: 0 0 10px 10px;
+        align-items: center;
+        justify-content: space-evenly;
     }
-
+    .inputChatbotContainer img
+    {
+        cursor: pointer;
+    }
+    #chatInput
+    {
+        background-color: inherit;
+        height: 70%;
+        width: 70%;
+        font-size: 1rem;
+        border:none;
+        color: #fff;
+        border-radius: 0 0 10px 10px;
+        font-family: Helvetica;
+       
+    }
+    #chatInput:focus
+    {
+        outline: none;
+    }
 
     .chatbotBtn
     {   
@@ -314,7 +389,7 @@ header
         position: absolute;
         bottom: 0;
         right: 0;
-        visibility: hidden;
+        visibility: visible;
         width: 40%;
     }
 
@@ -332,6 +407,9 @@ header
         z-index: 113;
         right: 10px;
     }
+ 
+
+
     .container
     {   
         display: flex;
