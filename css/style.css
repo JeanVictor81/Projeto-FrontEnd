@@ -966,6 +966,42 @@ header
         background-color: transparent; 
       }
 
+    .container form
+    {   
+        background-color: #fff;
+        width: 60%;
+        padding: 10px;
+        font-family: Helvetica;
+        font-weight: lighter;
+        border-radius: 10px;
+        margin-bottom:  80px;
+        
+    }
+    .container form h1
+    {
+        font-weight: normal;
+    }
+    #textoFeedbackInput
+    {   
+    
+        background-color: var(--amarelo);
+        font-size: 1rem;
+        font-family:Helvetica;
+        border-radius: 10px;
+        margin-left: 6px;
+        max-width: 100%;
+        resize: none;
+    }
+    .indentificacaoUsuario
+    {
+        margin-top:20px;
+    }
+    .salvarDadosFeedback
+    {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
     footer
     {   
         position: relative;
