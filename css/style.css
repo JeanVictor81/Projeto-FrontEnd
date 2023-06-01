@@ -1,5 +1,5 @@
 :root
-{   --cor-fundo:#D9D9D9;
+{   --cor-fundo:#EDEDED;
     --laranja-Forte:#FC4A1A;
     --branco:#ffff;
     --laranja-Fraco:#f4781f;
@@ -910,6 +910,7 @@ header
         margin: 50px;
         align-self: flex-start;
         height:10vh;
+        margin-bottom: 0;
     }
     
 
@@ -954,17 +955,6 @@ header
         overflow: auto;
         
     }
-    .textoComentario ::-webkit-scrollbar
-    {
-        background-color: transparent;
-    }
-    .textoComentario ::-webkit-scrollbar-thumb
-    {
-        background-color: transparent;
-    }
-    .textoComentario ::-webkit-scrollbar-track {
-        background-color: transparent; 
-      }
 
     .container form
     {   
@@ -995,12 +985,34 @@ header
     .indentificacaoUsuario
     {
         margin-top:20px;
+    
+    }
+    .indentificacaoUsuario input
+    {
+        border: none;
+        background-color: var(--cor-fundo);
+        height: 35px;
+        width: 250px;
     }
     .salvarDadosFeedback
     {
         margin-top: 10px;
         margin-bottom: 10px;
     }
+    .sendFeedbackButton
+    {
+        background-color: var(--verde-escuro);
+        border: none;
+        height: 30px;
+        width: 90px;
+        align-self: end;
+        font-family: Helvetica;
+        color:var(--branco);
+        font-weight: bold;
+        border-radius: 10px;
+        font-size: 1rem;
+    }
+
 
     footer
     {   
