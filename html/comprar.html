@@ -11,322 +11,364 @@
     <title>FLOWERS - Comprar</title>
 </head>
 <body>
-    
     <header>
-        <div class="logar">
-            <button onClick="irParaLogin()">Entrar</button>
-            <button onClick="irParaCadastro()">Cadastrar</button>
-            <img src="../img/profile.png" alt="">
-            <img src="../img/pesquisa-de-lupa.png" alt="">
+        <div class="navCTA">
+            <h3>viva uma experiência calorosa & perfumada do nosso <b>Nordeste!</b></h3>
         </div>
-        <div class="menuPrincipal">
-            <div class="container1">   
-                <div class="logo">
-                    <a href="../index.html"><img src="../img/logo.png" alt=""></a>
-                </div>
-                <div class="icones">
-                    <img src="../img/coracao.png" alt="">
-                    <img src="../img/sacola de compras.png" alt="">
-                    <img id="tracos" src="../img/3traços.png" alt="">
-                </div>
-
+        <div class="menuPesquisa">
+            <div class="logo">
+                <a href="index.html"><img src="../img/logoQuebradaVerde.png" alt=""></a>
             </div>
-            <div class="container2">
-                <button class="otherPagesButton" onClick="irParaHome()">HOME</button>
-                <button class="otherPagesButton">+PROCURADAS</button>
-                <button class="otherPagesButton">ARRANJOS</button>
-                <button class="otherPagesButton">OCASIÕES</button>
+            <div class="buscar">
+                <input type="text">
+                <img src="../img/buscaIcone.png" alt="">
             </div>
-        </div>
-    </header>
-    <div class="breadcrumbs">
-        <a link href="../index.html"><h5>Home</h5></a>
-        <h5> > </h5>
-        <a link href="../index.html"><h5>Promoções</h5></a>
-        <h5> > </h5>
-        <a link href="../index.html"><h5>Comprar</h5></a>
-        <h5> > </h5>
-        <h5 class="paginaAtual"> Arranjo de Flores Mistas Vermelhas</h5>
-     </div>
-    <div class="pagCompraContainer">
-        <div class="compraContainer">
-            <div class="imgFLor"> 
-                <img src="../img/mistas.png" alt="">
-                <div class="descricaoContainer">
-                    <p>Mix de flores vermelhas (rosas colombianas, nacionais hipericum, alstroemérias, ixórias...)
-                         em meio à folhagens, formando um belo e romântico arranjo em um vaso delicado e elegante. 
-                        Seu presente será carinhosamente embalado pelos nossos floristas.</p>
-               </div>
-            </div>
-            <div class="titulo">
-                <h1>Arranjo de Flores Mistas Vermelhas</h1>
-                <img src="../img/classificação 4.5.png" alt="">
-                <h3 class="desconto"> de R$ 210,90</h3>
-                <div class="preco">
-                    <h3>por</h3>
-                    <h1>R$ 159,90</h1>    
-                </div>
-                <h3 id="parcelas">ou 3x de R$ 53,90</h3> 
-                <div class="frete">
-                    <img src="../img/Caminhao.png" alt="">
-                    <h3>Informações da entrega -<span class="destaque">alterar endereço<span></h3>
-                </div>
-                <div class="informacoes">
-                    <p>Av. Boa Viagem,<br> 
-                        1000 - Apt. 1501 - Boa Viagem,<br>
-                        Recife - PE, 51011-000, Brasil.</p>
-                </div>
-                <div class="agendar">
-                    <img src="../img/Calendario.png" alt="">
-                    <h3>Agende sua entrega- <span class="destaque">aqui<span> </h3>
-                </div>
-
-               
-            </div>
-            <div class="btnCompra">
-                <button class="comprar">
-                    COMPRAR
-                </button>
-                <button class="sacolinha">
-                    <img src="../img/sacola de compras.png" alt="">
-                </button>
-            </div>
-        </div>
-        <div class="opiniaoTitulo">
-            <h2>OPINIÃO DE NOSSOS CLIENTES<hr></h2>
             
+            <div class="loginSacola">
+            <img src="../img/Perfil Verde.png" alt="">
+                  <div class="entrarCasatrar">
+                <p><a>Entre</a> ou <a>Cadastre-se</a>
+                    para ver seus pedidos.<p> 
+            </div>
+            <img src="../img/Sacola Verde.png" alt="">
+            </div>
+          
+                
         </div>
-        <div class="opinioes">
-            <div class="perfilOpiniao">
-                <img src="../img/Maximo.png" alt="">
-                <h2>Fernando Lima</h2>
+        <nav class="menuPrincipal">
+            <div class="menuBotoes">
+                <button class="botoesMenu">home</button>
+                <button class="botoesMenu">mais procuradas</button>
+                <button class="botoesMenu">arranjos</button>
+                <button class="botoesMenu">ocasiões</button>
+                <button class="botoesMenu">tipos</button>
+                <button class="botoesMenu">sobre nós</button>
             </div>
-            <div class="opiniaoDetalhada">
-                <h2>Produto excelente,  ótima experiência de compra!</h2>
-                <hr>
-                <p>As Flores chegaram à minha casa em perfeito estado, lindas! Entrega super rápida, me surpreendi positivamente!</p>
-                <img src="../img/classificação.png" alt="">
+           
+
+
+        </nav>
+    </header>
+    <section class="chatbot">
+        <div class="chat">
+            <div class="chatBtn">
+                <img src="../img/ChatbotBallon.png" id="chatClickFloraBaloon" alt="">
+                <img src="../img/FloraChatV.png" id="chatBtnImgFlora"   alt="">
             </div>
+            <div class="chatTitle">
+                <img src="../img/close.png" id="closeChatMessage" alt="">
+                <h1>Flora</h1>
+                <img src="../img/chatbot2 1.png" alt="">
+            </div>
+            <div class="mensagens">
+                <div class="mensagemFlora">
+                    <img src="../img/FloraChatV.png" alt="">
+                    <span class="textoMensagemflora">
+                        <p> Bem-vindo ao FLOWERS, sou a Flora, sua assistente
+                            virtual. Para começar, poderia me informar seu nome
+                            e endereço de e-mail?</p>
+                    </span>
+                </div>
+                <div class="mensagemUsuario">
+                    <span class="textoMensagemUsuario">
+                        <p>Claro! Meu nome é Luiz e meu e-mail é Luiz@email.com.</p>
+                    </span>
+                    
+                </div>
+            </div>
+            <div class="inputChatbotContainer">
+                <input type="text" id="chatInput" placeholder="Digite sua mensagem">
+                <img src="../img/Chat_emoji-20-regular.png" alt="">
+                <img src="../img/sentMensage.png" alt="">
+            </div>
+            
+        
             
           
-            
         </div>
-        <div class="opinioes">
-
-            <div class="perfilOpiniao">
-                <img src="../img/Maddie.png" alt="">
-                <h2>Maria Rita</h2>
-            </div>
-            <div class="opiniaoDetalhada">
-                <h2>Estou encantada! Com certeza farei mais compras no Flowers</h2>
-                <hr>
-                <p>O Flowers é um dos melhores ou até o melhor site de compra, me ofereceu uma ótima experiência durante a compra até quando as flores foram entregues na minha residência.</p>
-                <img src="../img/classificação.png" alt="">
+        <div class="chatbotBtn">
+            <img id="flora" src="../img/chatbot.png" alt="">
+            <img src="../img/ChatbotBallon.png" alt="">
+        </div>
+    </section>
+    <section>
+        <div class="breadcrumbs">
+            <a link href="../img/index.html"><h5>Home</h5></a>
+            <h5> > </h5>
+            <a link href="../img/index.html"><h5>Promoções</h5></a>
+            <h5> > </h5>
+            <a link href="../img/index.html"><h5>Comprar</h5></a>
+            <h5> > </h5>
+            <h5 class="paginaAtual"> Arranjo de Flores Mistas Vermelhas</h5>
+         </div>
+        <div class="pagCompraContainer">
+            <div class="compraContainer">
+                <div class="imgFLor"> 
+                    <img src="../img/mistas.png" alt="">
+                  
+                </div>
+                <div class="titulo">
+                    <h1>Arranjo de Flores Mistas Vermelhas</h1>
+                    <img src="../img/classificação 4.5.png" alt="">
+                    <h3 class="desconto"> de R$ 210,90</h3>
+                    <div class="preco">
+                        <h3>por</h3>
+                        <h1>R$ 159,90</h1>    
+                    </div>
+                    <h3 id="parcelas">ou 3x de R$ 53,90</h3> 
+                    <div class="frete">
+                        <img src="../img/Caminhao.png" alt="">
+                        <h3>Informações da entrega -<span class="destaque">alterar endereço<span></h3>
+                    </div>
+                    <div class="informacoes">
+                        <p>Av. Boa Viagem,<br> 
+                            1000 - Apt. 1501 - Boa Viagem,<br>
+                            Recife - PE, 51011-000, Brasil.</p>
+                    </div>
+                    <div class="agendar">
+                        <img src="../img/Calendario.png" alt="">
+                        <h3>Agende sua entrega- <span class="destaque">aqui<span> </h3>
+                    </div>
+    
+                   
+                </div>
+                <div class="btnCompra">
+                    <button class="comprar">
+                        COMPRAR
+                    </button>
+                    <button class="sacolinha">
+                        <img src="../img/sacola de compras.png" alt="">
+                    </button>
+                </div>
             </div>
         </div>
-        <div class="avaliacaoRestantes">
-            <h2>AVALIAÇÕES RESTANTES (26)</h2>
-            <img src="../img/classificação.png" alt="">
-         </div>  
-         <div class="tituloSug">
-            <h1>Você pode se interessar também</h1>
-        </div>
-        <div class="sugeridos">
-            <div class="prodSugerido">
-                <img src="../img/anturio.jpeg" alt="">
-                <h4>Antúrio vermelhas</h4>
-                <h3 class="desconto"> de R$ 210,90</h3>
-                <div class="preco">
-                        <div class="iconeCoracaoItem">
-                            <img src="../img/coracao.png">
-                        </div>
-                        <div class="space"></div>
-                        <div class="space"></div>
-                        <h3>por</h3>
-                        <h1>R$ 159,90</h1>    
-                    
-                </div> 
-                <div class="btnSugeridos">
-                    <button class="btnSugeridosSacola"><img src="../img/SacolaItem.png" alt=""></button>
-                    <button class="btnSugeridosCompra">COMPRAR</button>
-                </div>   
-            </div>
-            <div class="prodSugerido">
-                <img src="../img/anturio.jpeg" alt="">
-                <h4>Antúrio vermelhas</h4>
-                <h3 class="desconto"> de R$ 210,90</h3>
-                <div class="preco">
-                        <div class="iconeCoracaoItem">
-                            <img src="../img/coracao.png">
-                        </div>
-                        <div class="space"></div>
-                        <div class="space"></div>
-                        <h3>por</h3>
-                        <h1>R$ 159,90</h1>    
-                    
-                </div> 
-                <div class="btnSugeridos">
-                    <button class="btnSugeridosSacola"><img src="../img/SacolaItem.png" alt=""></button>
-                    <button class="btnSugeridosCompra">COMPRAR</button>
-                </div>   
-            </div>
-            <div class="prodSugerido">
-                <img src="../img/anturio.jpeg" alt="">
-                <h4>Antúrio vermelhas</h4>
-                <h3 class="desconto"> de R$ 210,90</h3>
-                <div class="preco">
-                        <div class="iconeCoracaoItem">
-                            <img src="../img/coracao.png">
-                        </div>
-                        <div class="space"></div>
-                        <div class="space"></div>
-                        <h3>por</h3>
-                        <h1>R$ 159,90</h1>    
-                    
-                </div> 
-                <div class="btnSugeridos">
-                    <button class="btnSugeridosSacola"><img src="../img/SacolaItem.png" alt=""></button>
-                    <button class="btnSugeridosCompra">COMPRAR</button>
-                </div>   
-            </div>
-            <div class="prodSugerido">
-                <img src="../img/anturio.jpeg" alt="">
-                <h4>Antúrio vermelhas</h4>
-                <h3 class="desconto"> de R$ 210,90</h3>
-                <div class="preco">
-                        <div class="iconeCoracaoItem">
-                            <img src="../img/coracao.png">
-                        </div>
-                        <div class="space"></div>
-                        <div class="space"></div>
-                        <h3>por</h3>
-                        <h1>R$ 159,90</h1>    
-                    
-                </div> 
-                <div class="btnSugeridos">
-                    <button class="btnSugeridosSacola"><img src="../img/SacolaItem.png" alt=""></button>
-                    <button class="btnSugeridosCompra">COMPRAR</button>
-                </div>   
-            </div>
-            <div class="prodSugerido">
-                <img src="../img/anturio.jpeg" alt="">
-                <h4>Antúrio vermelhas</h4>
-                <h3 class="desconto"> de R$ 210,90</h3>
-                <div class="preco">
-                        <div class="iconeCoracaoItem">
-                            <img src="../img/coracao.png">
-                        </div>
-                        <div class="space"></div>
-                        <div class="space"></div>
-                        <h3>por</h3>
-                        <h1>R$ 159,90</h1>    
-                    
-                </div> 
-                <div class="btnSugeridos">
-                    <button class="btnSugeridosSacola"><img src="../img/SacolaItem.png" alt=""></button>
-                    <button class="btnSugeridosCompra">COMPRAR</button>
-                </div>   
-            </div>
-            <div class="prodSugerido">
-                <img src="../img/anturio.jpeg" alt="">
-                <h4>Antúrio vermelhas</h4>
-                <h3 class="desconto"> de R$ 210,90</h3>
-                <div class="preco">
-                        <div class="iconeCoracaoItem">
-                            <img src="../img/coracao.png">
-                        </div>
-                        <div class="space"></div>
-                        <div class="space"></div>
-                        <h3>por</h3>
-                        <h1>R$ 159,90</h1>    
-                    
-                </div> 
-                <div class="btnSugeridos">
-                    <button class="btnSugeridosSacola"><img src="../img/SacolaItem.png" alt=""></button>
-                    <button class="btnSugeridosCompra">COMPRAR</button>
-                </div>   
-            </div>
-            <div class="prodSugerido">
-                <img src="../img/anturio.jpeg" alt="">
-                <h4>Antúrio vermelhas</h4>
-                <h3 class="desconto"> de R$ 210,90</h3>
-                <div class="preco">
-                        <div class="iconeCoracaoItem">
-                            <img src="../img/coracao.png">
-                        </div>
-                        <div class="space"></div>
-                        <div class="space"></div>
-                        <h3>por</h3>
-                        <h1>R$ 159,90</h1>    
-                    
-                </div> 
-                <div class="btnSugeridos">
-                    <button class="btnSugeridosSacola"><img src="../img/SacolaItem.png" alt=""></button>
-                    <button class="btnSugeridosCompra">COMPRAR</button>
-                </div>   
-            </div>
-            <div class="prodSugerido">
-                <img src="../img/anturio.jpeg" alt="">
-                <h4>Antúrio vermelhas</h4>
-                <h3 class="desconto"> de R$ 210,90</h3>
-                <div class="preco">
-                        <div class="iconeCoracaoItem">
-                            <img src="../img/coracao.png">
-                        </div>
-                        <div class="space"></div>
-                        <div class="space"></div>
-                        <h3>por</h3>
-                        <h1>R$ 159,90</h1>    
-                    
-                </div> 
-                <div class="btnSugeridos">
-                    <button class="btnSugeridosSacola"><img src="../img/SacolaItem.png" alt=""></button>
-                    <button class="btnSugeridosCompra">COMPRAR</button>
-                </div>   
-            </div>
-            
-      
-        </div>
+         <nav class="menuComentariosDescricao">
+            <button>Descrição</button>
+            <button>Avaliações & comentários (2)</button>
+    
+         </nav>
          
-    </div> 
-    <footer class="rodape">
-        <div class="cabecalhoRodape">
-            <img src="../img/logoQuebrada.png">
-            <h4>Viva uma experiência perfumada e calorosa <br> do nosso <b>Nordeste.</b></h4>
-        </div>
-        <div class="buttonTropicalizar">
-            <a href="../html/Login.html"><button>TROPICALIZE-SE AQUI!</button></a>
-        </div>
-        <div class="atendimentoClienteRodape">
-            <h4>atendimentoaocliente</h4>
-            <a href=""><p>Central de ajuda</p></a>
-            <a href=""><p>Como comprar</p></a>
-            <a href=""><p>Métodos de pagamento</p></a>
-            <a href=""><p>Devolução e reembolso</p></a>
-            <a href=""><p>Ouvidoria</p></a>
-        </div>
-        <div class="nossasFloresRodape">
-            <h4>nossasflores</h4>
-            <a href=""><p>Hibisco</p></a>
-            <a href=""><p>Ave-do-paraíso</p></a>
-            <a href=""><p>Lírio-do-Amazonas</p></a>
-            <a href=""><p>Orquídeas</p></a>
-            <a href=""><p>Samabaias</p></a>
-        </div>
-        <div class="faleConoscoRodape">
-            <h4>faleconosco</h4>
-            <a href="https://pt-br.facebook.com/login.php"><img src="../img/facebook.png"></a>
-            <a href="https://instagram.com/culturaflowers_brazil?igshid=YmMyMTA2M2Y="><img src="../img/instagram.png"></a>
-            <a href="https://www.linkedin.com/in/jean-v/"><img src="../img/linkedin.png"></a>
-            <a href="https://api.whatsapp.com/send?
-            phone=5581987243930&text=Ol%C3%A1,%20queria%20saber
-            %20como%20est%C3%A1%20o%20status%20da%20minha%20compra!"><img src="../img/wpp.png"></a>
-            <a href="https://mail.google.com/mail/u/0/#inbox?compose=new"><img src="../img/gmail.png"></a>
-        </div>
-        <div class="copyrightRodape">
-            <img src="../img/copyright.png">
+         <div class="comentarios">
+            <div class="opiniaoTitulo">
+                <h2>OPINIÃO DE NOSSOS CLIENTES<hr></h2>  
+            </div>
+            <div class="opinioes">
+                <div class="perfilOpiniao">
+                    <img src="../img/Maximo.png" alt="">
+                    <h2>Fernando Lima</h2>
+                </div>
+                <div class="opiniaoDetalhada">
+                    <h2>Produto excelente,  ótima experiência de compra!</h2>
+                    <hr>
+                    <p>As Flores chegaram à minha casa em perfeito estado, lindas! Entrega super rápida, me surpreendi positivamente!</p>
+                    <img src="../img/classificação.png" alt="">
+                </div>
+                
+              
+                
+            </div>
+            <div class="opinioes">
+    
+                <div class="perfilOpiniao">
+                    <img src="../img/Maddie.png" alt="">
+                    <h2>Maria Rita</h2>
+                </div>
+                <div class="opiniaoDetalhada">
+                    <h2>Estou encantada! Com certeza farei mais compras no Flowers</h2>
+                    <hr>
+                    <p>O Flowers é um dos melhores ou até o melhor site de compra, me ofereceu uma ótima experiência durante a compra até quando as flores foram entregues na minha residência.</p>
+                    <img src="../img/classificação.png" alt="">
+                </div>
+            </div>
+            <div class="avaliacaoRestantes">
+                <h2>AVALIAÇÕES RESTANTES (26)</h2>
+                <img src="../img/classificação.png" alt="">
+            </div>  
+             <div class="tituloSug">
+                <h1>Você pode se interessar também</h1>
+            </div>
+         </div>
+         <div class="descricao">
+            <div class="descricaoContainer">
+                <p>Mix de flores vermelhas (rosas colombianas, nacionais hipericum, alstroemérias, ixórias...)
+                     em meio à folhagens, formando um belo e romântico arranjo em um vaso delicado e elegante. 
+                    Seu presente será carinhosamente embalado pelos nossos floristas.</p>
+           </div>
+         </div>
+         <div class="produtos">
+            <div class="produto">
+              <img src="../img/mistas.png" alt="">
+              <div class="tituloProduto">
+                  <h1>Arranjo de Flores Mistas Vermelhas</h1>
+                  <img src="../img/coracao.png" alt="">
+              </div>
+              <div class="produtoPreco">
+                  <p>de R$ 210,90</p>
+                  <h1>por R$ 159,90</h1>
+              </div>
+              <div class="btnProduto">
+                  <button class="btnProdutoSacola"><img src="../img/SacolaItem.png" alt=""></button>
+                  <button class="btnProdutoComprar">Comprar</button>
+              </div>
+            </div>
+            <div class="produto">
+              <img src="../img/protea.jpeg" alt="">
+              <div class="tituloProduto">
+                  <h1>Arranjo de King Protea 
+                      rosa</h1>
+                  <img src="../img/coracao.png" alt="">
+              </div>
+              <div class="produtoPreco">
+                  <p>de R$ 255,90</p>
+                  <h1>por R$ 237,90</h1>
+              </div>
+              <div class="btnProduto">
+                  <button class="btnProdutoSacola"><img src="../img/SacolaItem.png" alt=""></button>
+                  <button class="btnProdutoComprar">Comprar</button>
+              </div>
+            </div>
+            <div class="produto">
+              <img src="../img/samambaia.jpg" alt="">
+              <div class="tituloProduto">
+                  <h1>Samambaia Verde</h1>
+                  <img src="../img/coracao.png" alt="">
+              </div>
+              <div class="produtoPreco">
+                  <p>de R$ 153,99</p>
+                  <h1>por R$ 138,90</h1>
+              </div>
+              <div class="btnProduto">
+                  <button class="btnProdutoSacola"><img src="../img/SacolaItem.png" alt=""></button>
+                  <button class="btnProdutoComprar">Comprar</button>
+              </div>
+            </div>
+            <div class="produto">
+              <img src="../img/orquideaprmocao.jpeg" alt="">
+              <div class="tituloProduto">
+                  <h1>Orquídeas Pink</h1>
+                  <img src="../img/coracao.png" alt="">
+              </div>
+              <div class="produtoPreco">
+                  <p>de R$ 210,90</p>
+                  <h1>por R$ 159,90</h1>
+              </div>
+              <div class="btnProduto">
+                  <button class="btnProdutoSacola"><img src="../img/SacolaItem.png" alt=""></button>
+                  <button class="btnProdutoComprar">Comprar</button>
+              </div>
+            </div>
+          </div>
+          <div class="produtos">
+            <div class="produto">
+              <img src="../img/mistas.png" alt="">
+              <div class="tituloProduto">
+                  <h1>Arranjo de Flores Mistas Vermelhas</h1>
+                  <img src="../img/coracao.png" alt="">
+              </div>
+              <div class="produtoPreco">
+                  <p>de R$ 210,90</p>
+                  <h1>por R$ 159,90</h1>
+              </div>
+              <div class="btnProduto">
+                  <button class="btnProdutoSacola"><img src="../img/SacolaItem.png" alt=""></button>
+                  <button class="btnProdutoComprar">Comprar</button>
+              </div>
+            </div>
+            <div class="produto">
+              <img src="../img/protea.jpeg" alt="">
+              <div class="tituloProduto">
+                  <h1>Arranjo de King Protea 
+                      rosa</h1>
+                  <img src="../img/coracao.png" alt="">
+              </div>
+              <div class="produtoPreco">
+                  <p>de R$ 255,90</p>
+                  <h1>por R$ 237,90</h1>
+              </div>
+              <div class="btnProduto">
+                  <button class="btnProdutoSacola"><img src="../img/SacolaItem.png" alt=""></button>
+                  <button class="btnProdutoComprar">Comprar</button>
+              </div>
+            </div>
+            <div class="produto">
+              <img src="../img/samambaia.jpg" alt="">
+              <div class="tituloProduto">
+                  <h1>Samambaia Verde</h1>
+                  <img src="../img/coracao.png" alt="">
+              </div>
+              <div class="produtoPreco">
+                  <p>de R$ 153,99</p>
+                  <h1>por R$ 138,90</h1>
+              </div>
+              <div class="btnProduto">
+                  <button class="btnProdutoSacola"><img src="../img/SacolaItem.png" alt=""></button>
+                  <button class="btnProdutoComprar">Comprar</button>
+              </div>
+            </div>
+            <div class="produto">
+              <img src="../img/orquideaprmocao.jpeg" alt="">
+              <div class="tituloProduto">
+                  <h1>Orquídeas Pink</h1>
+                  <img src="../img/coracao.png" alt="">
+              </div>
+              <div class="produtoPreco">
+                  <p>de R$ 210,90</p>
+                  <h1>por R$ 159,90</h1>
+              </div>
+              <div class="btnProduto">
+                  <button class="btnProdutoSacola"><img src="../img/SacolaItem.png" alt=""></button>
+                  <button class="btnProdutoComprar">Comprar</button>
+              </div>
+            </div>
+          </div>
+    </section>
+    <footer>
+        <div class="footerContainer">
+            <div class="atendimentoCliente">
+                <h3>atendimento ao cliente</h3>
+                <ul>
+                    <li><a>central de ajuda</a></li>
+                    <li><a>como comprar</a></li>
+                    <li><a>métodos de pagamento</a></li>
+                    <li><a>devolução e reembolso</a></li>
+                    <li><a>ouvidoria</a></li>
+                </ul>
+            </div>
+            <div class="nossasFlores">
+                <h3>nossas flores</h3>
+                <ul>
+                    <li><a>aphelandra</a></li>
+                    <li><a>strelitzia</a></li>
+                    <li><a>bastões do imperador</a></li>
+                    <li><a>orquídeas</a></li>
+                    <li><a>alpínia</a></li>
+                </ul>
+            </div>
+            <div class="faleConosco">
+                <h3>fale conosco</h3>
+                <ul>
+                    <li><a href=""><img src="../img/facebook.png" alt="" srcset=""></a></li>
+                    <li><a href="https://www.instagram.com/culturaflowers_brazil/#"><img src="../img/instagram.png" alt="" srcset=""></a></li>
+                    <li><a href=""><img src="../img/wpp.png" alt=""></a></li>
+                    <li><a href=""><img src="../img/gmail.png" alt=""></a></li>
+                </ul>
+            
+            </div>
+            <div class="vivaExperiencia">
+                <h1>a experiência flowers perfeita para alguém
+                    como você.</h1>
+            </div>
+            <div class="flowersLogoFooter">
+                <img src="../img/logoQuebrada.png"quw alt="" srcset="">
+            </div>
         </div>
     </footer>
-    <script src="../js/script.js"></script>
+    <script src="../js/script.js"> </script>
+    
+        
+        
+   
+    
+    
 </body>
 </html>

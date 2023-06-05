@@ -29,6 +29,10 @@ body{
   
     
 }
+body button
+{
+    cursor: pointer;
+}
 header
 {
     position: fixed;
@@ -965,11 +969,24 @@ header
         font-weight: lighter;
         border-radius: 10px;
         margin-bottom:  80px;
+        visibility: hidden;
         
     }
     .container form h1
     {
         font-weight: normal;
+    }
+    .formHeader
+    {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    #closeForm
+    {
+        margin-top: -60px;
+        margin-right: 8px;
+        cursor: pointer;
     }
     #textoFeedbackInput
     {   

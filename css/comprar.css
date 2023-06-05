@@ -246,6 +246,28 @@ a
       font-family: 'Inter-Regular';
     
 }
+.menuComentariosDescricao
+{
+    width: 100%;
+    background-color: var(--laranja-Forte);
+    padding: 10px;
+    margin-top: 10px ;
+
+}
+.menuComentariosDescricao button
+{
+    background-color: inherit;
+    height: 100%;
+    border:none;
+    font-size: 1rem;
+    font-family: Helvetica;
+    color: var(--branco);  
+    font-weight: bold; 
+}
+.comentarios
+{
+    display: none;
+}
 .agendar
 {
     margin-left: 7%;
@@ -409,182 +431,7 @@ a
     margin-top: -3vh;
 }
 
-.sugeridos
-{   
-    font-family: 'Inter-regular';
-    max-width: 1200;
-    max-height: 800;
-    display: grid;
-    grid-template-columns:250px 250px 250px 250px;
-    grid-template-rows: 380px 380px;
-    gap: 3%;
-    margin-right: 5%;
-   
 
-}
-
-.tituloSug{
-    width: 100%;
-    text-align:center;
-    padding: 5%;
-}
-
-.tituloSug h1
-{   
-    font-family: 'Inter-Regular';
-    text-decoration: underline;
-    font-size: 170%;
-}
-.prodSugerido{
-   
-    width: 100%;
-    height: 100%;
-    max-width: 250px;
-    max-height: 380px;
-    background-color: #fff;
-    border-radius: 3px;
- 
- }
- .prodSugerido:hover
- {
-     cursor: pointer;
- }
- .prodSugerido img
- {
-     
-     max-width: 250px;
-     max-height: 210px;
-     padding: 8%;
- }
- .prodSugerido h4
- {
-     font-size:125%;
-     font-family: 'Antonio-Regular';
-     margin-left: 5%;
-     margin-bottom:0; 
-     margin-top: 0;   
- }
- 
- .prodSugerido .desconto
- {
-     font-size:80%;
-     font-family: 'Antonio-Regular';
-     text-align: end;
-     margin-right: 10%;
-     margin-top: 0;
- }
- .prodSugerido .preco 
- {
- 
-     font-family: 'Antonio-Regular';
-     justify-content: end;
-     margin-top: -11%;
-     margin-right: 3%;
-     
-     
- }
- .prodSugerido .preco h1
- {
-     font-size:120%;
-     justify-self: end;
- }
- .prodSugerido .preco h3
- {
-     font-size:80%;
-     
- }
- 
- .iconeCoracaoItem 
- {
-     max-width: 20px;
-     max-height: 20px;
-    
-     
- }
- 
- .iconeCoracaoItem img
- {
-     max-width: 20px;
-     max-height: 20px;
-     cursor: pointer;
-     margin: 0;
-    
-     
- }
- .space {
-     flex-grow: 1;
-     flex-shrink: 1;
-     width: 0;
-   }
- .btnSugeridos
- {
-     display: none;
-     opacity: 0;
-     flex-direction: row;
-     justify-content:center;
-     align-items: center;
- }
- .btnSugeridos button
- {
-     width:100%;
-     height:100%;
-     min-height: 40px;
-     max-width:106px;
-     max-height:40px;
-     border: none;
-     font-size:100%;
-     font-family:'Antonio-Regular';
-     border-radius: 2px;
-     color: #fff;
-     
- 
- }
- .btnSugeridos button:hover
- {
-     cursor: pointer;
-     background-color: var(--amarelo);
- 
- }
- .btnSugeridosCompra
- {
-     background-color:var(--azul-verde);
- }
- .btnSugeridosSacola
- {
-     background-color: var(--laranja-Fraco);
- }
- .btnSugeridos img
- {    
-     width:100%;
-     height:100%;
-     max-width:21px;
-     max-height:24px;
- 
- }
- 
- [data-btnTrasition = "btnBonito"]
- {
-     opacity: 0;
- }
- [data-btnTrasition = "btnBonito"].active
- {
-     opacity: 1;
-     animation: btnAnin;
-     animation-duration: 0.3s;
- }
- @keyframes btnAnin
- {
-     0%
-     {
-         opacity: 0;
-         transform: translateY(-10px);
-     }
-     100%
-     {
-         opacity: 1;
-         transform: translateY(0px);
-     } 
- }
 
 
 
@@ -855,6 +702,8 @@ max-width: 27px;
 max-height: 20px;
 margin-right: 5px;
 }
+
+
 
 .descricaoContainer
 {

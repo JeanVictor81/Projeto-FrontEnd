@@ -14,6 +14,10 @@ document.addEventListener('DOMContentLoaded', function() {
   const btnChabotAtive = document.querySelector('.chatBtn');
   const chatbot = document.querySelector('.chatbot');
   const closeChatbotIcon = document.getElementById('closeChatMessage');
+  const formulario = document.querySelector('.container form');
+  const btnNovoFeedback = document.getElementById('btnNovoFeedback');
+  const btnFecharFormulario = document.getElementById('closeForm');
+  
 
   let buttonIndex = 0;
   let buttonLastIndex = 0;
@@ -167,6 +171,20 @@ document.addEventListener('DOMContentLoaded', function() {
   
     
   }
+
+  function manipularFormulario() {
+    
+    btnNovoFeedback.addEventListener('click',() =>
+    {
+      formulario.style.visibility = 'visible';
+
+    })
+    btnFecharFormulario.addEventListener('click',() =>
+    {
+      formulario.style.visibility = 'hidden';
+
+    })
+  }
   navegarCarrossel();
   
   animarBtnMenu()
@@ -174,6 +192,7 @@ document.addEventListener('DOMContentLoaded', function() {
   acionarChatbot();
   desativarChatbot(btnChabotAtive);
   desativarChatbot(closeChatbotIcon);
+  manipularFormulario();
   window.addEventListener('scroll', manipularRolagem)
 
 
