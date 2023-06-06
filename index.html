@@ -37,7 +37,7 @@
         </div>
         <nav class="menuPrincipal">
             <div class="menuBotoes">
-                <button class="botoesMenu">home</button>
+                <button class="botoesMenuAtual" >home</button>
                 <button class="botoesMenu">mais procuradas</button>
                 <button class="botoesMenu">arranjos</button>
                 <button class="botoesMenu">ocasiões</button>
@@ -91,7 +91,7 @@
             <img src="img/ChatbotBallon.png" alt="">
         </div>
     </section>
-    <section class="container">
+    <section class="container" style="display: none;" id="home">
         <div class="carrossel">
             <div class="imagensCarrossel">
                 <img src="img/anuncio1.png" alt="">  
@@ -457,6 +457,37 @@
         </form>
 
    </section>  
+   <aside>
+    <h1>mais Procuradas</h1>
+    <h3>Filtros</h3>
+    <h4>ocasiones</h4>
+    <input type="checkbox" id="casamentos"> 
+    <label for="casamentos">casamentos</label>
+    <div></div>
+    <input type="checkbox" id="congressos"> 
+    <label for="congressos">Congressos</label>
+    <div></div>
+    <input type="checkbox" id="eventosCorp"> 
+    <label for="eventosCorp">Eventos Corporativos</label>
+    <div></div>
+    <input type="checkbox" id="Formaturas"> 
+    <label for="Formaturas">Formaturas</label>
+    <h4>Por cor</h4>
+    <input type="checkbox" id="lilas"> 
+    <label for="lilas">Lilás</label>
+    <div></div>
+    <input type="checkbox" id="magenta"> 
+    <label for="magenta">Magenta</label>
+    <div></div>
+    <input type="checkbox" id="rosa"> 
+    <label for="rosa">Rosa</label>
+    <div></div>
+    <input type="checkbox" id="vermelho"> 
+    <label for="vermelho">Vermelho</label>
+</aside>
+   <section class="container" id="maisProcuradas">
+       
+   </section>
    <footer>
         <div class="footerContainer">
             <div class="atendimentoCliente">
@@ -499,5 +530,7 @@
         </div>
    </footer> 
    <script src="./js/script.js" defer></script>
+   <script src="./js/produtos.js"> </script>
+   <script src="./js/headerAnin.js"></script>
 </body>
 </html>

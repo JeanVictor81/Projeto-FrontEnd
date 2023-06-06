@@ -1,11 +1,11 @@
 :root
 {   --cor-fundo:#EDEDED;
     --laranja-Forte:#FC4A1A;
-    --branco:#ffff;
+    --branco:#fff;
     --laranja-Fraco:#f4781f;
     --amarelo:#F7B733;
     --azul-verde:#4ABDAC;
-    --verde-escuro: #003C1F;
+    --verde-escuro: #003c1f;
     --laranja-fosco: #FA623A;
 }
 @font-face {
@@ -22,7 +22,7 @@
 body{
     margin: 0;
     padding: 0;
-    background-color: #EDEDED;
+    background-color:var(--cor-fundo);
     width: 100%;
     height: 100%;
     overflow-x: hidden;
@@ -60,7 +60,7 @@ header
 .navCTA h3
 
 {
-    color: #fff;
+    color: var(--branco);
     font-family: 'Inter-regular';
     font-weight: lighter;
     font-size: 1rem;
@@ -68,7 +68,7 @@ header
 
 .menuPesquisa
 {   position: fixed;
-    background-color: #ffff;
+    background-color: var(--branco);
     width: 100%;
     height: 15vh;
     left: 0;
@@ -153,11 +153,11 @@ header
 .menuPrincipal 
 {   
     position: fixed;
-  
+    
     height:6vh;
     width: 100%;
     top: 20vh;
-    background-color:#EDEDED;
+    background-color: var(--cor-fundo);
     color: var(--verde-escuro);
 }
 .menuPrincipalPag 
@@ -167,16 +167,16 @@ header
     width: 100%;
     top: 15vh;  
     background-color:var(--laranja-Forte);
-    color: #fff;
+    color: var(--branco);
 }
 .menuBotoes
 {
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
+    justify-content: center;
     height: 100%;
-    margin-left: 25vw;
     color: inherit;
+    gap: 10px;
     
 }
 .botoesMenu
@@ -246,7 +246,6 @@ header
        justify-content: space-between;
        align-items: start;
        border-radius: 10px 10px 0 0;
-       background-color: #003C1F;
        overflow: hidden;
        max-height: 17.5%;
        background-color: var(--verde-escuro);
@@ -276,7 +275,7 @@ header
     }
     .mensagens
     {
-        background-color: #003C1F;
+        background-color: var(--verde-escuro);
         opacity: 0.95;
         min-height: 70%;
         display: flex;
@@ -297,7 +296,7 @@ header
     .textoMensagemflora
     {
         color: var(--verde-escuro);
-        background-color: #ffff;
+        background-color: var(--branco);
         border-radius: 15px;
         padding: 5px;
         font-size:0.8rem;
@@ -317,7 +316,7 @@ header
         font-family: Helvetica;
         width: 70%;
         color: var(--verde-escuro); ;
-        background-color:#FFF;
+        background-color:var(--branco);
         opacity: 1;
         margin-top: 5px;
         margin-right: 3px;
@@ -359,7 +358,7 @@ header
     .inputChatbotContainer
     {
         height: 10%;
-        background-color: #003C1F;
+        background-color: var(--verde-escuro);
         margin-top:1px;
         display: flex;
         border-radius: 0 0 10px 10px;
@@ -377,7 +376,7 @@ header
         width: 70%;
         font-size: 1rem;
         border:none;
-        color: #fff;
+        color: var(--branco);
         border-radius: 0 0 10px 10px;
         font-family: Helvetica;
        
@@ -489,7 +488,7 @@ header
      }
      .manual-btn
      {
-        border: 2px solid #ffff;
+        border: 2px solid var(--branco);
         padding: 5px;
         border-radius:10px;
         cursor: pointer;
@@ -501,7 +500,7 @@ header
     }
     .manual-btn:hover
     {
-        background-color: #fff;
+        background-color: var(--branco);
         transition: 0.5s;
     }
     
@@ -546,7 +545,7 @@ header
 
     .produto
     {
-        background-color: #ffff;
+        background-color: var(--branco);
         width: 18vw;
         max-width: 300px;
         border-radius: 10px;
@@ -635,7 +634,7 @@ header
         font-size:100%;
         font-family:'Antonio-Regular';
         border-radius: 2px;
-        color: #fff;
+        color: var(--branco);
     }
     .btnProduto button:hover
     {
@@ -707,7 +706,7 @@ header
         max-height: 50px;
         height: 6vh;
         width: 100%;
-        color: #fff;
+        color: var(--branco);
         font-size:1.2rem;
         font-family: "Inter-regular";
         border-radius: 15px;
@@ -746,7 +745,7 @@ header
     align-items:center;
     justify-content:center;
     font-family: "Inter-Regular";
-    color: #fff;
+    color: var(--branco);
     
    }
    .vantagensTexto h1
@@ -754,7 +753,7 @@ header
     font-weight: lighter;
    }
    .vantagensTexto img {
-        color: #003C1F;
+        color: var(--verde-escuro);
         max-width: 25px;
         padding-left:5px;
 
@@ -763,7 +762,7 @@ header
    {
     font-weight: lighter;
     font-family: "Inter-Regular";
-    color: #fff;
+    color: var(--branco);
    }
 
    .iconesBeneficios
@@ -888,7 +887,7 @@ header
     .comentario
     {
         background-color: var(--verde-escuro);
-        color: #fff;
+        color: var(--branco);
         font-family: 'Inter-regular';
         height: 50vh;
         width: 100%;
@@ -962,8 +961,8 @@ header
 
     .container form
     {   
-        background-color: #fff;
-        width: 60%;
+        background-color: var(--branco);
+        width: 80%;
         padding: 10px;
         font-family: Helvetica;
         font-weight: lighter;
@@ -996,7 +995,8 @@ header
         font-family:Helvetica;
         border-radius: 10px;
         margin-left: 6px;
-        max-width: 100%;
+        width: 80%;
+        margin-left: 6%;
         resize: none;
     }
     .indentificacaoUsuario
@@ -1030,6 +1030,13 @@ header
         font-size: 1rem;
     }
 
+  
+    aside
+    {
+        position: absolute;
+        left: 2vw;
+        top: 25vh;
+    }
 
     footer
     {   
@@ -1079,7 +1086,7 @@ header
     footer h3
     {
         font-family: 'Inter-regular';
-        color: #fff;
+        color: var(--branco);
         font-size: 1rem;
         font-weight:bold;
         margin-left: 0;
@@ -1088,5 +1095,5 @@ header
     footer h1
     {
         font-family: 'Antonio-regular';
-        color: #fff;
+        color: var(--branco);
     }
