@@ -1,0 +1,17 @@
+.maisProcuradasContainer
+{
+   display: flex;
+   flex-direction: column;
+   margin-left: 23vw;
+   margin-top: 30vh;
+   align-items: start;
+   justify-content:center;
+   padding-left: 6vw;
+}
+.maisProcuradasTitle
+{
+   font-family:Helvetica;
+   font-weight: bold;
+   color:var(--laranja-Forte)
+}
+

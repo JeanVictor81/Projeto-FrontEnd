@@ -4,17 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/env.css">
-    <link rel="stylesheet" href="../css/comprar.css">
     <link rel="stylesheet" href="../css/components/header.css">
-    <link rel="stylesheet" href="../css/components/chatbot.css">
-    <link rel="stylesheet" href="../css/components/produtos.css">
     <link rel="stylesheet" href="../css/components/footer.css">
-    <link rel="stylesheet" href="../css/components/formFeedback.css">
-    <link rel="shortcut icon" href="../img/flor.png" type="image/x-icon">
-    
-    <title>FLOWERS - Comprar</title>
+    <link rel="stylesheet" href="../css/components/produtos.css">
+    <link rel="stylesheet" href="../css/components/chatbot.css">
+    <link rel="stylesheet" href="../css/arranjos.css">
+    <link rel="stylesheet" href="../css/env.css">
+    <link rel="stylesheet" href="../css/components/sidebar.css">
+    <title>Arranjos - Flowers</title>
 </head>
 <body>
     <header>
@@ -43,9 +40,9 @@
         </div>
         <nav class="menuPrincipal">
             <div class="menuBotoes">
-                <button class="botoesMenu">home</button>
+                <button class="botoesMenu" >home</button>
                 <button class="botoesMenu">mais procuradas</button>
-                <button class="botoesMenu">arranjos</button>
+                <button class="botoesMenuAtual">arranjos</button>
                 <button class="botoesMenu">ocasiões</button>
                 <button class="botoesMenu">tipos</button>
                 <button class="botoesMenu">sobre nós</button>
@@ -97,144 +94,53 @@
             <img src="../img/ChatbotBallon.png" alt="">
         </div>
     </section>
-    <section>
-        <div class="breadcrumbs">
-            <a link href="../img/index.html"><h5>Home</h5></a>
-            <h5> > </h5>
-            <a link href="../img/index.html"><h5>Promoções</h5></a>
-            <h5> > </h5>
-            <a link href="../img/index.html"><h5>Comprar</h5></a>
-            <h5> > </h5>
-            <h5 class="paginaAtual"> Arranjo de Flores Mistas Vermelhas</h5>
-         </div>
-        <div class="container">
-            <div class="compraContainer">
-                <div class="imgFLor"> 
-                    <img src="../img/mistas.png" alt="">
-                  
-                </div>
-                <div class="titulo">
-                    <h1>Arranjo de Flores Mistas Vermelhas</h1>
-                    <img src="../img/classificação 4.5.png" alt="">
-                    <h3 class="desconto"> de R$ 210,90</h3>
-                    <div class="preco">
-                        <h3>por</h3>
-                        <h1>R$ 159,90</h1>    
-                    </div>
-                    <h3 id="parcelas">ou 3x de R$ 53,90</h3> 
-                    <div class="frete">
-                        <img src="../img/Caminhao.png" alt="">
-                        <h3>Informações da entrega -<span class="destaque">alterar endereço<span></h3>
-                    </div>
-                    <div class="informacoes">
-                        <p>Av. Boa Viagem,<br> 
-                            1000 - Apt. 1501 - Boa Viagem,<br>
-                            Recife - PE, 51011-000, Brasil.</p>
-                    </div>
-                    <div class="agendar">
-                        <img src="../img/Calendario.png" alt="">
-                        <h3>Agende sua entrega- <span class="destaque">aqui<span> </h3>
-                    </div>
-    
-                   
-                </div>
-                <div class="btnCompra">
-                    <button class="comprar">
-                        COMPRAR
-                    </button>
-                    <button class="sacolinha">
-                        <img src="../img/sacola de compras.png" alt="">
-                    </button>
-                </div>
-            </div>
+    <aside class="arranjosSideBar" >
+        <h3>Filtros</h3>
+        <h4>Por ocasioes</h4>
+        <input type="checkbox" id="casamentos"> 
+        <label for="casamentos">casamentos</label>
+        <div></div>
+        <input type="checkbox" id="congressos"> 
+        <label for="congressos">Congressos</label>
+        <div></div>
+        <input type="checkbox" id="eventosCorp"> 
+        <label for="eventosCorp">Eventos Corporativos</label>
+        <div></div>
+        <input type="checkbox" id="Formaturas"> 
+        <label for="Formaturas">Formaturas</label>
+        <h4>Por cor</h4>
+        <input type="checkbox" id="lilas"> 
+        <label for="lilas">Lilás</label>
+        <div></div>
+        <input type="checkbox" id="magenta"> 
+        <label for="magenta">Magenta</label>
+        <div></div>
+        <input type="checkbox" id="rosa"> 
+        <label for="rosa">Rosa</label>
+        <div></div>
+        <input type="checkbox" id="vermelho"> 
+        <label for="vermelho">Vermelho</label>
+        <div></div>
+        <label for="pesquisarCor" class="pesquisarCorLabel"><img src="./../img/pesquisa-de-lupa.png" alt=""></label>
+        <input type="text" id="pesquisarCor" placeholder="Pesquisar cor">
+        <h4>Por preço</h4>
+        de R$ 49,90<input type="range" id="precoFiltro" min="49.90" max="800">à R$ 800,99
+        <div>
+            <img src="../img/Aside ad1.png" alt="">
         </div>
-         <nav class="menuComentariosDescricao">
-            <button class="botoesMenuAtual" onclick="exibirDescricao()">Descrição</button>
-            <button class="botoesMenu" onclick="exibirComentarios()">Avaliações & comentários (2)</button>
-    
-         </nav>
-         <div class="container">
-            <div class="comentarios">
-                <div class="opiniaoTitulo">
-                    <h2>OPINIÃO DE NOSSOS CLIENTES<hr></h2>  
-                </div>
-                <div class="opinioes">
-                    <div class="perfilOpiniao">
-                        <img src="../img/Maximo.png" alt="">
-                        <h2>Fernando Lima</h2>
-                    </div>
-                    <div class="opiniaoDetalhada">
-                        <h2>Produto excelente,  ótima experiência de compra!</h2>
-                        <hr>
-                        <p>As Flores chegaram à minha casa em perfeito estado, lindas! Entrega super rápida, me surpreendi positivamente!</p>
-                        <img src="../img/classificação.png" alt="">
-                    </div>
-                    
-                  
-                    
-                </div>
-                <div class="opinioes">
-        
-                    <div class="perfilOpiniao">
-                        <img src="../img/Maddie.png" alt="">
-                        <h2>Maria Rita</h2>
-                    </div>
-                    <div class="opiniaoDetalhada">
-                        <h2>Estou encantada! Com certeza farei mais compras no Flowers</h2>
-                        <hr>
-                        <p>O Flowers é um dos melhores ou até o melhor site de compra, me ofereceu uma ótima experiência durante a compra até quando as flores foram entregues na minha residência.</p>
-                        <img src="../img/classificação.png" alt="">
-                    </div>
-                </div>
-                <form action="" style="visibility: visible">
-            
-                    <div class="formHeader">
-                        <div class="tituloFeedback">
-                            <h1>avalie seu pedido:</h1>
-                            <img src="" alt="">
-                        </div>
-                        
-                       
-                    </div>
-                   
-                    <hr>
-                    <div class="textoFeedback">
-                        <h1>Dê um comentário sobre sua <b>experiência</b> no flowers:</h1>
-                        <textarea name="" id="textoFeedbackInput" cols="80" rows="8"></textarea>
-                    </div>
-                    <div class="indentificacaoUsuario">
-                        <label for="feedBackNome">Nome:</label>
-                        <input type="text" id="feedBackNome">
-                        <label for="feedbackEmailUsuario">Email:</label>
-                        <input type="email" id="feedbackEmailUsuario">
-                    </div>
-                    <div class="salvarDadosFeedback">
-                        <input type="checkbox" id = 'salvarDadosFeedbackInput'>
-                        <label for="salvarDadosFeedbackInput">Salvar meus dados para a próxima vez que eu comentar.</label>
-                    </div>
-                    <button class="sendFeedbackButton">Enviar</button>
-                </form>
-        
-             </div>
-             <div class="descricao">
-                  <p>Mix de flores vermelhas (rosas colombianas, nacionais hipericum, alstroemérias, ixórias...)
-                         em meio à folhagens, formando um belo e romântico arranjo em um vaso delicado e elegante. 
-                        Seu presente será carinhosamente embalado pelos nossos floristas.</p>
-        
-             </div>
-             <div class="tituloSug">
-                <h1>Você pode se interessar também</h1>
-            </div>
-             <div class="sugeridos">
+    </aside>
+    <section  class="arranjosContainer">
+            <h1 class="arranjosTitle">Arranjos</h1>
+            <div class="gridProdutos">
                 <div class="produto">
-                    <img src="../img/mistas.png" alt="">
+                    <img src="../img/buque orquidea.jpeg" alt="">
                     <div class="tituloProduto">
-                        <h1>Arranjo de Flores Mistas Vermelhas</h1>
+                        <h1>Orquídeas Pink</h1>
                         <img src="../img/coracao.png" alt="">
                     </div>
                     <div class="produtoPreco">
-                        <p>de R$ 210,90</p>
-                        <h1>por R$ 159,90</h1>
+                        <h1>R$ 204,99</h1>
+                        <p>ou 4x de R$ 51,25</p>
                     </div>
                     <div class="btnProduto">
                         <button class="btnProdutoSacola"><img src="../img/SacolaItem.png" alt=""></button>
@@ -242,14 +148,14 @@
                     </div>
                   </div>
                   <div class="produto">
-                    <img src="../img/mistas.png" alt="">
+                    <img src="../img/buque orquidea.jpeg" alt="">
                     <div class="tituloProduto">
-                        <h1>Arranjo de Flores Mistas Vermelhas</h1>
+                        <h1>Orquídeas Pink</h1>
                         <img src="../img/coracao.png" alt="">
                     </div>
                     <div class="produtoPreco">
-                        <p>de R$ 210,90</p>
-                        <h1>por R$ 159,90</h1>
+                        <h1>R$ 204,99</h1>
+                        <p>ou 4x de R$ 51,25</p>
                     </div>
                     <div class="btnProduto">
                         <button class="btnProdutoSacola"><img src="../img/SacolaItem.png" alt=""></button>
@@ -257,14 +163,14 @@
                     </div>
                   </div>
                   <div class="produto">
-                    <img src="../img/mistas.png" alt="">
+                    <img src="../img/buque orquidea.jpeg" alt="">
                     <div class="tituloProduto">
-                        <h1>Arranjo de Flores Mistas Vermelhas</h1>
+                        <h1>Orquídeas Pink</h1>
                         <img src="../img/coracao.png" alt="">
                     </div>
                     <div class="produtoPreco">
-                        <p>de R$ 210,90</p>
-                        <h1>por R$ 159,90</h1>
+                        <h1>R$ 204,99</h1>
+                        <p>ou 4x de R$ 51,25</p>
                     </div>
                     <div class="btnProduto">
                         <button class="btnProdutoSacola"><img src="../img/SacolaItem.png" alt=""></button>
@@ -272,14 +178,14 @@
                     </div>
                   </div>
                   <div class="produto">
-                    <img src="../img/mistas.png" alt="">
+                    <img src="../img/buque orquidea.jpeg" alt="">
                     <div class="tituloProduto">
-                        <h1>Arranjo de Flores Mistas Vermelhas</h1>
+                        <h1>Orquídeas Pink</h1>
                         <img src="../img/coracao.png" alt="">
                     </div>
                     <div class="produtoPreco">
-                        <p>de R$ 210,90</p>
-                        <h1>por R$ 159,90</h1>
+                        <h1>R$ 204,99</h1>
+                        <p>ou 4x de R$ 51,25</p>
                     </div>
                     <div class="btnProduto">
                         <button class="btnProdutoSacola"><img src="../img/SacolaItem.png" alt=""></button>
@@ -287,14 +193,14 @@
                     </div>
                   </div>
                   <div class="produto">
-                    <img src="../img/mistas.png" alt="">
+                    <img src="../img/buque orquidea.jpeg" alt="">
                     <div class="tituloProduto">
-                        <h1>Arranjo de Flores Mistas Vermelhas</h1>
+                        <h1>Orquídeas Pink</h1>
                         <img src="../img/coracao.png" alt="">
                     </div>
                     <div class="produtoPreco">
-                        <p>de R$ 210,90</p>
-                        <h1>por R$ 159,90</h1>
+                        <h1>R$ 204,99</h1>
+                        <p>ou 4x de R$ 51,25</p>
                     </div>
                     <div class="btnProduto">
                         <button class="btnProdutoSacola"><img src="../img/SacolaItem.png" alt=""></button>
@@ -302,14 +208,14 @@
                     </div>
                   </div>
                   <div class="produto">
-                    <img src="../img/mistas.png" alt="">
+                    <img src="../img/buque orquidea.jpeg" alt="">
                     <div class="tituloProduto">
-                        <h1>Arranjo de Flores Mistas Vermelhas</h1>
+                        <h1>Orquídeas Pink</h1>
                         <img src="../img/coracao.png" alt="">
                     </div>
                     <div class="produtoPreco">
-                        <p>de R$ 210,90</p>
-                        <h1>por R$ 159,90</h1>
+                        <h1>R$ 204,99</h1>
+                        <p>ou 4x de R$ 51,25</p>
                     </div>
                     <div class="btnProduto">
                         <button class="btnProdutoSacola"><img src="../img/SacolaItem.png" alt=""></button>
@@ -317,14 +223,14 @@
                     </div>
                   </div>
                   <div class="produto">
-                    <img src="../img/mistas.png" alt="">
+                    <img src="../img/buque orquidea.jpeg" alt="">
                     <div class="tituloProduto">
-                        <h1>Arranjo de Flores Mistas Vermelhas</h1>
+                        <h1>Orquídeas Pink</h1>
                         <img src="../img/coracao.png" alt="">
                     </div>
                     <div class="produtoPreco">
-                        <p>de R$ 210,90</p>
-                        <h1>por R$ 159,90</h1>
+                        <h1>R$ 204,99</h1>
+                        <p>ou 4x de R$ 51,25</p>
                     </div>
                     <div class="btnProduto">
                         <button class="btnProdutoSacola"><img src="../img/SacolaItem.png" alt=""></button>
@@ -332,23 +238,86 @@
                     </div>
                   </div>
                   <div class="produto">
-                    <img src="../img/mistas.png" alt="">
+                    <img src="../img/buque orquidea.jpeg" alt="">
                     <div class="tituloProduto">
-                        <h1>Arranjo de Flores Mistas Vermelhas</h1>
+                        <h1>Orquídeas Pink</h1>
                         <img src="../img/coracao.png" alt="">
                     </div>
                     <div class="produtoPreco">
-                        <p>de R$ 210,90</p>
-                        <h1>por R$ 159,90</h1>
+                        <h1>R$ 204,99</h1>
+                        <p>ou 4x de R$ 51,25</p>
                     </div>
                     <div class="btnProduto">
                         <button class="btnProdutoSacola"><img src="../img/SacolaItem.png" alt=""></button>
                         <button class="btnProdutoComprar">Comprar</button>
                     </div>
                   </div>
-             </div>
-         </div>
-        
+                  <div class="produto">
+                    <img src="../img/buque orquidea.jpeg" alt="">
+                    <div class="tituloProduto">
+                        <h1>Orquídeas Pink</h1>
+                        <img src="../img/coracao.png" alt="">
+                    </div>
+                    <div class="produtoPreco">
+                        <h1>R$ 204,99</h1>
+                        <p>ou 4x de R$ 51,25</p>
+                    </div>
+                    <div class="btnProduto">
+                        <button class="btnProdutoSacola"><img src="../img/SacolaItem.png" alt=""></button>
+                        <button class="btnProdutoComprar">Comprar</button>
+                    </div>
+                  </div>
+                  <div class="produto">
+                    <img src="../img/buque orquidea.jpeg" alt="">
+                    <div class="tituloProduto">
+                        <h1>Orquídeas Pink</h1>
+                        <img src="../img/coracao.png" alt="">
+                    </div>
+                    <div class="produtoPreco">
+                        <h1>R$ 204,99</h1>
+                        <p>ou 4x de R$ 51,25</p>
+                    </div>
+                    <div class="btnProduto">
+                        <button class="btnProdutoSacola"><img src="../img/SacolaItem.png" alt=""></button>
+                        <button class="btnProdutoComprar">Comprar</button>
+                    </div>
+                  </div>
+                  <div class="produto">
+                    <img src="../img/buque orquidea.jpeg" alt="">
+                    <div class="tituloProduto">
+                        <h1>Orquídeas Pink</h1>
+                        <img src="../img/coracao.png" alt="">
+                    </div>
+                    <div class="produtoPreco">
+                        <h1>R$ 204,99</h1>
+                        <p>ou 4x de R$ 51,25</p>
+                    </div>
+                    <div class="btnProduto">
+                        <button class="btnProdutoSacola"><img src="../img/SacolaItem.png" alt=""></button>
+                        <button class="btnProdutoComprar">Comprar</button>
+                    </div>
+                    
+                  </div>
+                  <div class="produto">
+                    <img src="../img/buque orquidea.jpeg" alt="">
+                    <div class="tituloProduto">
+                        <h1>Orquídeas Pink</h1>
+                        <img src="../img/coracao.png" alt="">
+                    </div>
+                    <div class="produtoPreco">
+                        <h1>R$ 204,99</h1>
+                        <p>ou 4x de R$ 51,25</p>
+                    </div>
+                    <div class="btnProduto">
+                        <button class="btnProdutoSacola"><img src="../img/SacolaItem.png" alt=""></button>
+                        <button class="btnProdutoComprar">Comprar</button>
+                    </div>
+                    
+                  </div>
+          
+                  
+            </div>
+           
     </section>
     <footer>
         <div class="footerContainer">
@@ -390,16 +359,10 @@
                 <img src="../img/logoQuebrada.png"quw alt="" srcset="">
             </div>
         </div>
-    </footer>
-    <script src="../js/produtos.js"> </script>
+   </footer> 
+
     <script src="../js/headerAnin.js"></script>
-    <script src="../js/comprar.js"></script>
+    <script src="../js/produtos.js"></script>
     <script src="../js/chatbot.js"></script>
-    
-        
-        
-   
-    
-    
 </body>
 </html>

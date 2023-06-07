@@ -1,0 +1,179 @@
+header
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 30vh;
+    z-index: 1000;
+    
+    
+}
+
+.navCTA{
+    background-color: var(--laranja-Forte);
+    height: 5vh;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.navCTA h3
+
+{
+    color: var(--branco);
+    font-family: 'Inter-regular';
+    font-weight: lighter;
+    font-size: 1rem;
+}
+
+.menuPesquisa
+{   position: fixed;
+    background-color: var(--branco);
+    width: 100%;
+    height: 15vh;
+    left: 0;
+    top: 5vh;
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items: center;
+    padding: 0.5%;
+    gap: 5%;
+}
+
+
+.logo img{
+    width: 100%;
+    height: 100%;
+    max-height: 100px;
+    max-width:100px;
+    position: inherit;
+
+}
+.buscar
+{
+    width: 50%;
+    display:flex;
+    
+}
+.buscar input
+{
+    width: 100%;
+    height: 4vh;
+    font-family: 'Inter-regular';
+    border: none;
+    background-color: var(--cor-fundo);
+    font-size: 1rem;
+    color: var(--verde-escuro);
+
+}
+
+.buscar img
+{
+    max-width: 21px;
+    max-height:23px;
+    margin-left: -25px;
+    margin-top:6px;
+}
+.entrarCasatrar
+{
+    font-size: 1rem;
+    font-family: "Inter-regular";
+    color: var(--verde-escuro);
+    width: 47.5%;
+}
+
+.entrarCasatrar a
+{   
+    font-weight: bold;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+.entrarCasatrar a:hover
+{
+    cursor: pointer;
+    text-decoration: underline;
+}
+.loginSacola
+{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    gap: 2%;
+}
+.loginSacola img
+{
+    width:100%;
+    height:100%;
+    max-width: 32px;
+    max-height: 35px;
+}
+
+.menuPrincipal 
+{   
+    position: fixed;
+    
+    height:6vh;
+    width: 100%;
+    top: 20vh;
+    background-color: var(--cor-fundo);
+    color: var(--verde-escuro);
+}
+.menuPrincipalPag 
+{   
+    position: fixed;
+    height:6vh;
+    width: 100%;
+    top: 15vh;  
+    background-color:var(--laranja-Forte);
+    color: var(--branco);
+}
+.menuBotoes
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 100%;
+    color: inherit;
+    gap: 10px;
+    
+}
+.botoesMenu
+{
+    border: none;
+    font-size: 1.2rem;
+    font-family: 'Antonio-regular';
+    color: inherit;
+    background-color:inherit;
+}
+
+.botoesMenu:hover
+{
+    background-color:var(--laranja-Fraco);
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.botoesMenuAtual
+{
+
+    border: none;
+    font-size: 1.2rem;
+    font-family: 'Antonio-regular';
+    color: inherit;
+    background-color: var(--amarelo)
+
+}
+.botoesMenuAtual:hover
+{
+    background-color:var(--laranja-Fraco);
+    transition: 0.3s;
+    cursor: pointer;
+
+}
