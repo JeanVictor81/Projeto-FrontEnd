@@ -159,7 +159,7 @@
         border: none;
         font-weight:bold;
         
-        background-color: var(--verde-escuro);
+        background-color:  #003c1f ;
    }
    .btnContainer:hover
    {
@@ -332,7 +332,7 @@
     }
     .comentario
     {
-        background-color: var(--verde-escuro);
+        background-color: #003c1f;
         color: var(--branco);
         font-family: 'Inter-regular';
         height: 50vh;

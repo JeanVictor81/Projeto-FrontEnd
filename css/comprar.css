@@ -84,6 +84,7 @@ a
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
+    color: #003c1f;
  
 
 }
@@ -253,6 +254,7 @@ a
     align-items: center;
     justify-content: center;
     gap: 30px;
+    color: #003c1f;
 }
 .comentarios h2
 {
@@ -287,6 +289,7 @@ height: 100%;
 max-width:1239px;
 max-height:120px;
 background-color:var(--branco);
+color: #003c1f;
 
 }
 .descricao p

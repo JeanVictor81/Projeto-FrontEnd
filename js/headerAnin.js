@@ -61,5 +61,8 @@ const buttons = menuPrincipal.querySelectorAll('button');
     
   })
   }
+
+
   animarBtnMenu(buttons);
+
   window.addEventListener('scroll', manipularRolagem)

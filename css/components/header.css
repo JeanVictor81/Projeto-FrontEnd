@@ -117,23 +117,15 @@ header
 
 .menuPrincipal 
 {   
-    position: fixed;
-    
+    position: fixed;    
+    display: flex;
     height:6vh;
     width: 100%;
     top: 20vh;
     background-color: var(--cor-fundo);
     color: var(--verde-escuro);
 }
-.menuPrincipalPag 
-{   
-    position: fixed;
-    height:6vh;
-    width: 100%;
-    top: 15vh;  
-    background-color:var(--laranja-Forte);
-    color: var(--branco);
-}
+
 .menuBotoes
 {
     display: flex;
@@ -142,6 +134,7 @@ header
     height: 100%;
     color: inherit;
     gap: 10px;
+    width:90%;
     
 }
 .botoesMenu
@@ -175,5 +168,54 @@ header
     background-color:var(--laranja-Fraco);
     transition: 0.3s;
     cursor: pointer;
+}
+.menuConfig
+{   
+    align-self: flex-end;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    width: 8%;
+}
+/* Dark Header */
 
+.menuPesquisaDark
+{   
+        background-color: var(--darkColor1);
+
+}
+.logoDark img{
+
+    filter: grayscale(100%) brightness(1000%);
+}
+.entrarCasatrarDark
+{
+    color: var(--branco);   
+}
+.loginSacolaDark
+{
+    color: var(--branco);
+}
+.loginSacolaDark img
+{
+  
+    filter: grayscale(100%) brightness(1000%);
+}
+
+.menuPrincipalDark 
+{   
+   
+    background-color: var(--darkColor1);
+    color: var(--branco);
+}
+
+
+.menuPrincipalPag 
+{   
+    position: fixed;
+    height:6vh;
+    width: 100%;
+    top: 15vh;  
+    background-color:var(--laranja-Forte);
+    color: var(--branco);
 }

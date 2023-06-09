@@ -47,7 +47,7 @@
    border-radius: 10px 10px 0 0;
    overflow: hidden;
    max-height: 17.5%;
-   background-color: var(--verde-escuro);
+   background-color:  #003c1f;
    opacity: 100;
    
 }   
@@ -74,7 +74,7 @@
 }
 .mensagens
 {
-    background-color: var(--verde-escuro);
+    background-color:#003c1f ;
     opacity: 0.95;
     min-height: 70%;
     display: flex;
@@ -94,7 +94,7 @@
 }
 .textoMensagemflora
 {
-    color: var(--verde-escuro);
+    color:  #003c1f;
     background-color: var(--branco);
     border-radius: 15px;
     padding: 5px;
@@ -114,7 +114,7 @@
     font-size:0.8rem;
     font-family: Helvetica;
     width: 70%;
-    color: var(--verde-escuro); ;
+    color:  #003c1f; 
     background-color:var(--branco);
     opacity: 1;
     margin-top: 5px;
@@ -157,7 +157,7 @@
 .inputChatbotContainer
 {
     height: 10%;
-    background-color: var(--verde-escuro);
+    background-color: #003c1f;
     margin-top:1px;
     display: flex;
     border-radius: 0 0 10px 10px;

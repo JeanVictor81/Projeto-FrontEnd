@@ -7,6 +7,11 @@
     width: 25%;
     color: var(--verde-escuro);
     
+} 
+.maisProcuradasSideBar img
+{
+    object-fit: contain;
+    max-width:100%
 }
 
 .arranjosSideBar
@@ -18,7 +23,11 @@
     width: 25%;
     color: var(--verde-escuro);
 }
-
+.arranjosSideBar img
+{
+    object-fit: contain;
+    max-width:100%
+}
 aside input
 {
     border: none;

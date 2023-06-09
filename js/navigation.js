@@ -30,3 +30,30 @@ function irParaCadastro()
     }
     
   }
+function irParaMaisProcuradas()
+{
+  if (document.title == 'FLOWERS') {
+    window.location.href = "html/maisProcuradas.html";
+  }
+  else
+  {
+    window.location.href = "../html/maisProcuradas.html";
+  }
+}
+function irParaArranjos()
+{
+  if (document.title == 'FLOWERS') {
+    window.location.href = "html/arranjos.html";
+  }
+  else
+  {
+    window.location.href = "../html/arranjos.html";
+  }
+}
+function navigation(){
+
+  buttons[0].addEventListener('click', irParaHome)
+  buttons[1].addEventListener('click', irParaMaisProcuradas)
+  buttons[2].addEventListener('click', irParaArranjos)
+}
+navigation();
