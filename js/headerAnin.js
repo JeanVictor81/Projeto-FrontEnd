@@ -2,6 +2,7 @@ const menuCTA = document.querySelector('.navCTA');
 const menuPesquisa = document.querySelector('.menuPesquisa');
 const menuPrincipal = document.querySelector('.menuPrincipal');
 const buttons = menuPrincipal.querySelectorAll('button');
+const header = document.querySelector('header');
 
 
 
@@ -11,7 +12,7 @@ const buttons = menuPrincipal.querySelectorAll('button');
     
     menuCTA.style.display = 'none';
     menuPesquisa.style.top = '0';
-  
+    header.style.height = '25vh';
     menuPrincipal.classList.add('menuPrincipalPag')
     
   
@@ -23,6 +24,7 @@ const buttons = menuPrincipal.querySelectorAll('button');
     
     menuCTA.style.display = 'flex';
     menuPesquisa.style.top = '5vh';
+    header.style.height = '30vh';
     menuPrincipal.classList.remove('menuPrincipalPag') 
    
   

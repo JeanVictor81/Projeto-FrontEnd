@@ -10,6 +10,7 @@ header
     
 }
 
+
 .navCTA{
     background-color: var(--laranja-Forte);
     height: 5vh;
@@ -176,6 +177,10 @@ header
     align-items: center;
     justify-content: end;
     width: 8%;
+}
+.menuConfig img
+{   
+    cursor: pointer;
 }
 /* Dark Header */
 

@@ -1,6 +1,8 @@
 const productsButtonsList = document.querySelectorAll(".btnProduto");
-const listProdutcs = document.querySelectorAll(".produto")
-
+const listProdutcs = document.querySelectorAll(".produto");
+const btnComprarProduto = document.querySelectorAll(".btnProdutoComprar");
+const btnSacolaProduto = document.querySelectorAll(".btnProdutoSacola");
+const listProdutoSemBtn = [];
 
 function animarProduto() {
   listProdutcs.forEach((element) => {
@@ -23,5 +25,29 @@ function animarProduto() {
   });
   
 }
+function adcionarSacola(){
 
+  btnSacolaProduto.forEach(element => {
+    element.addEventListener('click', () => {
+      
+      alert('item Adcionado sacola');
+
+
+
+    })
+  })
+  
+}
+function definirProfutosSemBTN() {
+  
+  listProdutcs.forEach(function(produto) {
+    const filhos = produto.querySelectorAll(":not(:nth-last-child(-n+2))");
+    filhos.forEach(function(filho) {
+      listProdutoSemBtn.push(filho);
+    });
+  });
+}
+
+definirProfutosSemBTN()
+adcionarSacola()
 animarProduto();

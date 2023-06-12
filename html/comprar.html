@@ -33,7 +33,7 @@
             <div class="loginSacola">
             <img src="../img/Perfil Verde.png" alt="">
                   <div class="entrarCasatrar">
-                <p><a>Entre</a> ou <a>Cadastre-se</a>
+                <p data-translate><a href="../html/Login.html" data-translate><b>Entre</b></a> ou <a href="../html/cadastro.html" data-translate><b>Cadastre-se</b></a>
                     para ver seus pedidos.<p> 
             </div>
             <img src="../img/Sacola Verde.png" alt="">
@@ -44,16 +44,14 @@
         <nav class="menuPrincipal">
             <div class="menuBotoes">
                 <button class="botoesMenuAtual" >home</button>
-                <button class="botoesMenu">mais procuradas</button>
-                <button class="botoesMenu">arranjos</button>
-                <button class="botoesMenu">ocasiões</button>
-                <button class="botoesMenu">tipos</button>
-                <button class="botoesMenu">sobre nós</button>
+                <button class="botoesMenu" data-translate> mais procuradas</button>
+                <button class="botoesMenu" data-translate> arranjos</button>
+                <button class="botoesMenu" data-translate>sobre   nos</button>
             </div>
             <div class="menuConfig">
                 <img src="../img/sol.png" alt="" id="darkLigthMode">
-                <img src="../img/BandeiraBR.png" alt="">
-                <img src="../img/BandeiraUS.png" alt="">
+                <img src="../img/BandeiraBR.png" onclick="resetTranslation()" alt="">
+                <img src="../img/BandeiraUS.png" onclick="imageClick()" alt="">
             </div>
            
 
@@ -75,14 +73,14 @@
                 <div class="mensagemFlora">
                     <img src="../img/FloraChatV.png" alt="">
                     <span class="textoMensagemflora">
-                        <p> Bem-vindo ao FLOWERS, sou a Flora, sua assistente
+                        <p  data-translate> Bem-vindo ao FLOWERS, sou a Flora, sua assistente
                             virtual. Para começar, poderia me informar seu nome
                             e endereço de e-mail?</p>
                     </span>
                 </div>
                 <div class="mensagemUsuario">
                     <span class="textoMensagemUsuario">
-                        <p>Claro! Meu nome é Luiz e meu e-mail é Luiz@email.com.</p>
+                        <p >Claro! Meu nome é Luiz e meu e-mail é Luiz@email.com.</p>
                     </span>
                     
                 </div>
@@ -104,13 +102,13 @@
     </section>
     <section>
         <div class="breadcrumbs">
-            <a link href="../img/index.html"><h5>Home</h5></a>
+            <a link href="../img/index.html"><h5  data-translate>Home</h5></a>
             <h5> > </h5>
-            <a link href="../img/index.html"><h5>Promoções</h5></a>
+            <a link href="../img/index.html"><h5  data-translate>Promoções</h5></a>
             <h5> > </h5>
-            <a link href="../img/index.html"><h5>Comprar</h5></a>
+            <a link href="../img/index.html"><h5  data-translate>Comprar</h5></a>
             <h5> > </h5>
-            <h5 class="paginaAtual"> Arranjo de Flores Mistas Vermelhas</h5>
+            <h5 class="paginaAtual"  data-translate> Arranjo de Flores Mistas Vermelhas</h5>
          </div>
         <div class="container">
             <div class="compraContainer">
@@ -119,17 +117,17 @@
                   
                 </div>
                 <div class="titulo">
-                    <h1>Arranjo de Flores Mistas Vermelhas</h1>
+                    <h1  data-translate>Arranjo de Flores Mistas Vermelhas</h1>
                     <img src="../img/classificação 4.5.png" alt="">
-                    <h3 class="desconto"> de R$ 210,90</h3>
+                    <h3 class="desconto"  data-translate> de R$ 210,90</h3>
                     <div class="preco">
-                        <h3>por</h3>
-                        <h1>R$ 159,90</h1>    
+                        <h3 data-translate>por</h3>
+                        <h1  data-translate>R$ 159,90</h1>    
                     </div>
-                    <h3 id="parcelas">ou 3x de R$ 53,90</h3> 
+                    <h3 id="parcelas"  data-translate>ou 3x de R$ 53,90</h3> 
                     <div class="frete">
                         <img src="../img/Caminhao.png" alt="">
-                        <h3>Informações da entrega -<span class="destaque">alterar endereço<span></h3>
+                        <h3  data-translate>Informações da entrega -<span class="destaque" data-translate>alterar endereço<span></h3>
                     </div>
                     <div class="informacoes">
                         <p>Av. Boa Viagem,<br> 
@@ -138,13 +136,13 @@
                     </div>
                     <div class="agendar">
                         <img src="../img/Calendario.png" alt="">
-                        <h3>Agende sua entrega- <span class="destaque">aqui<span> </h3>
+                        <h3  data-translate>Agende sua entrega- <span class="destaque"  data-translate>aqui<span> </h3>
                     </div>
     
                    
                 </div>
                 <div class="btnCompra">
-                    <button class="comprar">
+                    <button class="comprar"  data-translate>
                         COMPRAR
                     </button>
                     <button class="sacolinha">
@@ -154,8 +152,8 @@
             </div>
         </div>
          <nav class="menuComentariosDescricao">
-            <button class="botoesMenuAtual" onclick="exibirDescricao()">Descrição</button>
-            <button class="botoesMenu" onclick="exibirComentarios()">Avaliações & comentários (2)</button>
+            <button class="botoesMenuAtual" onclick="exibirDescricao()"  data-translate>Descrição</button>
+            <button class="botoesMenu" onclick="exibirComentarios()"  data-translate>Avaliações & comentários (2)</button>
     
          </nav>
          <div class="container">
@@ -166,12 +164,12 @@
                 <div class="opinioes">
                     <div class="perfilOpiniao">
                         <img src="../img/Maximo.png" alt="">
-                        <h2>Fernando Lima</h2>
+                        <h2 data-translate>Fernando Lima</h2>
                     </div>
                     <div class="opiniaoDetalhada">
-                        <h2>Produto excelente,  ótima experiência de compra!</h2>
+                        <h2  data-translate>Produto excelente,  ótima experiência de compra!</h2>
                         <hr>
-                        <p>As Flores chegaram à minha casa em perfeito estado, lindas! Entrega super rápida, me surpreendi positivamente!</p>
+                        <p  data-translate>As Flores chegaram à minha casa em perfeito estado, lindas! Entrega super rápida, me surpreendi positivamente!</p>
                         <img src="../img/classificação.png" alt="">
                     </div>
                     
@@ -195,7 +193,7 @@
             
                     <div class="formHeader">
                         <div class="tituloFeedback">
-                            <h1>avalie seu pedido:</h1>
+                            <h1  data-translate>avalie seu pedido:</h1>
                             <img src="" alt="">
                         </div>
                         
@@ -204,7 +202,7 @@
                    
                     <hr>
                     <div class="textoFeedback">
-                        <h1>Dê um comentário sobre sua <b>experiência</b> no flowers:</h1>
+                        <h1  data-translate>Dê um comentário sobre sua <b>experiência</b> no flowers:</h1>
                         <textarea name="" id="textoFeedbackInput" cols="80" rows="8"></textarea>
                     </div>
                     <div class="indentificacaoUsuario">
@@ -228,22 +226,67 @@
         
              </div>
              <div class="tituloSug">
-                <h1>Você pode se interessar também</h1>
+                <h1  data-translate>Se você gostou dessa, dá uma olhadas nessas aqui!</h1>
             </div>
              <div class="sugeridos">
                 <div class="produto">
                     <img src="../img/mistas.png" alt="">
                     <div class="tituloProduto">
-                        <h1>Arranjo de Flores Mistas Vermelhas</h1>
+                        <h1 data-translate>Arranjo de Flores Mistas Vermelhas</h1>
                         <img src="../img/coracao.png" alt="">
                     </div>
                     <div class="produtoPreco">
-                        <p>de R$ 210,90</p>
-                        <h1>por R$ 159,90</h1>
+                        <p data-translate>de R$ 210,90</p>
+                        <h1 data-translate >por R$ 159,90</h1>
                     </div>
                     <div class="btnProduto">
                         <button class="btnProdutoSacola"><img src="../img/SacolaItem.png" alt=""></button>
-                        <button class="btnProdutoComprar">Comprar</button>
+                        <button class="btnProdutoComprar" data-translate>Comprar</button>
+                    </div>
+                  </div>
+                  <div class="produto">
+                    <img src="../img/mistas.png" alt="">
+                    <div class="tituloProduto">
+                        <h1 data-translate>Arranjo de Flores Mistas Vermelhas</h1>
+                        <img src="../img/coracao.png" alt="">
+                    </div>
+                    <div class="produtoPreco">
+                        <p data-translate>de R$ 210,90</p>
+                        <h1 data-translate>por R$ 159,90</h1>
+                    </div>
+                    <div class="btnProduto">
+                        <button class="btnProdutoSacola"><img src="../img/SacolaItem.png" alt=""></button>
+                        <button class="btnProdutoComprar" data-translate>Comprar</button>
+                    </div>
+                  </div>
+                  <div class="produto">
+                    <img src="../img/mistas.png" alt="">
+                    <div class="tituloProduto">
+                        <h1 data-translate>Arranjo de Flores Mistas Vermelhas</h1>
+                        <img src="../img/coracao.png" alt="">
+                    </div>
+                    <div class="produtoPreco">
+                        <p data-translate>de R$ 210,90</p>
+                        <h1 data-translate>por R$ 159,90</h1>
+                    </div>
+                    <div class="btnProduto">
+                        <button class="btnProdutoSacola"><img src="../img/SacolaItem.png" alt=""></button>
+                        <button class="btnProdutoComprar" data-translate>Comprar</button>
+                    </div>
+                  </div>
+                  <div class="produto">
+                    <img src="../img/mistas.png" alt="">
+                    <div class="tituloProduto">
+                        <h1 data-translate>Arranjo de Flores Mistas Vermelhas</h1>
+                        <img src="../img/coracao.png" alt="">
+                    </div>
+                    <div class="produtoPreco">
+                        <p data-translate>de R$ 210,90</p>
+                        <h1 data-translate>por R$ 159,90</h1>
+                    </div>
+                    <div class="btnProduto">
+                        <button class="btnProdutoSacola"><img src="../img/SacolaItem.png" alt=""></button>
+                        <button class="btnProdutoComprar" data-translate>Comprar</button>
                     </div>
                   </div>
                   <div class="produto">
@@ -264,91 +307,46 @@
                   <div class="produto">
                     <img src="../img/mistas.png" alt="">
                     <div class="tituloProduto">
-                        <h1>Arranjo de Flores Mistas Vermelhas</h1>
+                        <h1 data-translate>Arranjo de Flores Mistas Vermelhas</h1>
                         <img src="../img/coracao.png" alt="">
                     </div>
                     <div class="produtoPreco">
-                        <p>de R$ 210,90</p>
-                        <h1>por R$ 159,90</h1>
+                        <p data-translate>de R$ 210,90</p>
+                        <h1 data-translate>por R$ 159,90</h1>
                     </div>
                     <div class="btnProduto">
                         <button class="btnProdutoSacola"><img src="../img/SacolaItem.png" alt=""></button>
-                        <button class="btnProdutoComprar">Comprar</button>
+                        <button class="btnProdutoComprar" data-translate>Comprar</button>
                     </div>
                   </div>
                   <div class="produto">
                     <img src="../img/mistas.png" alt="">
                     <div class="tituloProduto">
-                        <h1>Arranjo de Flores Mistas Vermelhas</h1>
+                        <h1 data-translate>Arranjo de Flores Mistas Vermelhas</h1>
                         <img src="../img/coracao.png" alt="">
                     </div>
                     <div class="produtoPreco">
-                        <p>de R$ 210,90</p>
-                        <h1>por R$ 159,90</h1>
+                        <p data-translate>de R$ 210,90</p>
+                        <h1 data-translate>por R$ 159,90</h1>
                     </div>
                     <div class="btnProduto">
                         <button class="btnProdutoSacola"><img src="../img/SacolaItem.png" alt=""></button>
-                        <button class="btnProdutoComprar">Comprar</button>
+                        <button class="btnProdutoComprar"data-translate>Comprar</button>
                     </div>
                   </div>
                   <div class="produto">
                     <img src="../img/mistas.png" alt="">
                     <div class="tituloProduto">
-                        <h1>Arranjo de Flores Mistas Vermelhas</h1>
+                        <h1 data-translate>Arranjo de Flores Mistas Vermelhas</h1>
                         <img src="../img/coracao.png" alt="">
                     </div>
                     <div class="produtoPreco">
-                        <p>de R$ 210,90</p>
-                        <h1>por R$ 159,90</h1>
+                        <p data-translate>de R$ 210,90</p>
+                        <h1 data-translate>por R$ 159,90</h1>
                     </div>
                     <div class="btnProduto">
                         <button class="btnProdutoSacola"><img src="../img/SacolaItem.png" alt=""></button>
-                        <button class="btnProdutoComprar">Comprar</button>
-                    </div>
-                  </div>
-                  <div class="produto">
-                    <img src="../img/mistas.png" alt="">
-                    <div class="tituloProduto">
-                        <h1>Arranjo de Flores Mistas Vermelhas</h1>
-                        <img src="../img/coracao.png" alt="">
-                    </div>
-                    <div class="produtoPreco">
-                        <p>de R$ 210,90</p>
-                        <h1>por R$ 159,90</h1>
-                    </div>
-                    <div class="btnProduto">
-                        <button class="btnProdutoSacola"><img src="../img/SacolaItem.png" alt=""></button>
-                        <button class="btnProdutoComprar">Comprar</button>
-                    </div>
-                  </div>
-                  <div class="produto">
-                    <img src="../img/mistas.png" alt="">
-                    <div class="tituloProduto">
-                        <h1>Arranjo de Flores Mistas Vermelhas</h1>
-                        <img src="../img/coracao.png" alt="">
-                    </div>
-                    <div class="produtoPreco">
-                        <p>de R$ 210,90</p>
-                        <h1>por R$ 159,90</h1>
-                    </div>
-                    <div class="btnProduto">
-                        <button class="btnProdutoSacola"><img src="../img/SacolaItem.png" alt=""></button>
-                        <button class="btnProdutoComprar">Comprar</button>
-                    </div>
-                  </div>
-                  <div class="produto">
-                    <img src="../img/mistas.png" alt="">
-                    <div class="tituloProduto">
-                        <h1>Arranjo de Flores Mistas Vermelhas</h1>
-                        <img src="../img/coracao.png" alt="">
-                    </div>
-                    <div class="produtoPreco">
-                        <p>de R$ 210,90</p>
-                        <h1>por R$ 159,90</h1>
-                    </div>
-                    <div class="btnProduto">
-                        <button class="btnProdutoSacola"><img src="../img/SacolaItem.png" alt=""></button>
-                        <button class="btnProdutoComprar">Comprar</button>
+                        <button class="btnProdutoComprar" data-translate>Comprar</button>
                     </div>
                   </div>
              </div>
@@ -402,6 +400,7 @@
     <script src="../js/chatbot.js"></script>
     <script src="../js/darkLigthMode.js"></script>
     <script src="../js/navigation.js"></script>
+    <script src="../js/translate.js"></script>
     
         
         

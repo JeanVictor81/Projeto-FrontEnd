@@ -30,7 +30,7 @@
             <div class="loginSacola">
             <img src="../img/Perfil Verde.png" alt="">
                   <div class="entrarCasatrar">
-                <p><a>Entre</a> ou <a>Cadastre-se</a>
+                <p data-translate><a href="../html/Login.html" data-translate><b>Entre</b></a> ou <a href="../html/cadastro.html" data-translate><b>Cadastre-se</b></a>
                     para ver seus pedidos.<p> 
             </div>
             <img src="../img/Sacola Verde.png" alt="">
@@ -40,17 +40,15 @@
         </div>
         <nav class="menuPrincipal">
             <div class="menuBotoes">
-                <button class="botoesMenu" >home</button>
-                <button class="botoesMenuAtual">mais procuradas</button>
-                <button class="botoesMenu">arranjos</button>
-                <button class="botoesMenu">ocasiões</button>
-                <button class="botoesMenu">tipos</button>
-                <button class="botoesMenu">sobre nós</button>
+                <button class="botoesMenuAtual" >home</button>
+                <button class="botoesMenu" data-translate> mais procuradas</button>
+                <button class="botoesMenu" data-translate> arranjos</button>
+                <button class="botoesMenu" data-translate>sobre   nos</button>
             </div>
             <div class="menuConfig">
                 <img src="../img/sol.png" alt="" id="darkLigthMode">
-                <img src="../img/BandeiraBR.png" alt="">
-                <img src="../img/BandeiraUS.png" alt="">
+                <img src="../img/BandeiraBR.png" onclick="resetTranslation()" alt="">
+                <img src="../img/BandeiraUS.png" onclick="imageClick()" alt="">
             </div>
            
 
@@ -100,224 +98,222 @@
         </div>
     </section>
     <aside class="maisProcuradasSideBar" >
-        <h3>Filtros</h3>
-        <h4>Por ocasioes</h4>
+        <h3 data-translate>Filtros</h3>
+        <h4 data-translate>Por ocasioes</h4>
         <input type="checkbox" id="casamentos"> 
-        <label for="casamentos">casamentos</label>
+        <label for="casamentos" data-translate>casamentos</label>
         <div></div>
         <input type="checkbox" id="congressos"> 
-        <label for="congressos">Congressos</label>
+        <label for="congressos" data-translate>Congressos</label>
         <div></div>
         <input type="checkbox" id="eventosCorp"> 
-        <label for="eventosCorp">Eventos Corporativos</label>
+        <label for="eventosCorp" data-translate>Eventos Corporativos</label>
         <div></div>
         <input type="checkbox" id="Formaturas"> 
-        <label for="Formaturas">Formaturas</label>
+        <label for="Formaturas" data-translate>Formaturas</label>
         <h4>Por cor</h4>
         <input type="checkbox" id="lilas"> 
-        <label for="lilas">Lilás</label>
+        <label for="lilas" data-translate>Lilás</label>
         <div></div>
         <input type="checkbox" id="magenta"> 
-        <label for="magenta">Magenta</label>
+        <label for="magenta" data-translate>Magenta</label>
         <div></div>
         <input type="checkbox" id="rosa"> 
-        <label for="rosa">Rosa</label>
+        <label for="rosa" data-translate>Rosa</label>
         <div></div>
         <input type="checkbox" id="vermelho"> 
-        <label for="vermelho">Vermelho</label>
+        <label for="vermelho" data-translate>Vermelho</label>
         <div></div>
         <label for="pesquisarCor" class="pesquisarCorLabel"><img src="./../img/pesquisa-de-lupa.png" alt=""></label>
         <input type="text" id="pesquisarCor" placeholder="Pesquisar cor">
-        <h4>Por preço</h4>
-        de R$ 49,90<input type="range" id="precoFiltro" min="49.90" max="800">à R$ 800,99
+        <h4 data-translate>Por preço</h4>
+        R$ 49,90<input type="range" id="precoFiltro" min="49.90" max="800">R$ 800,99
         <div>
             <img src="../img/Aside ad1.png" alt="">
         </div>
     </aside>
     <section  id="maisProcuradas" class="maisProcuradasContainer">
-            <h1 class="maisProcuradasTitle">Mais procuradas</h1>
+            <h1 class="maisProcuradasTitle" data-translate>Mais procuradas</h1>
             <div class="gridProdutos">
                 <div class="produto">
                     <img src="../img/buque orquidea.jpeg" alt="">
                     <div class="tituloProduto">
-                        <h1>Orquídeas Pink</h1>
+                        <h1 data-translate>Orquídeas Pink</h1>
                         <img src="../img/coracao.png" alt="">
                     </div>
                     <div class="produtoPreco">
-                        <h1>R$ 204,99</h1>
-                        <p>ou 4x de R$ 51,25</p>
+                        <h1 data-translate>R$ 204,99</h1>
+                        <p data-translate>ou 4x de R$ 51,25</p>
                     </div>
                     <div class="btnProduto">
                         <button class="btnProdutoSacola"><img src="../img/SacolaItem.png" alt=""></button>
-                        <button class="btnProdutoComprar">Comprar</button>
+                        <button class="btnProdutoComprar" data-translate>Comprar</button>
                     </div>
                   </div>
                   <div class="produto">
                     <img src="../img/buque orquidea.jpeg" alt="">
                     <div class="tituloProduto">
-                        <h1>Orquídeas Pink</h1>
+                        <h1 data-translate>Orquídeas Pink</h1>
                         <img src="../img/coracao.png" alt="">
                     </div>
                     <div class="produtoPreco">
-                        <h1>R$ 204,99</h1>
-                        <p>ou 4x de R$ 51,25</p>
+                        <h1 data-translate>R$ 204,99</h1>
+                        <p data-translate>ou 4x de R$ 51,25</p>
                     </div>
                     <div class="btnProduto">
                         <button class="btnProdutoSacola"><img src="../img/SacolaItem.png" alt=""></button>
-                        <button class="btnProdutoComprar">Comprar</button>
+                        <button class="btnProdutoComprar" data-translate>Comprar</button>
                     </div>
                   </div>
                   <div class="produto">
                     <img src="../img/buque orquidea.jpeg" alt="">
                     <div class="tituloProduto">
-                        <h1>Orquídeas Pink</h1>
+                        <h1 data-translate>Orquídeas Pink</h1>
                         <img src="../img/coracao.png" alt="">
                     </div>
                     <div class="produtoPreco">
-                        <h1>R$ 204,99</h1>
-                        <p>ou 4x de R$ 51,25</p>
+                        <h1 data-translate>R$ 204,99</h1>
+                        <p data-translate>ou 4x de R$ 51,25</p>
                     </div>
                     <div class="btnProduto">
                         <button class="btnProdutoSacola"><img src="../img/SacolaItem.png" alt=""></button>
-                        <button class="btnProdutoComprar">Comprar</button>
+                        <button class="btnProdutoComprar" data-translate>Comprar</button>
                     </div>
                   </div>
                   <div class="produto">
                     <img src="../img/buque orquidea.jpeg" alt="">
                     <div class="tituloProduto">
-                        <h1>Orquídeas Pink</h1>
+                        <h1 data-translate>Orquídeas Pink</h1>
                         <img src="../img/coracao.png" alt="">
                     </div>
                     <div class="produtoPreco">
-                        <h1>R$ 204,99</h1>
-                        <p>ou 4x de R$ 51,25</p>
+                        <h1 data-translate>R$ 204,99</h1>
+                        <p data-translate>ou 4x de R$ 51,25</p>
                     </div>
                     <div class="btnProduto">
                         <button class="btnProdutoSacola"><img src="../img/SacolaItem.png" alt=""></button>
-                        <button class="btnProdutoComprar">Comprar</button>
+                        <button class="btnProdutoComprar" data-translate>Comprar</button>
                     </div>
                   </div>
                   <div class="produto">
                     <img src="../img/buque orquidea.jpeg" alt="">
                     <div class="tituloProduto">
-                        <h1>Orquídeas Pink</h1>
+                        <h1 data-translate>Orquídeas Pink</h1>
                         <img src="../img/coracao.png" alt="">
                     </div>
                     <div class="produtoPreco">
-                        <h1>R$ 204,99</h1>
-                        <p>ou 4x de R$ 51,25</p>
+                        <h1 data-translate>R$ 204,99</h1>
+                        <p data-translate>ou 4x de R$ 51,25</p>
                     </div>
                     <div class="btnProduto">
                         <button class="btnProdutoSacola"><img src="../img/SacolaItem.png" alt=""></button>
-                        <button class="btnProdutoComprar">Comprar</button>
+                        <button class="btnProdutoComprar" data-translate>Comprar</button>
                     </div>
                   </div>
                   <div class="produto">
                     <img src="../img/buque orquidea.jpeg" alt="">
                     <div class="tituloProduto">
-                        <h1>Orquídeas Pink</h1>
+                        <h1 data-translate>Orquídeas Pink</h1>
                         <img src="../img/coracao.png" alt="">
                     </div>
                     <div class="produtoPreco">
-                        <h1>R$ 204,99</h1>
-                        <p>ou 4x de R$ 51,25</p>
+                        <h1 data-translate>R$ 204,99</h1>
+                        <p data-translate>ou 4x de R$ 51,25</p>
                     </div>
                     <div class="btnProduto">
                         <button class="btnProdutoSacola"><img src="../img/SacolaItem.png" alt=""></button>
-                        <button class="btnProdutoComprar">Comprar</button>
+                        <button class="btnProdutoComprar" data-translate>Comprar</button>
                     </div>
                   </div>
                   <div class="produto">
                     <img src="../img/buque orquidea.jpeg" alt="">
                     <div class="tituloProduto">
-                        <h1>Orquídeas Pink</h1>
+                        <h1 data-translate>Orquídeas Pink</h1>
                         <img src="../img/coracao.png" alt="">
                     </div>
                     <div class="produtoPreco">
-                        <h1>R$ 204,99</h1>
-                        <p>ou 4x de R$ 51,25</p>
+                        <h1 data-translate>R$ 204,99</h1>
+                        <p data-translate>ou 4x de R$ 51,25</p>
                     </div>
                     <div class="btnProduto">
                         <button class="btnProdutoSacola"><img src="../img/SacolaItem.png" alt=""></button>
-                        <button class="btnProdutoComprar">Comprar</button>
+                        <button class="btnProdutoComprar" data-translate>Comprar</button>
                     </div>
                   </div>
                   <div class="produto">
                     <img src="../img/buque orquidea.jpeg" alt="">
                     <div class="tituloProduto">
-                        <h1>Orquídeas Pink</h1>
+                        <h1 data-translate>Orquídeas Pink</h1>
                         <img src="../img/coracao.png" alt="">
                     </div>
                     <div class="produtoPreco">
-                        <h1>R$ 204,99</h1>
-                        <p>ou 4x de R$ 51,25</p>
+                        <h1 data-translate>R$ 204,99</h1>
+                        <p data-translate>ou 4x de R$ 51,25</p>
                     </div>
                     <div class="btnProduto">
                         <button class="btnProdutoSacola"><img src="../img/SacolaItem.png" alt=""></button>
-                        <button class="btnProdutoComprar">Comprar</button>
+                        <button class="btnProdutoComprar" data-translate>Comprar</button>
                     </div>
                   </div>
                   <div class="produto">
                     <img src="../img/buque orquidea.jpeg" alt="">
                     <div class="tituloProduto">
-                        <h1>Orquídeas Pink</h1>
+                        <h1 data-translate>Orquídeas Pink</h1>
                         <img src="../img/coracao.png" alt="">
                     </div>
                     <div class="produtoPreco">
-                        <h1>R$ 204,99</h1>
-                        <p>ou 4x de R$ 51,25</p>
+                        <h1 data-translate>R$ 204,99</h1>
+                        <p data-translate>ou 4x de R$ 51,25</p>
                     </div>
                     <div class="btnProduto">
                         <button class="btnProdutoSacola"><img src="../img/SacolaItem.png" alt=""></button>
-                        <button class="btnProdutoComprar">Comprar</button>
+                        <button class="btnProdutoComprar" data-translate>Comprar</button>
                     </div>
                   </div>
                   <div class="produto">
                     <img src="../img/buque orquidea.jpeg" alt="">
                     <div class="tituloProduto">
-                        <h1>Orquídeas Pink</h1>
+                        <h1 data-translate>Orquídeas Pink</h1>
                         <img src="../img/coracao.png" alt="">
                     </div>
                     <div class="produtoPreco">
-                        <h1>R$ 204,99</h1>
-                        <p>ou 4x de R$ 51,25</p>
+                        <h1 data-translate>R$ 204,99</h1>
+                        <p data-translate>ou 4x de R$ 51,25</p>
                     </div>
                     <div class="btnProduto">
                         <button class="btnProdutoSacola"><img src="../img/SacolaItem.png" alt=""></button>
-                        <button class="btnProdutoComprar">Comprar</button>
+                        <button class="btnProdutoComprar" data-translate>Comprar</button>
                     </div>
                   </div>
                   <div class="produto">
                     <img src="../img/buque orquidea.jpeg" alt="">
                     <div class="tituloProduto">
-                        <h1>Orquídeas Pink</h1>
+                        <h1 data-translate>Orquídeas Pink</h1>
                         <img src="../img/coracao.png" alt="">
                     </div>
                     <div class="produtoPreco">
-                        <h1>R$ 204,99</h1>
-                        <p>ou 4x de R$ 51,25</p>
+                        <h1 data-translate>R$ 204,99</h1>
+                        <p data-translate>ou 4x de R$ 51,25</p>
                     </div>
                     <div class="btnProduto">
                         <button class="btnProdutoSacola"><img src="../img/SacolaItem.png" alt=""></button>
-                        <button class="btnProdutoComprar">Comprar</button>
+                        <button class="btnProdutoComprar" data-translate>Comprar</button>
                     </div>
-                    
                   </div>
                   <div class="produto">
                     <img src="../img/buque orquidea.jpeg" alt="">
                     <div class="tituloProduto">
-                        <h1>Orquídeas Pink</h1>
+                        <h1 data-translate>Orquídeas Pink</h1>
                         <img src="../img/coracao.png" alt="">
                     </div>
                     <div class="produtoPreco">
-                        <h1>R$ 204,99</h1>
-                        <p>ou 4x de R$ 51,25</p>
+                        <h1 data-translate>R$ 204,99</h1>
+                        <p data-translate>ou 4x de R$ 51,25</p>
                     </div>
                     <div class="btnProduto">
                         <button class="btnProdutoSacola"><img src="../img/SacolaItem.png" alt=""></button>
-                        <button class="btnProdutoComprar">Comprar</button>
+                        <button class="btnProdutoComprar" data-translate>Comprar</button>
                     </div>
-                    
                   </div>
           
                   
@@ -371,5 +367,6 @@
     <script src="../js/chatbot.js"></script>
     <script src="../js/darkLigthMode.js"></script>
     <script src="../js/navigation.js"></script>
+    <script src="../js/translate.js"></script>
 </body>
 </html>

@@ -50,6 +50,23 @@ function irParaArranjos()
     window.location.href = "../html/arranjos.html";
   }
 }
+  function irParaCompra(element)
+{
+  element.forEach(element => {
+    element. addEventListener("click", () => {
+    
+      if (document.title == 'FLOWERS') {
+        window.location.href = "html/comprar.html";
+      }
+      else
+      {
+        window.location.href = "../html/comprar.html";
+      }
+    })
+  });
+ 
+}
+
 function navigation(){
 
   buttons[0].addEventListener('click', irParaHome)
@@ -57,3 +74,5 @@ function navigation(){
   buttons[2].addEventListener('click', irParaArranjos)
 }
 navigation();
+irParaCompra(listProdutoSemBtn);
+irParaCompra(btnComprarProduto);

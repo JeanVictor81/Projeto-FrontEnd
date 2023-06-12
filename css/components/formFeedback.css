@@ -8,6 +8,7 @@
         border-radius: 10px;
         margin-bottom:  80px;
         visibility: hidden;
+        color: #003c1f;
         
     }
     form h1
@@ -63,7 +64,7 @@
         width: 90px;
         align-self: end;
         font-family: Helvetica;
-        color:var(--branco);
+        color:#fff;
         font-weight: bold;
         border-radius: 10px;
         font-size: 1rem;
