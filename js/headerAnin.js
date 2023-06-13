@@ -3,6 +3,8 @@ const menuPesquisa = document.querySelector('.menuPesquisa');
 const menuPrincipal = document.querySelector('.menuPrincipal');
 const buttons = menuPrincipal.querySelectorAll('button');
 const header = document.querySelector('header');
+const btnMenuMobile = document.querySelector('.btnMenuMobile')
+let isActive = false;
 
 
 
@@ -63,8 +65,33 @@ const header = document.querySelector('header');
     
   })
   }
+  function chamarMenuMobile(){
+    
+    btnMenuMobile.addEventListener('click',()=>
+    {
+      if (!isActive) {
+        
+        menuPrincipal.style.display = 'flex';
+        isActive = !isActive;
+      }
+      else
+      {
+        menuPrincipal.style.display = 'none';
+        isActive = !isActive;
+      }
+
+
+    })
+
+  }
+
+  if (window.innerWidth >= 1024) {
+    window.addEventListener('scroll', manipularRolagem);
+  }
+  if (window.innerWidth <= 600) {
+    chamarMenuMobile();
+  }
+
 
 
   animarBtnMenu(buttons);
-
-  window.addEventListener('scroll', manipularRolagem)

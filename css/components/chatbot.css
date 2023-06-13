@@ -13,19 +13,6 @@
     
    
 }
-.chatbotLeft
-{
-    position: fixed;
-    bottom:0;
-    left:0;
-    z-index: 100;
-    width: 380px;
-    height:440px;
-    overflow: hidden;
-    visibility: hidden;
-}
-
-
 
 .chat
 {   position: absolute;
@@ -208,4 +195,208 @@
 {
     z-index: 113;
     right: 10px;
+}
+
+@media (max-width:600px)
+{   
+    .chatbot
+    {
+        position: fixed;
+        bottom:0;
+        right:0;
+        z-index: 100;
+        width: 380px;
+        height:440px;
+        overflow: hidden;
+        visibility: hidden;
+        
+        
+        
+       
+    }
+    
+    .chat
+    {   position: absolute;
+        width: 90%;
+        height:80%;
+        border-radius: 10px;
+        bottom: 40px;
+        right: 25px;
+        display: flex;
+        flex-direction: column;
+        z-index: 101;
+    
+    }
+    .chatTitle
+    {
+       display: flex;
+       justify-content: space-between;
+       align-items: start;
+       border-radius: 10px 10px 0 0;
+       overflow: hidden;
+       max-height: 17.5%;
+       background-color:  #003c1f;
+       opacity: 100;
+       
+    }   
+    .chatTitle h1
+    {   
+        margin-left: 50%;
+        margin-top: 10px;
+        font-family: "Helvetica";
+        color: var(--laranja-Fraco)
+        
+    }
+    .chatTitle img
+    {  
+        object-fit: contain;
+        max-width: 70px;
+        
+    }
+    #closeChatMessage
+    {
+        
+        padding: 10px;
+        cursor: pointer;
+        
+    }
+    .mensagens
+    {
+        background-color:#003c1f ;
+        opacity: 0.95;
+        min-height: 70%;
+        display: flex;
+        flex-direction: column;
+    }
+    .mensagemFlora
+    {
+        display: flex;
+        
+    }
+    .mensagemFlora img
+    {
+      object-fit:contain;
+      max-width: 65px; 
+      transform: rotate(11deg);
+      width: 18%; 
+    }
+    .textoMensagemflora
+    {
+        color:  #003c1f;
+        background-color: var(--branco);
+        border-radius: 15px;
+        padding: 5px;
+        font-size:0.8rem;
+        font-family: Helvetica;
+        width: 78%;
+        margin-left: -13px;
+    }
+    .textoMensagemflora p
+    {
+        margin: 0;
+    }
+    .textoMensagemUsuario
+    {
+        border-radius: 15px;
+        padding: 5px;
+        font-size:0.8rem;
+        font-family: Helvetica;
+        width: 70%;
+        color:  #003c1f; 
+        background-color:var(--branco);
+        opacity: 1;
+        margin-top: 5px;
+        margin-right: 3px;
+    
+    }
+    .textoMensagemUsuario p
+    {
+        margin: 0;
+        text-align: right;
+    }
+    .mensagemUsuario
+    {
+        display: flex;
+        justify-content: flex-end;
+        width: 100%;
+    }
+    
+    
+    .chatBtn img
+    {   
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        object-fit: contain;
+        cursor: pointer;
+        
+        
+    }
+    #chatBtnImgFlora
+    {
+       bottom: -16px;
+       right: -12px;
+       max-width: 85px;
+    }
+    #chatClickFloraBaloon
+    {
+        max-width: 70px;
+    }
+    .inputChatbotContainer
+    {
+        height: 10%;
+        background-color: #003c1f;
+        margin-top:1px;
+        display: flex;
+        border-radius: 0 0 10px 10px;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    .inputChatbotContainer img
+    {
+        cursor: pointer;
+    }
+    #chatInput
+    {
+        background-color: inherit;
+        height: 70%;
+        width: 70%;
+        font-size: 1rem;
+        border:none;
+        color: var(--branco);
+        border-radius: 0 0 10px 10px;
+        font-family: Helvetica;
+       
+    }
+    #chatInput:focus
+    {
+        outline: none;
+    }
+    
+    .chatbotBtn
+    {   
+        
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        visibility: visible;
+        width: 20%;
+    }
+    
+    
+    .chatbotBtn img
+    {   position:absolute;
+        cursor: pointer;
+        object-fit: contain;
+        width: 80px;
+        bottom: 0;
+        right: 10px;
+    }
+    #flora
+    {
+        z-index: 113;
+        right: 10;
+        bottom: 0;
+    }
+    
 }

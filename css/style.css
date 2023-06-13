@@ -15,23 +15,7 @@
         
      }
 
-     @media (max-width:600px) {
-        
-        .container
-        {
-            display: flex;
-            flex-direction: column; 
-            justify-content: center; 
-            align-items: center; 
-            min-height: 100vh; 
-            max-width: 600px; 
-            margin: 0 auto; 
-            padding: 0 20px; 
-            color: var(--verde-escuro);
-            
-        }
 
-     }
 
     .container h2
     {   margin-left:0;
@@ -139,13 +123,7 @@
         padding-left: 17%;
     }
 
-    .produtos
-    {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 2vw;
-    }
+    
 
    
 
@@ -176,6 +154,7 @@
         border-radius: 15px;
         border: none;
         font-weight:bold;
+        grid-column: 2;
         
         background-color:  #003c1f ;
    }
@@ -381,7 +360,11 @@
         height:10vh;
         margin-bottom: 0;
     }
-    
+    .porqueComprarTexto
+    {
+        max-height: 300px;
+        overflow: auto;
+    }
 
     .porqueComprar
     {   
@@ -397,6 +380,7 @@
         font-family: 'Inter-regular';
         font-size: 3rem;
         font-weight: lighter;
+        margin: 0;
     }
     .porqueComprar img
     {
@@ -404,6 +388,7 @@
         height:100%;
         max-width: 637px;
         max-height: 374px;
+        overflow: auto;
         
     }
     .porqueComprar p {
@@ -424,7 +409,195 @@
         overflow: auto;
         
     }
+    #btnPqConprar
+    {
+        grid-column: 1;
+    }
+    @media (max-width:600px) {
+        
+        .container
+        {
+            display: flex;
+            flex-direction: column; 
+            justify-content: center; 
+            align-items: center; 
+            min-height: 100vh; 
+            max-width: 600px; 
+            margin: 0 auto; 
+            padding: 0 20px; 
+            color: var(--verde-escuro);
+            
+        }
 
-  
+        .container h2
+        {   margin-left:0;
+            margin-bottom: 5%;
+            margin-top: 3%;
+            font-family: 'inter-Regular';
+            align-self: flex-start;
+            font-weight: bold;
+            font-size: 1.5rem;
+        }
+        .tipos
+        {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            width: 100%;
+            max-width: 600px;
+            height: 10vh;
+            padding: 1%;
+        }
+        .tipos img
+        {
+            object-fit: contain;
+            width: 50px;
 
+        }
+        .tipos h3
+        {
+            text-align: center;
+            margin: 0;
+            font-family: 'Antonio-regular';
+            font-weight: lighter;
+            font-size: 1rem;
+        }
+    
+        #aveDoParaiso img
+        {
+            display: none;
+        }
+        #aveDoParaiso h3
+        {
+            display: none;
+        }
+        .carrossel
+        {  
+           margin-top: 17vh;
+           width: 100%;
+           overflow: hidden;
+           display: flex;
+           direction: column;
+           align-items: center;
+           justify-content: center;
+           
+        
+        }
+        .imagensCarrossel img
+        {
+           width: 100%;
+           height: 200px;
+           object-fit: cover;
+           border-radius: 2px;
+        }
+
+        .porqueComprarTexto
+        {
+            max-height: 300px;
+            overflow: auto;
+        }
+    
+        .porqueComprar
+        {   
+            margin-top: 130px;
+            display: grid;
+            grid-template-columns: 50% 50%;
+            gap: 1%;
+            
+            
+        }
+        .porqueComprar h1
+        {
+            font-family: 'Inter-regular';
+            font-size: 1.5rem;
+            font-weight: lighter;
+            margin: 0;
+        }
+        .porqueComprar img
+        {
+            width:100%;
+            height:100%;
+            max-width: 637px;
+            max-height: 374px;
+            overflow: auto;
+            
+        }
+        .porqueComprar p {
+    
+            font-size:1rem;
+            font-family: 'Inter-regular';
+            
+        }
+        .porqueComprar button
+        {
+            max-width: 200px;
+            left: 0;
+            position: relative;
+            
+        }
+        .textoComentario
+        {
+            overflow: auto;
+            
+        }
+        #btnPqConprar
+        {
+            grid-column: 1;
+        }
+        .btnContainer
+        {
+             
+             height: 50px;
+             width: 120px;
+             color: var(--branco);
+             font-size:1rem;
+             font-family: "Inter-regular";
+             border-radius: 15px;
+             border: none;
+             font-weight:bold;
+             grid-column: 2;
+             
+             background-color:  #003c1f ;
+        }
+        .btnContainer:hover
+        {
+         cursor: pointer;
+         background-color:var(--amarelo);
+        }
+        .opnioesFlowers
+        {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+            gap: 10px;
+    
+        } 
+        
+        .comentario
+        {
+            background-color: #003c1f;
+            color: var(--branco);
+            font-family: 'Inter-regular';
+            width: 80vw;
+            max-width: 337px;
+            max-height: 200px;
+            display: flex;
+            flex-direction: column;
+            padding: 2%;
+            gap: 5px;
+        }
+        .comentario div
+        {
+            height: 33%;
+            
+        }
+        .comentario p
+        {
+            margin: 0;
+            font-size: 90%;
+        }
+
+     }
    

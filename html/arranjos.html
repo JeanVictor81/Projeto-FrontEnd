@@ -28,12 +28,13 @@
             </div>
             
             <div class="loginSacola">
-            <img src="../img/Perfil Verde.png" alt="">
+                <a href="./login.html"><img src="../img/Perfil Verde.png" alt=""></a>
                   <div class="entrarCasatrar">
                 <p data-translate><a href="../html/Login.html" data-translate><b>Entre</b></a> ou <a href="../html/cadastro.html" data-translate><b>Cadastre-se</b></a>
                     para ver seus pedidos.<p> 
             </div>
-            <img src="../img/Sacola Verde.png" alt="">
+            <a href="./sacola.html"><img src="../img/Sacola Verde.png" alt=""></a>
+            <img src="../img/3traços.png" class="btnMenuMobile" alt="">
             </div>
           
                 
@@ -42,7 +43,7 @@
             <div class="menuBotoes">
                 <button class="botoesMenu" >home</button>
                 <button class="botoesMenu" data-translate> mais procuradas</button>
-                <button class="botoesMenuAtual" data-translate> arranjos</button>
+                <button class="botoesMenuAtual"  data-translate> arranjos</button>
                 <button class="botoesMenu" data-translate>sobre   nos</button>
             </div>
             <div class="menuConfig">
@@ -52,9 +53,6 @@
             </div>
            
 
-
-        </nav>
-    </header>
 
         </nav>
     </header>
@@ -136,7 +134,11 @@
         </div>
     </aside>
     <section  class="arranjosContainer">
+        <span class="tituloFiltro">
             <h1 data-translate class="arranjosTitle">Arranjos</h1>
+            <img src="../img/filtro.png" class="mobileFilter" onclick="chamarfiltros(sidebarMobileAr)" alt="">
+        </span>
+            
             <div class="gridProdutos">
                 <div class="produto">
                     <img src="../img/buque orquidea.jpeg" alt="">
@@ -371,5 +373,6 @@
     <script src="../js/darkLigthMode.js"></script>
     <script src="../js/navigation.js"></script>
     <script src="../js/translate.js"></script>
+    <script src="../js/sidebar.js"></script>
 </body>
 </html>
