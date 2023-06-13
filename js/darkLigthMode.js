@@ -27,11 +27,15 @@ function mudarTema()
             if (document.title == 'FLOWERS')
             {
               
-              darklight.setAttribute("src",'img/lua.png')  
+              darklight.setAttribute("src",'img/lua.png')
+              btnMenuMobile.setAttribute("src",'img/3traçosBranco.png') 
+              btnFiltro.setAttribute("src",'img/filtroBranco.png') 
             }
             else
             {   
-                darklight.setAttribute("src",'../img/lua.png') 
+                darklight.setAttribute("src",'../img/lua.png')
+                btnMenuMobile.setAttribute("src",'../img/3traçosBranco.png')  
+                btnFiltro.setAttribute("src",'../img/filtroBranco.png') 
             }
             
             localStorage.setItem('tema', 'dark')
@@ -49,11 +53,15 @@ function mudarTema()
             if (document.title == 'FLOWERS')
             {
                
-              darklight.setAttribute("src",'img/sol.png')  
+              darklight.setAttribute("src",'img/sol.png')
+              btnMenuMobile.setAttribute("src",'img/3traços.png')  
+              btnFiltro.setAttribute("src",'img/filtro.png')  
             }
             else
             {    
                 darklight.setAttribute("src",'../img/sol.png') 
+                btnMenuMobile.setAttribute("src",'../img/3traços.png') 
+                btnFiltro.setAttribute("src",'../img/filtro.png')  
             }
             
         }

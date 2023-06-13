@@ -224,3 +224,200 @@ header
     background-color:var(--laranja-Forte);
     color: var(--branco);
 }
+.btnMenuMobile
+{
+    display: none;
+}
+
+@media (max-width: 600px)
+{   
+    header
+    {
+       
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 15vh;
+        z-index: 1000;
+    
+    }
+
+
+    .navCTA{
+        background-color: var(--laranja-Forte);
+        height: 5vh;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    .navCTA h3
+    
+    {
+        color: var(--branco);
+        font-family: 'Inter-regular';
+        font-weight: lighter;
+        font-size: 0.6rem;
+    }
+    
+
+
+    .entrarCasatrar
+    
+    {
+        font-size: 1rem;
+        font-family: "Inter-regular";
+        color: var(--verde-escuro);
+        width: 47.5%;
+        display: none;
+    }
+
+    .loginSacola
+    {
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    gap: 5px;
+    margin-right: 25px
+    }
+    .loginSacola img
+    {
+        object-fit: contain;
+        width:20px
+    }
+
+    .logo img{
+        width: 100%;
+        height: 100%;
+        max-width:65px;
+        position: inherit;
+        object-fit: contain;
+    
+    }
+
+   .buscar
+  {
+    width: 50%;
+    display:flex;
+    align-items: center;
+    justify-content:center;
+    
+  }
+   .buscar input
+  {
+    width: 65%;
+    height: 3vh;
+    font-family: 'Inter-regular';
+    border: none;
+    background-color: var(--cor-fundo);
+    font-size: 0.8rem;
+    color: var(--verde-escuro);
+
+  }
+  .buscar img
+    {
+        display: none;
+    }
+    .btnMenuMobile
+    {
+        object-fit: contain;
+        display: inherit;
+
+        
+    }
+    .menuPesquisa
+    {   
+    position: fixed;
+    background-color: var(--branco);
+    width: 100%;
+    height: 10vh;
+    left: 0;
+    top: 5vh;
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items: center;
+    padding: 0.5%;
+    gap: 5%;
+    }
+    .menuPesquisaDark
+    {   
+        background-color: var(--darkColor1);
+
+    }
+    .menuPrincipal
+    {
+      position: absolute;
+      display: none;
+      flex-direction:column;
+      top: 15.6vh;
+      right: 0;
+      height: 85vh;
+      width: 40vw;
+    }
+    
+    .menuBotoes
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100%;
+        color: inherit;
+        gap: 10px;
+        width:90%;
+        
+    }
+    .botoesMenu
+    {
+        border: none;
+        font-size: 1.2rem;
+        font-family: 'Antonio-regular';
+        color: inherit;
+        background-color:inherit;
+    }
+    
+    .botoesMenu:hover
+    {
+        background-color:var(--laranja-Fraco);
+        transition: 0.3s;
+        cursor: pointer;
+    }
+    
+    .botoesMenuAtual
+    {
+    
+        border: none;
+        font-size: 1.2rem;
+        font-family: 'Antonio-regular';
+        color: inherit;
+        background-color: var(--amarelo)
+    
+    }
+    .botoesMenuAtual:hover
+    {
+        background-color:var(--laranja-Fraco);
+        transition: 0.3s;
+        cursor: pointer;
+    }
+    .menuConfig
+    {   
+        align-self: flex-end;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+    .menuConfig img
+    {   
+        cursor: pointer;
+    }
+ 
+    
+
+
+}
