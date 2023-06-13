@@ -1,5 +1,7 @@
 footer
 {   
+    
+    position: relative;
     bottom: 0;
     left: 0;
     background-color: var(--laranja-fosco);
@@ -9,6 +11,7 @@ footer
     font-family: 'Inter-regular';
     z-index: 1000;
     width: 100vw;
+    margin-top: 2%;
 }
 
 .footerContainer
@@ -55,4 +58,82 @@ footer h1
 {
     font-family: 'Antonio-regular';
     color: var(--branco);
+}
+
+@media (max-width:600px)
+{
+
+    footer
+    {   
+    
+    position: relative;
+    bottom: 0;
+    left: 0;
+    background-color: var(--laranja-fosco);
+    height: 50vh;
+    margin:0;
+    padding:1%;
+    font-family: 'Inter-regular';
+    z-index: 1000;
+    width: 100vw;
+    margin-top: 2%;
+}
+
+
+.footerContainer
+{
+    display:flex;
+    flex-direction: row;
+    width: 100%;
+    
+    align-items: center;
+    justify-content:center;
+    gap: 2vw;
+}
+
+footer ul
+{
+    list-style-type: none;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+    font-size: 0.8rem;
+}
+footer a
+{
+   margin: 0;
+   padding: 0;
+   text-decoration: none;
+   
+}
+footer a:hover
+{
+    text-decoration: underline;
+    cursor: pointer;
+}
+footer h3
+{
+    font-family: 'Inter-regular';
+    color: var(--branco);
+    font-size: 0.8rem;
+    font-weight:bold;
+    margin-left: 0;
+}
+
+footer h1
+{
+    font-family: 'Antonio-regular';
+    color: var(--branco);
+    font-size: 1rem;
+}
+
+
+footer img 
+{
+ object-fit: contain;
+ max-width: 100px;
+}
+
+
 }

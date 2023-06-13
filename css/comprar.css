@@ -45,18 +45,6 @@
     background-color: var(--laranja-Fraco);
 }
 
-.breadcrumbs{
-    margin-top:7%;
-    margin-left: 2rem;
-    font-family:'Inter-regular';
-    color: var(--cor-fundo);
-    display: flex;
-    flex-direction:row;
-    justify-content: start;
-    align-items: center;
-   
-}
-
 a
 {
     text-decoration: none;
@@ -73,6 +61,7 @@ a
 }
 .compraContainer{
     
+    margin-top: 30vh;
     width: 100%;
     height: 100%;
     max-width:1239px;

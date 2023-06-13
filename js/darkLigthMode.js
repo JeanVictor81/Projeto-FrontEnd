@@ -2,6 +2,7 @@ const darklight = document.getElementById('darkLigthMode');
 const rootStyles = getComputedStyle(document.documentElement);
 const corRoot = rootStyles.getPropertyValue('--verde-escuro');
 const body = document.body;
+
 let temaSalvo = localStorage.getItem('tema');
 
 window.onload = function () 

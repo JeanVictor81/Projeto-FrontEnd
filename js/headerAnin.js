@@ -24,7 +24,7 @@ const header = document.querySelector('header');
     
     menuCTA.style.display = 'flex';
     menuPesquisa.style.top = '5vh';
-    header.style.height = '30vh';
+    header.style.height = '26vh';
     menuPrincipal.classList.remove('menuPrincipalPag') 
    
   

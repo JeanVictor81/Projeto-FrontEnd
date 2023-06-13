@@ -47,7 +47,25 @@ function definirProfutosSemBTN() {
     });
   });
 }
+function irParaCompra(element)
+{
+  element.forEach(element => {
+    element. addEventListener("click", () => {
+    
+      if (document.title == 'FLOWERS') {
+        window.location.href = "html/comprar.html";
+      }
+      else
+      {
+        window.location.href = "../html/comprar.html";
+      }
+    })
+  });
+ 
+}
 
 definirProfutosSemBTN()
 adcionarSacola()
 animarProduto();
+irParaCompra(listProdutoSemBtn);
+irParaCompra(btnComprarProduto);

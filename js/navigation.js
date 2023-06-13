@@ -50,21 +50,15 @@ function irParaArranjos()
     window.location.href = "../html/arranjos.html";
   }
 }
-  function irParaCompra(element)
+function irParaSobrenos()
 {
-  element.forEach(element => {
-    element. addEventListener("click", () => {
-    
-      if (document.title == 'FLOWERS') {
-        window.location.href = "html/comprar.html";
-      }
-      else
-      {
-        window.location.href = "../html/comprar.html";
-      }
-    })
-  });
- 
+  if (document.title == 'FLOWERS') {
+    window.location.href = "html/sobrenos.html";
+  }
+  else
+  {
+    window.location.href = "../html/sobrenos.html";
+  }
 }
 
 function navigation(){
@@ -72,7 +66,7 @@ function navigation(){
   buttons[0].addEventListener('click', irParaHome)
   buttons[1].addEventListener('click', irParaMaisProcuradas)
   buttons[2].addEventListener('click', irParaArranjos)
+  buttons[3].addEventListener('click', irParaSobrenos)
 }
 navigation();
-irParaCompra(listProdutoSemBtn);
-irParaCompra(btnComprarProduto);
+

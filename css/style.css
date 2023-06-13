@@ -15,6 +15,24 @@
         
      }
 
+     @media (max-width:600px) {
+        
+        .container
+        {
+            display: flex;
+            flex-direction: column; 
+            justify-content: center; 
+            align-items: center; 
+            min-height: 100vh; 
+            max-width: 600px; 
+            margin: 0 auto; 
+            padding: 0 20px; 
+            color: var(--verde-escuro);
+            
+        }
+
+     }
+
     .container h2
     {   margin-left:0;
         margin-bottom: 5%;
@@ -151,7 +169,7 @@
    {
         max-height: 50px;
         height: 6vh;
-        width: 100%;
+        width: 200px;
         color: var(--branco);
         font-size:1.2rem;
         font-family: "Inter-regular";
@@ -197,6 +215,7 @@
    .vantagensTexto h1
    {
     font-weight: lighter;
+    font-size: 1rem;
    }
    .vantagensTexto img {
         color: var(--verde-escuro);
@@ -208,6 +227,7 @@
    {
     font-weight: lighter;
     font-family: "Inter-Regular";
+    font-size: 1rem;
     color: var(--branco);
    }
 
