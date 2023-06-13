@@ -1,0 +1,63 @@
+.maisProcuradasSideBar
+{
+    font-family: Helvetica;
+    position: absolute;
+    left: 5vw;
+    top: 25vh;
+    width: 25%;
+    color: var(--verde-escuro);
+    
+} 
+.maisProcuradasSideBar img
+{
+    object-fit: contain;
+    max-width:100%
+}
+
+.arranjosSideBar
+{
+    font-family: Helvetica;
+    position: absolute;
+    right:0;
+    top: 30vh;
+    width: 25%;
+    color: var(--verde-escuro);
+}
+.arranjosSideBar img
+{
+    object-fit: contain;
+    max-width:100%
+}
+aside input
+{
+    border: none;
+    
+}
+
+.pesquisarCorLabel
+{
+    background-color:var(--branco);
+    height:20px;
+    padding: 2px;
+    margin-top: 10px;
+    
+    
+}
+
+.pesquisarCorLabel img
+{
+    object-fit: contain; 
+    width: 15px; 
+    opacity: 0.5;
+    height: 15px;
+   
+}
+#pesquisarCor
+{
+    height: 20px;
+    margin-left: -5px;
+}
+#pesquisarCor:focus
+{
+    border: none;
+}

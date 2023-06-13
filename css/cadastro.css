@@ -1,11 +1,4 @@
-:root
-{   --cor-fundo:#B0AFAF;
-    --laranja-Forte:#FC4A1A;
-    --branco:#ffff;
-    --laranja-Fraco:#f4781f;
-    --amarelo:#F7B733;
-    --azul-verde:#4ABDAC;
-}
+
 @font-face {
     src: url(../fontes/Antonio-VariableFont_wght.ttf);
     font-family: 'Antonio-Regular';    

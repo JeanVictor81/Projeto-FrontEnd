@@ -1,90 +1,64 @@
-const controls = document.querySelectorAll(".control");
-let currentItem = 0;
-const items = document.querySelectorAll(".item");
-const maxItems = items.length;
 
-controls.forEach((control) => {
-  control.addEventListener("click", (e) => {
-    isLeft = e.target.classList.contains("arrow-left");
+document.addEventListener('DOMContentLoaded', function() {
 
-    if (isLeft) {
-      currentItem -= 1;
-    } else {
-      currentItem += 1;
-    }
-
-    if (currentItem >= maxItems) {
-      currentItem = 0;
-    }
-
-    if (currentItem < 0) {
-      currentItem = maxItems - 1;
-    }
-
-    items.forEach((item) => item.classList.remove("current-item"));
-
-    items[currentItem].scrollIntoView({
-      behavior: "smooth",
-      inline: "center"
-    });
-
-    items[currentItem].classList.add("current-item");
-  });
-});
+  const imgCarrossel = document.querySelector('.imagensCarrossel');
+  const btnCarrossel = document.querySelectorAll('.carrosselCheckBox input');
+  const btnCarrosselLabel = document.querySelectorAll('.manual-btn');
+  const formulario = document.querySelector('.container form');
+  const btnNovoFeedback = document.getElementById('btnNovoFeedback');
+  const btnFecharFormulario = document.getElementById('closeForm');
   
-function irParaHome() {
-  if(document.title == 'FLOWERS')
-  {
-    window.location.href = "index.html";
-  }
-  else
-  {
-    window.location.href = "../index.html"
-  }
-  
-}
+  let buttonIndex = 0;
+  let buttonLastIndex = 0;
+ 
+  function navegarCarrossel() {
+    btnCarrossel.forEach((buttonCarrossel, index) => {
+        buttonCarrossel.addEventListener('click',() => {
+          buttonIndex = index;
+          imgCarrossel.style.transform = `translateX(${-100 * index}%)`;
+          btnCarrosselLabel[buttonLastIndex].style.backgroundColor = 'transparent';
+          btnCarrosselLabel[buttonIndex].style.backgroundColor = '#fff'
+          buttonLastIndex = buttonIndex;
+        })
+    })
+    setInterval(() => {
+      
+      if (buttonIndex == btnCarrossel.length) {
+        buttonIndex = 0;  
+      }
+      btnCarrosselLabel[buttonLastIndex].style.backgroundColor = 'transparent';
+      btnCarrosselLabel[buttonIndex].style.backgroundColor = '#fff'
+      imgCarrossel.style.transform = `translateX(${-100 * buttonIndex}%)`;
+      buttonLastIndex = buttonIndex;
+      buttonIndex++;
+      
+    }, 3000);
 
-function irParaLogin() {
-    if (document.title == 'FLOWERS') {
-      window.location.href = "html/Login.html";
-    }
-    else
-    {
-      window.location.href = "../html/Login.html"
-    }
+  
     
-}
-
-function irParaCadastro() 
-{
-  if (document.title == 'FLOWERS') {
-    window.location.href = "html/cadastro.html";
   }
-  else
-  {
-    window.location.href = "../html/cadastro.html";
+
+  function manipularFormulario() {
+    
+    btnNovoFeedback.addEventListener('click',() =>
+    {
+      formulario.style.visibility = 'visible';
+
+    })
+    btnFecharFormulario.addEventListener('click',() =>
+    {
+      formulario.style.visibility = 'hidden';
+
+    })
   }
   
-}
-
-const listBunttons = document.querySelectorAll(".prodSugerido");
-listBunttons.forEach((element)=> {
-      element.addEventListener("mouseover",()=>{
-        
-        element.childNodes[9].style.display = "flex";
-        element.childNodes[9].classList.add("active");
+  manipularFormulario();
+  navegarCarrossel();
   
-      })
-      element.addEventListener("mouseout",()=>{
-        
-       
-          element.childNodes[9].classList.remove("active");
-       
-          
-      })
-})
-const buttonsList = document.querySelectorAll(".btnSugeridos");
-buttonsList.forEach(element => {
-      element.setAttribute("data-btnTrasition","btnBonito");
+
+
+
 });
+
+
 

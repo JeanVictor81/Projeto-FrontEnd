@@ -1,0 +1,71 @@
+    form
+    {   
+        background-color: var(--branco);
+        width: 80%;
+        padding: 10px;
+        font-family: Helvetica;
+        font-weight: lighter;
+        border-radius: 10px;
+        margin-bottom:  80px;
+        visibility: hidden;
+        color: #003c1f;
+        
+    }
+    form h1
+    {
+        font-weight: normal;
+    }
+    .formHeader
+    {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    #closeForm
+    {
+        margin-top: -60px;
+        margin-right: 8px;
+        cursor: pointer;
+    }
+    #textoFeedbackInput
+    {   
+    
+        background-color: var(--amarelo);
+        font-size: 1rem;
+        font-family:Helvetica;
+        border-radius: 10px;
+        margin-left: 6px;
+        width: 80%;
+        margin-left: 6%;
+        resize: none;
+    }
+    .indentificacaoUsuario
+    {
+        margin-top:20px;
+    
+    }
+    .indentificacaoUsuario input
+    {
+        border: none;
+        background-color: var(--cor-fundo);
+        height: 35px;
+        width: 250px;
+    }
+    .salvarDadosFeedback
+    {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .sendFeedbackButton
+    {
+        background-color:#003c1f;;
+        border: none;
+        height: 30px;
+        width: 90px;
+        align-self: end;
+        font-family: Helvetica;
+        color:#fff;
+        font-weight: bold;
+        border-radius: 10px;
+        font-size: 1rem;
+    }

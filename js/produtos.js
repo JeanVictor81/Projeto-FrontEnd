@@ -1,7 +1,71 @@
-const itensAmostra = document.querySelectorAll('prodSugerido');
-const butoesItens = itensAmostra.querySelectorAll('btnSugeridos');
+const productsButtonsList = document.querySelectorAll(".btnProduto");
+const listProdutcs = document.querySelectorAll(".produto");
+const btnComprarProduto = document.querySelectorAll(".btnProdutoComprar");
+const btnSacolaProduto = document.querySelectorAll(".btnProdutoSacola");
+const listProdutoSemBtn = [];
 
-itensAmostra.addEventListener('mouseover', function(){
+function animarProduto() {
+  listProdutcs.forEach((element) => {
+    element.addEventListener("mouseover",()=>{
+  
+      element.childNodes[7].style.display = 'flex';
+      element.childNodes[7].classList.add("active");
+    })
+    element.addEventListener("mouseout",()=>{
+          
+         
+      element.childNodes[7].classList.remove("active");
+   
+      
+    })
+  })
+  
+  productsButtonsList.forEach(element => {
+        element.setAttribute("data-btnTrasition","btnBonito");
+  });
+  
+}
+function adcionarSacola(){
 
-  itensAmostra.style.backgroundColor = 'blue';
-})
+  btnSacolaProduto.forEach(element => {
+    element.addEventListener('click', () => {
+      
+      alert('item Adcionado sacola');
+
+
+
+    })
+  })
+  
+}
+function definirProfutosSemBTN() {
+  
+  listProdutcs.forEach(function(produto) {
+    const filhos = produto.querySelectorAll(":not(:nth-last-child(-n+2))");
+    filhos.forEach(function(filho) {
+      listProdutoSemBtn.push(filho);
+    });
+  });
+}
+function irParaCompra(element)
+{
+  element.forEach(element => {
+    element. addEventListener("click", () => {
+    
+      if (document.title == 'FLOWERS') {
+        window.location.href = "html/comprar.html";
+      }
+      else
+      {
+        window.location.href = "../html/comprar.html";
+      }
+    })
+  });
+ 
+}
+
+definirProfutosSemBTN()
+adcionarSacola()
+animarProduto();
+irParaCompra(listProdutoSemBtn);
+irParaCompra(btnComprarProduto);

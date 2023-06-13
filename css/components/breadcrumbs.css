@@ -1,0 +1,29 @@
+.breadcrumbs
+{
+    position:absolute;
+    top: 26.1vh;
+    left: 2.5vw;
+    display: inline;
+    color: #B0AFAF;
+    font-family: Helvetica;
+    
+
+}
+.breadcrumbs a 
+{
+    
+    text-decoration: none;
+    
+}
+.breadcrumbs :hover 
+{
+    cursor: pointer;
+    text-decoration: underline;
+    
+}
+.breadcrumbs a:last-Child
+{
+    color: var(--verde-escuro);
+    font-weight: bold;
+}
+

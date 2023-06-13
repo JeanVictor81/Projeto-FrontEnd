@@ -1,11 +1,4 @@
-:root
-{   --cor-fundo:#B0AFAF;
-    --laranja-Forte:#FC4A1A;
-    --branco:#ffff;
-    --laranja-Fraco:#f4781f;
-    --amarelo:#F7B733;
-    --azul-verde:#4ABDAC;
-}
+
 @font-face {
     src: url(../fontes/Antonio-VariableFont_wght.ttf);
     font-family: 'Antonio-Regular';    
@@ -24,18 +17,6 @@
 
 @media only screen and (min-width: 1025px) {
    
-        .pagCompraContainer
-    {   
-    display: flex;
-    flex-direction: column; 
-    justify-content: center; 
-    align-items: center; 
-    min-height: 100vh; 
-    max-width: 1920px; 
-    margin: 0 auto; 
-    padding: 0 20px; 
-
-    }
 
     .btnCabecalhoComprar {
     
@@ -64,18 +45,6 @@
     background-color: var(--laranja-Fraco);
 }
 
-.breadcrumbs{
-    margin-top:7%;
-    margin-left: 2rem;
-    font-family:'Inter-regular';
-    color: var(--cor-fundo);
-    display: flex;
-    flex-direction:row;
-    justify-content: start;
-    align-items: center;
-   
-}
-
 a
 {
     text-decoration: none;
@@ -92,6 +61,7 @@ a
 }
 .compraContainer{
     
+    margin-top: 30vh;
     width: 100%;
     height: 100%;
     max-width:1239px;
@@ -103,6 +73,7 @@ a
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
+    color: #003c1f;
  
 
 }
@@ -246,6 +217,40 @@ a
       font-family: 'Inter-Regular';
     
 }
+.menuComentariosDescricao
+{
+    width: 100%;
+    background-color: var(--laranja-Forte);
+    margin-top: 10px ;
+    height: 30px;
+
+}
+.menuComentariosDescricao button
+{
+    height: 30px;
+    border:none;
+    font-size: 1rem;
+    font-family: Helvetica;
+    color: var(--branco);  
+    font-weight: bold; 
+    margin-left: 10px;
+}
+
+.comentarios
+{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    color: #003c1f;
+}
+.comentarios h2
+{
+    font-size: 1.5rem;
+    margin:5px;
+    
+}
 .agendar
 {
     margin-left: 7%;
@@ -260,24 +265,27 @@ a
     max-height: 20px;
     margin-right: 5px;
 }
-
-.descricaoContainer
+.menuComentariosDescricao
 {
-    width: 100%;
-    height: 100%;
-    max-width:1239px;
-    max-height:120px;
-    background-color:var(--branco);
-    position: relative;
-    margin-top:5.5%; 
-    left: 50%;
-    transform: translate(-50%, -50%);
+    padding-left:50px;
 }
-.descricaoContainer p
+
+.descricao
 {
-   font-family: 'Inter-regular';
-   font-size: 35;
-   padding: 20px;
+margin-top:30px;
+width: 100%;
+height: 100%;
+max-width:1239px;
+max-height:120px;
+background-color:var(--branco);
+color: #003c1f;
+
+}
+.descricao p
+{
+font-family:'Inter-regular';
+font-size: 1rem;
+padding: 20px;
 }
 
 .opiniaoTitulo
@@ -351,7 +359,7 @@ a
 {
     width: 60%;
     margin-top: -1%;
-    border-color: #f4781f;
+    border-color: var(--laranja-Fraco);
 }
 .opiniaoDetalhada p
 {
@@ -411,613 +419,13 @@ a
 
 .sugeridos
 {   
-    font-family: 'Inter-regular';
-    max-width: 1200;
-    max-height: 800;
-    display: grid;
-    grid-template-columns:250px 250px 250px 250px;
-    grid-template-rows: 380px 380px;
-    gap: 3%;
-    margin-right: 5%;
-   
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-bottom: 80px;
+    margin-left:35px
 
 }
-
-.tituloSug{
-    width: 100%;
-    text-align:center;
-    padding: 5%;
-}
-
-.tituloSug h1
-{   
-    font-family: 'Inter-Regular';
-    text-decoration: underline;
-    font-size: 170%;
-}
-.prodSugerido{
-   
-   width: 100%;
-   height: 100%;
-   max-width: 250px;
-   max-height: 380px;
-   background-color: #fff;
-   border-radius: 3px;
-
-}
-.prodSugerido:hover
-{
-    cursor: pointer;
-}
-.prodSugerido img
-{
-    
-    max-width: 250px;
-    max-height: 210px;
-    padding: 8%;
-}
-.prodSugerido h4
-{
-    font-size:125%;
-    font-family: 'Antonio-Regular';
-    margin-left: 5%;
-    margin-bottom:0; 
-    margin-top: 0;   
-}
-
-.prodSugerido .desconto
-{
-    font-size:80%;
-    font-family: 'Antonio-Regular';
-    text-align: end;
-    margin-right: 10%;
-    margin-top: 0;
-}
-.prodSugerido .preco 
-{
-
-    font-family: 'Antonio-Regular';
-    justify-content: end;
-    margin-top: -11%;
-    margin-right: 3%;
-    
-    
-}
-.prodSugerido .preco h1
-{
-    font-size:120%;
-    justify-self: end;
-}
-.prodSugerido .preco h3
-{
-    font-size:80%;
-    
-}
-
-.iconeCoracaoItem 
-{
-    max-width: 20px;
-    max-height: 20px;
-   
-    
-}
-
-.iconeCoracaoItem img
-{
-    max-width: 20px;
-    max-height: 20px;
-    cursor: pointer;
-    margin: 0;
-   
-    
-}
-.space {
-    flex-grow: 1;
-    flex-shrink: 1;
-    width: 0;
-  }
-.btnSugeridos
-{
-    display: none;
-    opacity: 0;
-    flex-direction: row;
-    justify-content:center;
-    align-items: center;
-}
-.btnSugeridos button
-{
-    width:100%;
-    height:100%;
-    min-height: 40px;
-    max-width:106px;
-    max-height:40px;
-    border: none;
-    font-size:100%;
-    font-family:'Antonio-Regular';
-    border-radius: 2px;
-    color: #fff;
-    
-
-}
-.btnSugeridos button:hover
-{
-    cursor: pointer;
-    background-color: var(--amarelo);
-
-}
-.btnSugeridosCompra
-{
-    background-color:var(--azul-verde);
-}
-.btnSugeridosSacola
-{
-    background-color: var(--laranja-Fraco);
-}
-.btnSugeridos img
-{    
-    width:100%;
-    height:100%;
-    max-width:21px;
-    max-height:24px;
-
-}
-
-[data-btnTrasition = "btnBonito"]
-{
-    opacity: 0;
-}
-[data-btnTrasition = "btnBonito"].active
-{
-    opacity: 1;
-    animation: btnAnin;
-    animation-duration: 0.3s;
-}
-@keyframes btnAnin
-{
-    0%
-    {
-        opacity: 0;
-        transform: translateY(-10px);
-    }
-    100%
-    {
-        opacity: 1;
-        transform: translateY(0px);
-    } 
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-}
-  
-
-
-
-
-
-
-
-
-
-
-@media only screen and (max-width: 1024px) {
-   
-    .pagCompraContainer
-{   
-display: flex;
-flex-direction: column; 
-justify-content: center; 
-align-items: center; 
-min-height: 100vh; 
-max-width: 1920px; 
-margin: 0 auto; 
-padding: 0 20px; 
-
-}
-
-.btnCabecalhoComprar {
-
-    width: 7%;
-    height: 6.5%;
-    position: absolute;
-    top: 13.7%;
-    left: 25%;
-
-
-}
-.btnCabecalhoComprar button
-{
-width: 100%;
-height: 100%;
-border: none;
-cursor: pointer;
-outline: none;
-background-color: inherit;
-font-family:'Antonio-Regular';;
-}
-.btnCabecalhoComprar button:hover
-{
-
-
-background-color: var(--laranja-Fraco);
-}
-
-.breadcrumbs{
-margin-top:7%;
-margin-left: 2rem;
-font-family:'Inter-regular';
-color: var(--cor-fundo);
-display: flex;
-flex-direction:row;
-justify-content: start;
-align-items: center;
-
-}
-
-a
-{
-text-decoration: none;
-color:inherit;
-
-}
-.breadcrumbs a :hover
-{
-text-decoration: underline;
-}
-.paginaAtual
-{
-color:var(--azul-verde);
-}
-.compraContainer{
-
-width: 100%;
-height: 100%;
-max-width:1239px;
-max-height:700px;
-min-width: 600px;
-min-height:200px;
-background-color:var(--branco);
-position: relative;
-display: grid;
-grid-template-columns: 1fr 1fr 1fr;
-grid-template-rows: 1fr 1fr 1fr;
-
-
-}
-
-.imgFLor{
-
-grid-column: 1 / 3;
-grid-row: 1/5;
-}
-
-.imgFLor img{
-width: 100%;
-height: 100%;
-max-width:750px;
-max-height:550px;
-padding: 2%;
-}
-
-.titulo
-{
-grid-column: 3 / 5;
-grid-row: 1/3;
-font-family: 'Antonio-Regular';
-
-}
-
-.btnCompra
-{
-grid-column: 3 / 5;
-grid-row: 3/4;
-font-family: 'Antonio-Regular';
-margin: 5%;
-padding: 5%
-}
-
-.btnCompra button
-{
-height: 100%;
-width: 100%;
-max-width: 320px;
-max-height: 60px;
-margin-bottom: 1rem;
-border-radius: 2px;
-font-size: 40px;
-font-family: 'Antonio-Regular';
-border: none;
-
-}
-.comprar
-{
-background-color: var(--azul-verde);
-}
-.comprar:hover
-{
-background-color: var(--amarelo);
-cursor: pointer;
-}
-.sacolinha
-{
-background-color: var(--laranja-Fraco);
-}
-.sacolinha img
-{
-max-width: 30px;
-max-height: 30px;
-}
-.sacolinha:hover
-{
-background-color: var(--amarelo);
-cursor: pointer;
-}
-
-.titulo h1
-{   
-font-size: 200%;
-margin:5%;
-
-
-}
-.titulo img
-{
-margin-left: 1rem; 
-}
-.preco
-{
-display: flex;
-flex-direction:row;
-align-items: center;
-margin-left: 1.3rem;
-margin-top: -2.3rem;
-
-
-}
-.preco h1
-{
-font-size: 180%;
-}
-.preco h3
-{
-color: #B0AFAF;
-}
-#parcelas
-{
-margin-left: 1.3rem;
-margin-top:-1.5rem;
-color: #B0AFAF;
-}
-.desconto
-{
-margin-left: 1rem;
-color: #B40000;
-text-decoration: line-through;
-}
-.frete
-{
-margin-left: 7%;
-margin-top:8%;
-display: flex;
-align-items: center;
-
-}
-.frete img
-{
-max-width: 27px;
-max-height: 20px;
-margin-right: 5px;
-}
-.destaque
-{
-color: var(--amarelo);
-}
-.destaque:hover
-{
-text-decoration:underline;
-cursor: pointer;
-}
-.informacoes
-{     margin-left: 20%;
-  margin-top:-3%;
-    padding: 2%;
-  font-family: 'Inter-Regular';
-
-}
-.agendar
-{
-margin-left: 7%;
-margin-top:-5%;
-display: flex;
-align-items: center;
-
-}
-.agendar img
-{
-max-width: 27px;
-max-height: 20px;
-margin-right: 5px;
-}
-
-.descricaoContainer
-{
-width: 100%;
-height: 100%;
-max-width:1239px;
-max-height:120px;
-background-color:var(--branco);
-position: relative;
-margin-top:5.5%; 
-left: 50%;
-transform: translate(-50%, -50%);
-}
-.descricaoContainer p
-{
-font-family: 'Inter-regular';
-font-size: 35;
-padding: 20px;
-}
-
-.opiniaoTitulo
-{
-width: 100%;
-height: 10vh;
-max-width:770px;
-max-height:72px;
-background-color:var(--azul-verde);
-margin-top: 3%;
-align-self: flex-start;
-margin-left: 10vw;
-font-family:'Antonio-Regular';
-border-radius: 2px;
-text-align: center;
-}
-.opiniaoTitulo hr
-{   
-
-border-color:fffff;
-}
-.opinioes
-{   
-background-color:var(--branco);
-width: 100%;
-height: 100%;
-max-width:988px;
-max-height:247px;
-position:relative;
-font-family:'Antonio-Regular';
-margin-top: 3%;
-border-radius: 2px;
-margin-left: 3vw;
-align-self: flex-start;
-display: grid;
-grid-template-columns: 0.5fr 2.5fr;
-
-}
-
-
-.opinioes img
-{
-width: 100%;
-height: 100%;
-max-width:100px;
-max-height: 100px;
-}
-
-.perfilOpiniao
-{
-grid-column: 1 / 2;
-justify-self: center;
-}
-.perfilOpiniao img
-{
-padding: 10px;
-}
-.perfilOpiniao h2
-{
-margin-top:-2%;
-}
-.opiniaoDetalhada
-{
-grid-column: 2 / 3;
-}
-.opiniaoDetalhada h2
-{
-text-align: center;
-}
-.opiniaoDetalhada hr
-{
-width: 60%;
-margin-top: -1%;
-border-color: #f4781f;
-}
-.opiniaoDetalhada p
-{
-font-family: 'Inter-Regular';
-font-size: 20px;
-text-align: start;
-margin-left: 5%;
-}
-.opiniaoDetalhada img
-{
-width: 100%;
-height: 100%;
-max-height: 34px;
-max-width: 170px;
-margin-top: -50%;
-margin-left: 75%;
-}
-.avaliacaoRestantes
-{
-width: 100%;
-height: 100%;
-max-width:600px;
-max-height:72px;
-background-color:var(--azul-verde);
-font-family:'Antonio-Regular';
-border-radius: 2px;
-align-self: flex-start;
-margin-left: 10vw;
-margin-top: 3%;
-display: flex;
-flex-direction: row;
-align-items: center;
-justify-content: space-between;
-
-}
-
-.avaliacaoRestantes h2
-{
-margin-left: 10%;
-}
-.avaliacaoRestantes h2:hover
-{
-text-decoration: underline;
-cursor: pointer;
-}
-.avaliacaoRestantes img
-{
-margin-right: 10%;
-}
-#sublinhado
-{
-width: 40%;
-margin-right: 45%;
-border-color: var(--laranja-Forte);
-margin-top: -3vh;
-}
-
-.sugeridos
-{   
-font-family: 'Inter-regular';
-max-width: 1200;
-max-height: 800;
-display: grid;
-grid-template-columns:250px 250px 250px 250px;
-grid-template-rows: 380px 380px;
-gap: 3%;
-margin-right: 5%;
-
-
-}
-
 .tituloSug{
 width: 100%;
 text-align:center;
@@ -1030,105 +438,8 @@ font-family: 'Inter-Regular';
 text-decoration: underline;
 font-size: 170%;
 }
-.prodSugerido{
-
-width: 100%;
-height: 100%;
-max-width: 250px;
-max-height: 380px;
-background-color: #fff;
-border-radius: 3px;
-
-}
-.prodSugerido img
-{
-max-width: 250px;
-max-height: 210px;
-padding: 8%;
-}
-.prodSugerido h4
-{
-font-size:125%;
-font-family: 'Antonio-Regular';
-margin-left: 5%;
-margin-bottom:0; 
-margin-top: 0;   
-}
-
-.prodSugerido .desconto
-{
-font-size:80%;
-font-family: 'Antonio-Regular';
-text-align: end;
-margin-right: 10%;
-margin-top: 0;
-}
-.prodSugerido .preco 
-{
-
-font-family: 'Antonio-Regular';
-justify-content: end;
-margin-top: -11%;
-margin-right: 3%;
 
 
 }
-.prodSugerido .preco h1
-{
-font-size:120%;
-justify-self: end;
-}
-.prodSugerido .preco h3
-{
-font-size:80%;
+  
 
-}
-
-.iconeCoracaoItem 
-{
-max-width: 20px;
-max-height: 20px;
-
-
-}
-
-.iconeCoracaoItem img
-{
-max-width: 20px;
-max-height: 20px;
-cursor: pointer;
-margin: 0;
-
-
-}
-.space {
-flex-grow: 1;
-flex-shrink: 1;
-width: 0;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-}
